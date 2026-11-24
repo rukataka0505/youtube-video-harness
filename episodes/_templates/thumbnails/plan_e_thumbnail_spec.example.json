@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 2,
+  "episodeId": "ep-placeholder-plan-e",
+  "formatId": "planE_macro_econ",
+  "channelName": "経済の赤ペン",
+  "videoTitle": "企画タイトルのプレースホルダ（全角30文字前後）",
+  "videoDurationText": "18:00",
+  "comparisonSheetCompositionId": "ThumbnailFeedComparisonSheet",
+  "workflow": {
+    "stage": "pre_script_locked",
+    "lockedBeforeScript": true,
+    "researchBriefRef": "episodes/_templates/episode_template/01_research_brief.md",
+    "clickConfirmPromise": "冒頭15秒でタイトルとサムネイルの約束に答える",
+    "abTestMode": "test_and_compare",
+    "dailyImpressionsTier": "under_1000"
+  },
+  "fonts": [
+    "Noto Sans JP",
+    "Noto Serif JP",
+    "Playfair Display"
+  ],
+  "compliance": {
+    "primarySourcesCount": 3,
+    "noOfficialImpersonation": true,
+    "usesUnauthorizedTrademarkAsOfficial": false,
+    "hasMisleadingBreakingUi": false,
+    "noAiSlop3Ng": true,
+    "silOflFontsOnly": true,
+    "aiDisclosureRequired": false
+  },
+  "render": {
+    "width": 3840,
+    "height": 2160,
+    "squintWidth": 168,
+    "squintHeight": 94,
+    "comparisonSheetWidth": 2560,
+    "comparisonSheetHeight": 1600,
+    "maxFileSizeMb": 50,
+    "exportTextlessBase": true
+  },
+  "competitors": [
+    {
+      "channelName": "競合チャンネルA",
+      "title": "競合動画タイトル例A",
+      "viewsText": "10万回視聴",
+      "publishedAgo": "1か月前",
+      "durationText": "16:00",
+      "thumbnailLabel": "競合サムネA",
+      "bgColor": "#1E293B",
+      "accentColor": "#EF4444"
+    },
+    {
+      "channelName": "競合チャンネルB",
+      "title": "競合動画タイトル例B",
+      "viewsText": "20万回視聴",
+      "publishedAgo": "3か月前",
+      "durationText": "18:00",
+      "thumbnailLabel": "競合サムネB",
+      "bgColor": "#0F172A",
+      "accentColor": "#22C55E"
+    }
+  ],
+  "variants": [
+    {
+      "variantId": "A_variant",
+      "label": "案A",
+      "hypothesis": "案Aのクリック仮説を記入",
+      "visualHook": "案Aの視覚メタファーを記入",
+      "compositionId": "Thumb-EpisodePascal-A",
+      "supportsTextless": true,
+      "copyLines": [
+        "案Aの1行目",
+        "数字や事実"
+      ],
+      "highlightToken": "数字や事実",
+      "accentLineIndex": 1,
+      "triggers": [
+        "numbers"
+      ],
+      "colors": {
+        "background": "#FFFFFF",
+        "primaryText": "#111111",
+        "emphasisText": "#111111"
+      },
+      "backgroundAsset": {
+        "sourceType": "none"
+      }
+    },
+    {
+      "variantId": "B_variant",
+      "label": "案B",
+      "hypothesis": "案Bのクリック仮説を記入（案Aとは世界観・構図・コピーの切り口が異なる別案にする）",
+      "visualHook": "案Bの視覚メタファーを記入",
+      "compositionId": "Thumb-EpisodePascal-B",
+      "supportsTextless": true,
+      "copyLines": [
+        "案Bの1行目",
+        "構造の矛盾"
+      ],
+      "highlightToken": "構造の矛盾",
+      "accentLineIndex": 1,
+      "triggers": [
+        "surprise"
+      ],
+      "colors": {
+        "background": "#FFFFFF",
+        "primaryText": "#111111",
+        "emphasisText": "#111111"
+      },
+      "backgroundAsset": {
+        "sourceType": "none"
+      }
+    }
+  ]
+}

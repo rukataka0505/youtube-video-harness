@@ -1,0 +1,266 @@
+# 制作・開発スタック抽象化設定（疎結合・非ロックイン設計）
+# 最終検証: 2026-11-21
+# 注記: 特定ベンダー・モデル・サブスクにロックインしない。変更時は .agents/skills/stack-refresh/SKILL.md に従うこと。
+
+schema_version: 1
+last_verified: "2026-11-23"
+fx_assumption_jpy_per_usd: 157  # レポート06(155円)と07(159円)の中間目安
+
+roles:
+  research_llm:
+    primary:
+      provider: google
+      model: gemini-4-neon
+      effort: high
+      billing: subscription_or_api
+      status: confirmed
+    fallback:
+      - provider: anthropic
+        model: claude-opus-5-5
+        effort: medium
+        note: "200K以下の小〜中規模で網羅回答を優先したい場合"
+      - provider: google
+        model: gemini-4-carbon
+        note: "2026-12-01以降単価倍額($4/$20)のため超難関スポット限定"
+    avoid:
+      - "gpt-6.2-sol（SWE-Atlas -13.7pt急落のため大規模読解厳禁）"
+      - "gemini-4-hydrogen（複雑依存で誤認）"
+    notes: "1Mフラット料金・長文横断(GraphWalks 95.2%)・YouTube URL/MP4ネイティブ解析担当。カットオフ2026-03のため最新APIはローカル型定義/Docs必読"
+
+  outlier_batch_llm:
+    primary:
+      provider: google
+      model: gemini-3.5-flash-lite
+      status: tentative
+    fallback:
+      - provider: google
+        model: gemini-4-hydrogen
+        effort: medium
+        note: "2027-01-01のgemini-3.8-flash倍額化に備えたBatch 50%オフ切替先（xhigh厳禁）"
+    notes: "大量コメントラベリング・一次構造化用（Batch API優先）"
+
+  script_llm:
+    primary:
+      provider: anthropic
+      model: claude-opus-5-5
+      effort: medium_or_high
+      billing: subscription_or_api
+      status: confirmed
+    fallback:
+      - provider: anthropic
+        model: claude-sonnet-5-5
+        effort: medium
+        note: "xhigh/max厳禁。力不足時はOpus mediumへ昇格"
+      - provider: google
+        model: gemini-4-neon
+        effort: medium
+        note: "下書き・構成・素材整理の日常枠"
+    notes: "日本語口語長尺台本執筆。通常回はmedium、看板回・勝負フックはhigh。必ず別モデル/別セッションで聴感・品質のクロスモデル監査"
+
+  visual_hero_llm:
+    primary:
+      provider: anthropic
+      model: claude-opus-5-5
+      effort: high
+      status: confirmed
+    fallback:
+      - provider: google
+        model: gemini-4-neon
+        effort: high
+        note: "WebGLカスタムシェーダ・漸進的SVG合成・コスパ重視時"
+    avoid:
+      - "gpt-6.2-astra（強烈なハウススタイル固執により複数ブランド書き分け不向き）"
+      - "claude-sonnet-5-5 ブラインド運用（偽モック黒画面リスク）"
+    notes: "STYLE.md・Root.tsx・冒頭ヒーロー・勝負2D/TSX演出担当。既定5点セット名指し禁止＋remotion stillコンタクトシート検査必須"
+
+  bulk_cut_llm:
+    primary:
+      provider: anthropic
+      model: claude-sonnet-5-5
+      effort: medium_or_high
+      status: confirmed
+    fallback:
+      - provider: google
+        model: gemini-4-hydrogen
+        effort: high
+        note: "Antigravity /swarm（Worktree隔離・最大4並列）での疎結合カット量産。xhigh厳禁・従属パーツ動作チェック必須"
+      - provider: openai
+        model: gpt-6.2-sol
+        effort: medium_or_high
+        note: "仕様100%確定の単体修正・図表/スクショ模写（272K入力未満厳守・max非推奨）"
+    avoid:
+      - "claude-sonnet-5-5 xhigh/max（コスト逆転・暴走）"
+      - "gemini-4-hydrogen xhigh（饒舌化崩壊）"
+    notes: "確定済みSTYLE.mdとProps契約下での高速カット量産・小規模修正"
+
+  qa_and_code_agent:
+    primary:
+      provider: google
+      model: gemini-4-neon
+      effort: high
+      status: confirmed
+    secondary:
+      provider: anthropic
+      model: claude-sonnet-5-5
+      effort: medium_or_high
+      note: "全PR一次レビュー主力（静かで高速）。フルID指定・/fast禁止"
+    final_audit:
+      provider: anthropic
+      model: claude-opus-5-5
+      effort: medium_or_high
+      note: "本番前・高難度バグ/審美眼の最終監査およびAstra調査後の要約リレー"
+    avoid:
+      - "gpt-6.2-astra のPRレビュー（847コメント・Nitpick爆弾・Precision 12.22%）"
+      - "gpt-6.2-sol high/max レビュー（レビュー時は必ず low 固定）"
+      - "実装と同一モデル・同一セッションの自己採点"
+    notes: "長時間連続リファクタは単体Neon(high)固定。短〜中規模の調査→定型編集ループのみOrchestrator(Neon)使用。書き出しMP4/音声検品はNeon(high)ネイティブ入力"
+
+  spot_webmcp_physics_llm:
+    primary:
+      provider: openai
+      model: gpt-6.2-astra
+      effort: high_or_xhigh
+      status: optional_spot
+    notes: "Remotion Studio WebMCP直結プレビュー操作・特殊物理VFX・深層バグ発掘のスポット枠（重い3D動画は廃止済み）。max非推奨・272K超回避・完了後はOpus 5.5(medium)で要約リレー"
+
+  tts_primary:
+    primary:
+      provider: elevenlabs
+      model: eleven_v4
+      voice_id: TX3LPaxmHKxFdv7VOQHJ
+      voice_name: "Liam - Energetic, Social Media Creator"
+      voice_policy: own_voice_pvc_or_licensed
+      required_params:
+        language_code: ja
+      status: confirmed
+    fallback:
+      - provider: aivis_cloud
+        model: private_own_voice_only
+        note: "【警告】既製ACML 1.0モデルは企業・人物批判用途に使用禁止（非公開自声/CC0のみ可）"
+      - provider: google
+        model: gemini-3.8-flash-tts
+        note: "Batch 50%オフ併用・SynthID透かし付与・無料枠商用不可"
+      - provider: dreamtonics
+        model: voicepeak_commercial_6
+        note: "買い切りローカルGUI（CLI 140字上限）。冒頭フックの局所アクセント補正に最適"
+    legal_guardrail: "にじボイス(2026-02-04終了)は使用禁止。他者模倣・著名人酷似音声禁止。"
+
+  stt_align:
+    primary:
+      provider: elevenlabs
+      model: eleven_v4_with_timestamps
+      status: confirmed
+      note: "Eleven v4利用時はTTS応答の文字単位alignmentを直接利用しSTT不要化"
+    fallback:
+      - provider: elevenlabs
+        model: scribe_v3
+      - provider: local_oss
+        model: whisperx_or_mlx_whisper
+    excluded:
+      - name: kotoba-whisper
+        reason: "設定不備により単語・文字タイムスタンプ取得不可のため除外"
+
+  image_primary:
+    primary:
+      provider: web_curated_assets
+      model: none
+      status: confirmed
+    policy: "AI画像生成不使用（動画・サムネイルともに不使用）"
+    excluded:
+      - name: gemini-nano-banana-2.1
+        reason: "プロジェクト方針によりAI画像生成不使用。ネット収集の実写写真・ニュース見出し・公的資料・フリー素材を活用する"
+      - name: gpt-image-2.5
+        reason: "プロジェクト方針によりAI画像生成不使用"
+      - name: gpt-image-2.6
+        reason: "プロジェクト方針によりAI画像生成不使用"
+      - name: imagen-4
+        reason: "提供終了およびAI画像生成不使用方針"
+    notes: "動画・サムネイルともにAI画像生成は使用せず、ネット上の実写写真・ニュース見出し切り抜き・図版・公的資料・フリー素材を収集して使用する"
+
+  image_diagram:
+    primary:
+      provider: remotion_svg_code
+      model: none
+      status: confirmed
+    policy: "AI画像生成不使用（図解・チャート・数値・透過パーツはRemotion 2Dコード描画/SVGで補完）"
+    excluded:
+      - name: gpt-image-2.6
+        reason: "プロジェクト方針によりAI画像生成不使用"
+      - name: gpt-image-2.5
+        reason: "プロジェクト方針によりAI画像生成不使用"
+    notes: "図解・チャート・タイムライン・棒人間・透過SVGパーツは Remotion 2Dコード描画および収集図版で完結させる"
+
+  broll_primary:
+    primary:
+      provider: google_flow
+      model: gemini-omni-1.2-flash
+      status: tentative
+    fallback:
+      - provider: fal_ai
+        model: kling-3.0-pro
+    notes: "無音B-Roll時は 'No dialogue' 明記。Sora/Sora 2・Veo Fast/Quality(12/5 Flow終了)・Omni 1.1は使用禁止"
+
+  broll_hero:
+    primary:
+      provider: fal_ai
+      model: kling-4.0
+      status: tentative
+    fallback:
+      - provider: runway
+        model: gen-4.5
+      - provider: vertex_ai
+        model: veo-3.1
+        note: "フレーム厳密制御時のみスポット使用"
+    notes: "中国系サービス利用時は企業案件の機密・データ規約に留意"
+
+  motion_engine:
+    primary:
+      provider: remotion
+      version: "4.x"
+      license_rule: "コード関与人員は外注合算3名以下でFree（4名以上はCompany License必須）"
+      font_rule: "SIL OFL 1.1 / Apache 2.0 のみ許可（Adobe/Morisawaクラウド同梱禁止）"
+      status: tentative
+    secondary:
+      provider: manim
+      note: "数式・統計曲線パートのスポット利用のみ"
+
+  nle:
+    primary:
+      provider: blackmagic
+      product: davinci-resolve-studio-21.1
+      interface: native_mcp_and_async_python_api
+      audio_target:
+        integrated_lufs: -14.0
+        true_peak_dbtp: -1.0
+        sample_rate_hz: 48000
+      status: tentative
+    notes: "無償版はMCP・外部Python API非対応。11/20迄のセールは終了済み（通常約51,980円）。"
+
+  bgm_primary:
+    primary:
+      provider: epidemic_sound_pro
+      status: tentative
+    alternative:
+      - provider: audiostock_plus_artlist_pro
+        note: "国内バラエティ・解説調＋映画調の2本立て構成（要001-open-decisions.mdで選択確定）"
+    excluded:
+      - name: suno_udio
+        reason: "非独占規約およびContent ID他者先行登録による収益剥奪リスクのため本編BGM禁止"
+
+  thumbnail_layout:
+    primary:
+      provider: remotion_still
+      tool: "Remotion <Still> + pipeline/scripts/build_thumbnail.py"
+      status: confirmed
+    alternative:
+      - provider: adobe_photoshop_or_figma_human_finish
+        note: "必要時のみ、build_thumbnail.py が出力する文字抜きベース4K PNG（*_textless_3840x2160.png）を Photoshop / Figma へ読み込み人間が最終微調整する"
+    notes: "出力は4K(3840x2160) 50MB以下、A/Bテスト時も最低1280x720以上厳守。168x94px縮小スクイント画像とYouTube比較シートを同時生成する"
+
+excluded_formats:
+  - id: plan_d_heavy_3d
+    examples:
+      - "3Dローポリ調査報道（fern型）"
+      - "3D地形図極限事故（Green Dot Aviation型）"
+      - "3Dカットアウェイ機械・半導体断面（Branch Education型）"
+    decision: "ボツ確定（ADR-000により除外）"

@@ -1,0 +1,17 @@
+{
+  "click_confirm_sec": 1.0,
+  "has_greeting_or_logo_waste": false,
+  "hook_format": "cold_open",
+  "uses_negative_stakes": true,
+  "context_lean_in": "頭が良くなるには22年間の学業が必要とされる常識",
+  "scroll_stop_pivot": "But what you actually become is homeless",
+  "contrarian_snapback": "becoming smart is easy, actually",
+  "opening_curiosity_loop": "20年以上学んでも困窮する中、本当に簡単かつ実用的に賢くなる方法",
+  "cut_count_0_60s": 15,
+  "avg_shot_len_sec": 4.0,
+  "first_interrupt_sec": 1.5,
+  "telop_style": "minimal_keyword",
+  "opening_sfx_present": false,
+  "vocal_energy_level": "conversational",
+  "shorts_seamless_loop": null
+}

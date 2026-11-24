@@ -1,0 +1,1885 @@
+{
+  "slug": "ab_sc_self_help_v2_neon",
+  "compositionId": "AB-StickmanSelfHelp-v2-neon-high",
+  "title": "なぜ「自己啓発本を読む人」ほど変われないのか（ABテスト v2_neon_high）",
+  "formatId": "stickman_collage",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "totalDurationSec": 131.68,
+  "totalFrames": 3950,
+  "masterAudioMp3": "productions/ab_sc_self_help_v2_neon/master_audio.mp3",
+  "assetCatalog": [
+    {
+      "id": "photo_bookstore",
+      "kind": "scene_photo",
+      "src": "ab_tests/2026-11-22_stickman-collage_self-help-trap/bookstore.jpg",
+      "labelJa": "本屋のビジネス書コーナー（実写）",
+      "subjectNameJa": "本屋",
+      "tags": [
+        "本屋",
+        "書店",
+        "ビジネス書"
+      ],
+      "license": "royalty_free",
+      "creditShort": "写真：商用フリー素材（書店）",
+      "objectPosition": "50% 50%"
+    },
+    {
+      "id": "photo_convenience_store",
+      "kind": "scene_photo",
+      "src": "ab_tests/2026-11-22_stickman-collage_self-help-trap/convenience_store.jpg",
+      "labelJa": "夜のコンビニエンスストア（実写）",
+      "subjectNameJa": "コンビニ",
+      "tags": [
+        "コンビニ",
+        "帰り道"
+      ],
+      "license": "royalty_free",
+      "creditShort": "写真：商用フリー素材（コンビニ）",
+      "objectPosition": "50% 50%"
+    },
+    {
+      "id": "photo_salad_chicken",
+      "kind": "object_photo",
+      "src": "ab_tests/2026-11-22_stickman-collage_self-help-trap/salad_chicken.jpg",
+      "labelJa": "サラダチキン（実写）",
+      "subjectNameJa": "サラダチキン",
+      "tags": [
+        "サラダチキン",
+        "食品",
+        "コンビニ"
+      ],
+      "license": "royalty_free",
+      "creditShort": "写真：商用フリー素材（サラダチキン）",
+      "objectPosition": "50% 50%"
+    },
+    {
+      "id": "photo_book_stack_room",
+      "kind": "scene_photo",
+      "src": "ab_tests/2026-11-22_stickman-collage_self-help-trap/book_stack_room.jpg",
+      "labelJa": "室内の積ん読本タワー（実写）",
+      "subjectNameJa": "積ん読本",
+      "tags": [
+        "積ん読",
+        "本",
+        "室内",
+        "ベッド脇"
+      ],
+      "license": "royalty_free",
+      "creditShort": "写真：商用フリー素材（積ん読本）",
+      "objectPosition": "50% 50%"
+    },
+    {
+      "id": "person_gollwitzer",
+      "kind": "person_photo",
+      "src": "ab_tests/2026-11-22_stickman-collage_self-help-trap/peter_gollwitzer.jpg",
+      "labelJa": "心理学者 ピーター・ゴルヴィッツァー（本人写真）",
+      "subjectNameJa": "ピーター・ゴルヴィッツァー",
+      "tags": [
+        "ピーター・ゴルヴィッツァー",
+        "ゴルヴィッツァー",
+        "心理学者"
+      ],
+      "license": "cc_by",
+      "creditShort": "写真：Wikimedia Commons / NYU Faculty Profile (CC BY)",
+      "objectPosition": "50% 20%"
+    },
+    {
+      "id": "photo_smartphone_night",
+      "kind": "scene_photo",
+      "src": "ab_tests/2026-11-22_stickman-collage_self-help-trap/smartphone_night.jpg",
+      "labelJa": "深夜のスマートフォン画面（実写）",
+      "subjectNameJa": "深夜スマホ",
+      "tags": [
+        "スマホ",
+        "スマートフォン",
+        "深夜"
+      ],
+      "license": "royalty_free",
+      "creditShort": "写真：商用フリー素材（深夜のスマートフォン）",
+      "objectPosition": "50% 50%"
+    },
+    {
+      "id": "photo_desk_notebook",
+      "kind": "scene_photo",
+      "src": "ab_tests/2026-11-22_stickman-collage_self-help-trap/desk_notebook.jpg",
+      "labelJa": "机とノート（実写）",
+      "subjectNameJa": "机とノート",
+      "tags": [
+        "机",
+        "ノート",
+        "参考書",
+        "勉強"
+      ],
+      "license": "royalty_free",
+      "creditShort": "写真：商用フリー素材（机とノート）",
+      "objectPosition": "50% 50%"
+    }
+  ],
+  "chapters": [
+    {
+      "chapterIndex": 1,
+      "topicId": "bookstore_illusion",
+      "titleJa": "導入フック〜積ん読と不都合な調査結果",
+      "defaultPolarity": "black",
+      "openLoopQuestionJa": "なぜ自己啓発本を読むほど変われなくなるのか？",
+      "startSec": 0.0,
+      "endSec": 37.22,
+      "durationSec": 37.22
+    },
+    {
+      "chapterIndex": 2,
+      "topicId": "social_reality_trap",
+      "titleJa": "報酬先払いと「社会的現実感」のメカニズム",
+      "defaultPolarity": "grid_paper",
+      "openLoopQuestionJa": "なぜ宣言したり読むだけで行動エネルギーが切れるのか？",
+      "startSec": 37.22,
+      "endSec": 84.09,
+      "durationSec": 46.87
+    },
+    {
+      "chapterIndex": 3,
+      "topicId": "if_then_solution",
+      "titleJa": "決定的な分かれ道・94研究メタ分析・IF-THEN設計",
+      "defaultPolarity": "cream_notebook",
+      "openLoopQuestionJa": "1冊の知識をそのまま行動へ変える3ステップとは何か？",
+      "startSec": 84.09,
+      "endSec": 131.68,
+      "durationSec": 47.59
+    }
+  ],
+  "shots": [
+    {
+      "shotIndex": 1,
+      "chunkId": "c01",
+      "targetDurationSec": 7.8,
+      "narrativeRole": "scroll_stop_hook",
+      "polarity": "black",
+      "lightBg": false,
+      "layoutArchetype": "collage_stage",
+      "photoLayer": {
+        "assetId": "photo_bookstore",
+        "variant": "tape_scrap",
+        "placement": "left_card",
+        "rotateDeg": -2.4,
+        "tape": true,
+        "beatIndex": 0
+      },
+      "diagram": {
+        "kind": "kinetic_list",
+        "params": {
+          "variant": "clip_cards",
+          "align": "left",
+          "items": [
+            {
+              "text": "『人生が変わる習慣』",
+              "badge": "1冊目",
+              "accentColor": "#FFCC00",
+              "width": 650,
+              "fontSize": 36,
+              "rotateDeg": -1.2,
+              "beatIndex": 1
+            },
+            {
+              "text": "『1%の継続メソッド』",
+              "badge": "2冊目",
+              "accentColor": "#0099FF",
+              "width": 630,
+              "fontSize": 36,
+              "rotateDeg": 1.1,
+              "beatIndex": 2
+            },
+            {
+              "text": "『超・朝活思考』",
+              "badge": "3冊目",
+              "accentColor": "#FF4D4D",
+              "width": 640,
+              "fontSize": 36,
+              "rotateDeg": -0.8,
+              "beatIndex": 2
+            }
+          ]
+        }
+      },
+      "stickFigures": [
+        {
+          "id": "fig_c01_feel_good",
+          "pose": "celebrate",
+          "position": "bottom_right_corner",
+          "size": 185,
+          "beatIndex": 3,
+          "bubbleTextJa": "妙に気分がいい！",
+          "bubbleTail": "bottom-right"
+        }
+      ],
+      "beats": [
+        {
+          "beatIndex": 0,
+          "offsetSec": 0.12,
+          "phraseJa": "本屋のビジネス書コーナーで、",
+          "action": "reveal_photo"
+        },
+        {
+          "beatIndex": 1,
+          "offsetSec": 1.95,
+          "phraseJa": "人生が変わる習慣みたいな本を、",
+          "action": "reveal_diagram"
+        },
+        {
+          "beatIndex": 2,
+          "offsetSec": 3.85,
+          "phraseJa": "三冊まとめて買った夜って、",
+          "action": "reveal_diagram"
+        },
+        {
+          "beatIndex": 3,
+          "offsetSec": 5.65,
+          "phraseJa": "妙に気分がいいですよね。",
+          "action": "pop_figure"
+        }
+      ],
+      "narrationJa": "本屋のビジネス書コーナーで、人生が変わる習慣みたいな本を、さんさつまとめて買った夜って、みょうに気分がいいですよね。",
+      "subtitleSegments": [
+        {
+          "line1": "本屋のビジネス書コーナーで、",
+          "line2": "「人生が変わる習慣」みたいな本を"
+        },
+        {
+          "line1": "3冊まとめて買った夜って、",
+          "line2": "妙に気分がいいですよね。"
+        }
+      ],
+      "sfx": [
+        {
+          "kind": "paper_snap",
+          "offsetSec": 0.14,
+          "gain": 0.24
+        },
+        {
+          "kind": "paper_snap",
+          "offsetSec": 1.97,
+          "gain": 0.22
+        },
+        {
+          "kind": "soft_pop",
+          "offsetSec": 3.87,
+          "gain": 0.22
+        },
+        {
+          "kind": "soft_pop",
+          "offsetSec": 5.67,
+          "gain": 0.2
+        }
+      ],
+      "openLoopAction": "open",
+      "showOnScreenCitation": false,
+      "chapterIndex": 1,
+      "topicId": "bookstore_illusion",
+      "startSec": 0.0,
+      "endSec": 9.19,
+      "durationSec": 9.19,
+      "startFrame": 0,
+      "endFrame": 276,
+      "beatTimesSec": [
+        0.12,
+        1.95,
+        3.85,
+        5.65
+      ]
+    },
+    {
+      "shotIndex": 2,
+      "chunkId": "c02",
+      "targetDurationSec": 8.0,
+      "narrativeRole": "comic_punchline",
+      "polarity": "black",
+      "lightBg": false,
+      "layoutArchetype": "full_canvas_diagram",
+      "secondaryPhotoLayers": [
+        {
+          "assetId": "photo_convenience_store",
+          "variant": "tape_scrap",
+          "beatIndex": 0
+        },
+        {
+          "assetId": "photo_salad_chicken",
+          "variant": "tape_scrap",
+          "beatIndex": 1
+        }
+      ],
+      "diagram": {
+        "kind": "compare_cards",
+        "params": {
+          "cards": [
+            {
+              "badge": "帰り道",
+              "assetId": "photo_convenience_store",
+              "title": "コンビニへ直行",
+              "body": "まだ1ページも行動ゼロ",
+              "tiltDeg": -2.2,
+              "beatIndex": 0
+            },
+            {
+              "badge": "意識だけ急上昇",
+              "assetId": "photo_salad_chicken",
+              "title": "サラダチキン選択",
+              "body": "脳内ではもう成功者",
+              "highlight": true,
+              "tiltDeg": 2.0,
+              "beatIndex": 1
+            }
+          ]
+        }
+      },
+      "stickFigures": [
+        {
+          "id": "fig_c02_winner",
+          "pose": "celebrate",
+          "position": "bottom_left_corner",
+          "size": 195,
+          "beatIndex": 2,
+          "bubbleTextJa": "脳内では成功者！",
+          "bubbleTail": "bottom-left"
+        }
+      ],
+      "stamp": {
+        "text": "行動量 0",
+        "position": "top_right",
+        "rotateDeg": 8,
+        "fontSize": 56,
+        "beatIndex": 3
+      },
+      "beats": [
+        {
+          "beatIndex": 0,
+          "offsetSec": 0.12,
+          "phraseJa": "まだ1ページも行動していないのに、",
+          "action": "reveal_diagram"
+        },
+        {
+          "beatIndex": 1,
+          "offsetSec": 2.25,
+          "phraseJa": "帰り道のコンビニでなぜかサラダチキンを",
+          "action": "reveal_photo"
+        },
+        {
+          "beatIndex": 2,
+          "offsetSec": 4.55,
+          "phraseJa": "選んでしまうくらい、脳内では",
+          "action": "pop_figure"
+        },
+        {
+          "beatIndex": 3,
+          "offsetSec": 6.15,
+          "phraseJa": "もう成功者です。",
+          "action": "stamp"
+        }
+      ],
+      "narrationJa": "まだ1ページも行動していないのに、帰り道のコンビニでなぜかサラダチキンを選んでしまうくらい、脳内ではもう成功者です。",
+      "subtitleSegments": [
+        {
+          "line1": "まだ1ページも行動していないのに、",
+          "line2": "帰り道のコンビニでなぜか"
+        },
+        {
+          "line1": "サラダチキンを選んでしまうくらい、",
+          "line2": "脳内ではもう成功者です。"
+        }
+      ],
+      "sfx": [
+        {
+          "kind": "paper_snap",
+          "offsetSec": 0.14,
+          "gain": 0.22
+        },
+        {
+          "kind": "question_boing",
+          "offsetSec": 2.27,
+          "gain": 0.2
+        },
+        {
+          "kind": "soft_pop",
+          "offsetSec": 4.57,
+          "gain": 0.2
+        },
+        {
+          "kind": "stamp_thud",
+          "offsetSec": 6.17,
+          "gain": 0.25
+        }
+      ],
+      "comicPunchline": true,
+      "showOnScreenCitation": false,
+      "chapterIndex": 1,
+      "topicId": "bookstore_illusion",
+      "startSec": 9.19,
+      "endSec": 17.67,
+      "durationSec": 8.48,
+      "startFrame": 276,
+      "endFrame": 530,
+      "beatTimesSec": [
+        9.31,
+        11.44,
+        13.74,
+        15.34
+      ]
+    },
+    {
+      "shotIndex": 3,
+      "chunkId": "c03",
+      "targetDurationSec": 7.0,
+      "narrativeRole": "context_lean_in",
+      "polarity": "black",
+      "lightBg": false,
+      "layoutArchetype": "split_balanced",
+      "photoLayer": {
+        "assetId": "photo_book_stack_room",
+        "variant": "tape_scrap",
+        "placement": "right_card",
+        "labelJa": "ベッド脇の積ん読タワー",
+        "rotateDeg": 2.2,
+        "tape": true,
+        "beatIndex": 1
+      },
+      "stickFigures": [
+        {
+          "id": "fig_c03_unhappy",
+          "pose": "grad_unhappy",
+          "position": "left",
+          "size": 280,
+          "beatIndex": 0,
+          "bubbleTextJa": "1週間後…",
+          "bubbleSubText": "積ん読タワーに吸収",
+          "bubbleTail": "bottom-left"
+        }
+      ],
+      "callout": {
+        "textJa": "1週間後の現実",
+        "position": "top_left",
+        "fontSize": 44,
+        "rotateDeg": -2,
+        "beatIndex": 0
+      },
+      "stamp": {
+        "text": "元の生活へ復活",
+        "position": "bottom_left",
+        "rotateDeg": -7,
+        "fontSize": 52,
+        "beatIndex": 2
+      },
+      "beats": [
+        {
+          "beatIndex": 0,
+          "offsetSec": 0.12,
+          "phraseJa": "ところが1週間後、その本は",
+          "action": "pop_figure"
+        },
+        {
+          "beatIndex": 1,
+          "offsetSec": 2.1,
+          "phraseJa": "ベッド脇の積ん読タワーに吸収され、",
+          "action": "reveal_photo"
+        },
+        {
+          "beatIndex": 2,
+          "offsetSec": 4.45,
+          "phraseJa": "元の生活がきれいに復活します。",
+          "action": "stamp"
+        }
+      ],
+      "narrationJa": "ところが1週間後、その本はベッドわきのつんどくタワーに吸収され、元の生活がきれいに復活します。",
+      "subtitleSegments": [
+        {
+          "line1": "ところが1週間後、その本は",
+          "line2": "ベッド脇の積ん読タワーに吸収され、"
+        },
+        {
+          "line1": "元の生活がきれいに復活します。"
+        }
+      ],
+      "sfx": [
+        {
+          "kind": "soft_pop",
+          "offsetSec": 0.14,
+          "gain": 0.2
+        },
+        {
+          "kind": "paper_snap",
+          "offsetSec": 2.12,
+          "gain": 0.24
+        },
+        {
+          "kind": "impact_thud",
+          "offsetSec": 4.47,
+          "gain": 0.25
+        }
+      ],
+      "showOnScreenCitation": false,
+      "chapterIndex": 1,
+      "topicId": "bookstore_illusion",
+      "startSec": 17.67,
+      "endSec": 25.43,
+      "durationSec": 7.76,
+      "startFrame": 530,
+      "endFrame": 763,
+      "beatTimesSec": [
+        17.79,
+        19.77,
+        22.12
+      ]
+    },
+    {
+      "shotIndex": 4,
+      "chunkId": "c04",
+      "targetDurationSec": 9.2,
+      "narrativeRole": "example_illustration",
+      "polarity": "black",
+      "lightBg": false,
+      "layoutArchetype": "newspaper_focus",
+      "diagram": {
+        "kind": "newspaper_card",
+        "params": {
+          "variant": "editorial_serif",
+          "publicationName": "NEURAL PLASTICITY",
+          "categoryLabel": "モントリオール大学 ストレス研究センター",
+          "headlinePrefix": "自己啓発本をよく読む人ほど、",
+          "highlightedHeadline": "ストレス反応や抑うつ傾向が高い",
+          "subHeadline": "読者グループと非読者グループの比較パイロット調査",
+          "width": 1060,
+          "rotateDeg": -1.2,
+          "highlightDelaySec": 2.5,
+          "highlightDurationSec": 0.85,
+          "beatIndex": 0
+        }
+      },
+      "stickFigures": [
+        {
+          "id": "fig_c04_awkward",
+          "pose": "thinking",
+          "position": "bottom_right_corner",
+          "size": 195,
+          "beatIndex": 2,
+          "bubbleTextJa": "ちょっと気まずい…",
+          "bubbleTail": "bottom-right"
+        }
+      ],
+      "stamp": {
+        "text": "逆効果の罠",
+        "position": "top_right",
+        "rotateDeg": 9,
+        "fontSize": 54,
+        "beatIndex": 3
+      },
+      "beats": [
+        {
+          "beatIndex": 0,
+          "offsetSec": 0.12,
+          "phraseJa": "モントリオール大学のストレス研究センターが行った調査でも、",
+          "action": "reveal_diagram"
+        },
+        {
+          "beatIndex": 1,
+          "offsetSec": 2.65,
+          "phraseJa": "自己啓発本をよく読む人ほど",
+          "action": "draw_stroke"
+        },
+        {
+          "beatIndex": 2,
+          "offsetSec": 5.35,
+          "phraseJa": "ストレス反応や抑うつ傾向が高いという、",
+          "action": "pop_figure"
+        },
+        {
+          "beatIndex": 3,
+          "offsetSec": 7.15,
+          "phraseJa": "ちょっと気まずい結果が出ています。",
+          "action": "stamp"
+        }
+      ],
+      "narrationJa": "モントリオール大学のストレス研究センターが行った調査でも、自己啓発本をよく読む人ほどストレス反応や抑うつ傾向が高いという、ちょっと気まずい結果が出ています。",
+      "subtitleSegments": [
+        {
+          "line1": "モントリオール大学の",
+          "line2": "ストレス研究センターが"
+        },
+        {
+          "line1": "行った調査でも、自己啓発本を",
+          "line2": "よく読む人ほどストレス反応や"
+        },
+        {
+          "line1": "抑うつ傾向が高いという、",
+          "line2": "ちょっと気まずい結果が出ています。"
+        }
+      ],
+      "sfx": [
+        {
+          "kind": "paper_snap",
+          "offsetSec": 0.14,
+          "gain": 0.24
+        },
+        {
+          "kind": "pen_scratch",
+          "offsetSec": 2.68,
+          "gain": 0.19,
+          "durationSec": 0.55
+        },
+        {
+          "kind": "data_chirp",
+          "offsetSec": 5.38,
+          "gain": 0.18
+        },
+        {
+          "kind": "stamp_thud",
+          "offsetSec": 7.18,
+          "gain": 0.24
+        }
+      ],
+      "showOnScreenCitation": false,
+      "chapterIndex": 1,
+      "topicId": "bookstore_illusion",
+      "startSec": 25.43,
+      "endSec": 37.22,
+      "durationSec": 11.79,
+      "startFrame": 763,
+      "endFrame": 1117,
+      "beatTimesSec": [
+        25.55,
+        28.08,
+        30.78,
+        32.58
+      ]
+    },
+    {
+      "shotIndex": 5,
+      "chunkId": "c05",
+      "targetDurationSec": 8.0,
+      "narrativeRole": "contrarian_claim",
+      "polarity": "grid_paper",
+      "lightBg": true,
+      "polarityShiftReason": "認知メカニズムの因果解剖フェーズへ方眼紙（grid_paper）極性で切替",
+      "layoutArchetype": "full_canvas_diagram",
+      "diagram": {
+        "kind": "equation_flow",
+        "params": {
+          "handNote": "なぜ読めば読むほど空回りするのか？",
+          "handNoteBeat": 0,
+          "nodes": [
+            {
+              "text": "本を買う＋読む",
+              "bg": "#FFFFFF",
+              "beatIndex": 1
+            },
+            {
+              "text": "→",
+              "isOperator": true,
+              "beatIndex": 2
+            },
+            {
+              "text": "「変わった気」を先払い",
+              "bg": "#FEF08A",
+              "beatIndex": 2
+            },
+            {
+              "text": "→",
+              "isOperator": true,
+              "beatIndex": 3
+            },
+            {
+              "text": "肝心の行動が空回り",
+              "bg": "#FECACA",
+              "color": "#991B1B",
+              "beatIndex": 3
+            }
+          ]
+        }
+      },
+      "stickFigures": [
+        {
+          "id": "fig_c05_prepay",
+          "pose": "pointing",
+          "position": "bottom_left_corner",
+          "size": 190,
+          "beatIndex": 2,
+          "bubbleTextJa": "脳が先に満足！",
+          "bubbleTail": "bottom-left"
+        }
+      ],
+      "beats": [
+        {
+          "beatIndex": 0,
+          "offsetSec": 0.12,
+          "phraseJa": "なぜ読めば読むほど空回りするのか。",
+          "action": "reveal_diagram"
+        },
+        {
+          "beatIndex": 1,
+          "offsetSec": 1.95,
+          "phraseJa": "理由はシンプルで、本を買う瞬間と読む瞬間に、",
+          "action": "reveal_diagram"
+        },
+        {
+          "beatIndex": 2,
+          "offsetSec": 3.95,
+          "phraseJa": "脳が「変わった気」を",
+          "action": "pop_figure"
+        },
+        {
+          "beatIndex": 3,
+          "offsetSec": 5.85,
+          "phraseJa": "先払いしてしまうからです。",
+          "action": "animate_metric"
+        }
+      ],
+      "narrationJa": "なぜ読めば読むほど空回りするのか。理由はシンプルで、本を買う瞬間と読む瞬間に、脳が変わった気を先払いしてしまうからです。",
+      "subtitleSegments": [
+        {
+          "line1": "なぜ読めば読むほど空回りするのか。",
+          "line2": "理由はシンプルで、本を買う瞬間と"
+        },
+        {
+          "line1": "読む瞬間に、脳が「変わった気」を",
+          "line2": "先払いしてしまうからです。"
+        }
+      ],
+      "sfx": [
+        {
+          "kind": "whoosh",
+          "offsetSec": 0.08,
+          "gain": 0.22
+        },
+        {
+          "kind": "soft_pop",
+          "offsetSec": 1.97,
+          "gain": 0.2
+        },
+        {
+          "kind": "pen_scratch",
+          "offsetSec": 3.97,
+          "gain": 0.19,
+          "durationSec": 0.35
+        },
+        {
+          "kind": "impact_thud",
+          "offsetSec": 5.87,
+          "gain": 0.24
+        }
+      ],
+      "showOnScreenCitation": false,
+      "chapterIndex": 2,
+      "topicId": "social_reality_trap",
+      "startSec": 37.22,
+      "endSec": 47.26,
+      "durationSec": 10.04,
+      "startFrame": 1117,
+      "endFrame": 1418,
+      "beatTimesSec": [
+        37.34,
+        39.17,
+        41.17,
+        43.07
+      ]
+    },
+    {
+      "shotIndex": 6,
+      "chunkId": "c06",
+      "targetDurationSec": 9.2,
+      "narrativeRole": "example_illustration",
+      "polarity": "grid_paper",
+      "lightBg": true,
+      "layoutArchetype": "collage_stage",
+      "photoLayer": {
+        "assetId": "person_gollwitzer",
+        "variant": "polaroid_person",
+        "placement": "left_card",
+        "labelJa": "P. ゴルヴィッツァー",
+        "objectPosition": "50% 20%",
+        "rotateDeg": -2.2,
+        "tape": true,
+        "beatIndex": 0
+      },
+      "diagram": {
+        "kind": "newspaper_card",
+        "params": {
+          "variant": "broadsheet",
+          "publicationName": "PSYCHOLOGICAL SCIENCE",
+          "categoryLabel": "2009 / ニューヨーク大学 実験",
+          "headlinePrefix": "目標を周りに宣言して認められた人ほど、",
+          "highlightedHeadline": "実際の作業時間が短くなる",
+          "subHeadline": "When Intentions Go Public (Gollwitzer et al., 2009)",
+          "width": 760,
+          "rotateDeg": 1.4,
+          "highlightDelaySec": 2.0,
+          "highlightDurationSec": 0.75,
+          "beatIndex": 1
+        }
+      },
+      "stamp": {
+        "text": "作業時間が減少",
+        "position": "bottom_right",
+        "rotateDeg": -7,
+        "fontSize": 50,
+        "beatIndex": 3
+      },
+      "beats": [
+        {
+          "beatIndex": 0,
+          "offsetSec": 0.12,
+          "phraseJa": "ニューヨーク大学の心理学者ピーター・ゴルヴィッツァーが",
+          "action": "reveal_photo"
+        },
+        {
+          "beatIndex": 1,
+          "offsetSec": 2.35,
+          "phraseJa": "2009年に発表した実験では、",
+          "action": "reveal_diagram"
+        },
+        {
+          "beatIndex": 2,
+          "offsetSec": 4.65,
+          "phraseJa": "目標を周りに宣言して認められた人ほど、",
+          "action": "draw_stroke"
+        },
+        {
+          "beatIndex": 3,
+          "offsetSec": 6.85,
+          "phraseJa": "実際の作業時間が短くなる現象が確認されました。",
+          "action": "stamp"
+        }
+      ],
+      "narrationJa": "ニューヨーク大学の心理学者ピーター・ゴルヴィッツァーが2009年に発表した実験では、目標を周りに宣言して認められた人ほど、実際の作業時間が短くなる現象が確認されました。",
+      "subtitleSegments": [
+        {
+          "line1": "ニューヨーク大学の心理学者",
+          "line2": "ピーター・ゴルヴィッツァーが"
+        },
+        {
+          "line1": "2009年に発表した実験では、",
+          "line2": "目標を周りに宣言して"
+        },
+        {
+          "line1": "認められた人ほど、実際の作業時間が",
+          "line2": "短くなる現象が確認されました。"
+        }
+      ],
+      "sfx": [
+        {
+          "kind": "paper_snap",
+          "offsetSec": 0.14,
+          "gain": 0.24
+        },
+        {
+          "kind": "paper_snap",
+          "offsetSec": 2.37,
+          "gain": 0.22
+        },
+        {
+          "kind": "pen_scratch",
+          "offsetSec": 4.67,
+          "gain": 0.19,
+          "durationSec": 0.45
+        },
+        {
+          "kind": "stamp_thud",
+          "offsetSec": 6.87,
+          "gain": 0.24
+        }
+      ],
+      "showOnScreenCitation": false,
+      "chapterIndex": 2,
+      "topicId": "social_reality_trap",
+      "startSec": 47.26,
+      "endSec": 60.22,
+      "durationSec": 12.96,
+      "startFrame": 1418,
+      "endFrame": 1807,
+      "beatTimesSec": [
+        47.38,
+        49.61,
+        51.91,
+        54.11
+      ]
+    },
+    {
+      "shotIndex": 7,
+      "chunkId": "c07",
+      "targetDurationSec": 8.6,
+      "narrativeRole": "contrarian_claim",
+      "polarity": "grid_paper",
+      "lightBg": true,
+      "layoutArchetype": "full_canvas_diagram",
+      "diagram": {
+        "kind": "ruler_gauge",
+        "params": {
+          "variant": "battery",
+          "label": "行動エネルギー残量",
+          "fromValue": 92,
+          "toValue": 8,
+          "min": 0,
+          "max": 100,
+          "beatIndex": 1,
+          "animateBeatIndex": 2
+        }
+      },
+      "callout": {
+        "textJa": "心理学用語：「社会的現実感」",
+        "position": "top",
+        "fontSize": 50,
+        "beatIndex": 0
+      },
+      "stickFigures": [
+        {
+          "id": "fig_c07_sns",
+          "pose": "nerd_glasses",
+          "position": "bottom_left_corner",
+          "size": 195,
+          "beatIndex": 1,
+          "bubbleTextJa": "線引き＆SNS投稿で満足",
+          "bubbleTail": "bottom-left"
+        }
+      ],
+      "stamp": {
+        "text": "エネルギー枯渇",
+        "position": "bottom_right",
+        "rotateDeg": -9,
+        "fontSize": 54,
+        "beatIndex": 3
+      },
+      "beats": [
+        {
+          "beatIndex": 0,
+          "offsetSec": 0.12,
+          "phraseJa": "心理学ではこれを「社会的現実感」と呼びます。",
+          "action": "pop_callout"
+        },
+        {
+          "beatIndex": 1,
+          "offsetSec": 2.15,
+          "phraseJa": "本に線を引いたりSNSで感想を投稿しただけで、",
+          "action": "reveal_diagram"
+        },
+        {
+          "beatIndex": 2,
+          "offsetSec": 4.35,
+          "phraseJa": "脳がゴールに近づいたと勘違いし、",
+          "action": "animate_metric"
+        },
+        {
+          "beatIndex": 3,
+          "offsetSec": 6.45,
+          "phraseJa": "行動エネルギーを切ってしまうんです。",
+          "action": "stamp"
+        }
+      ],
+      "narrationJa": "心理学ではこれを、社会的現実感と呼びます。本に線を引いたりSNSで感想を投稿しただけで、脳がゴールに近づいたと勘違いし、行動エネルギーを切ってしまうんです。",
+      "subtitleSegments": [
+        {
+          "line1": "心理学ではこれを「社会的現実感」と",
+          "line2": "呼びます。"
+        },
+        {
+          "line1": "本に線を引いたりSNSで感想を",
+          "line2": "投稿しただけで、"
+        },
+        {
+          "line1": "脳がゴールに近づいたと勘違いし、",
+          "line2": "行動エネルギーを切ってしまうんです。"
+        }
+      ],
+      "sfx": [
+        {
+          "kind": "soft_pop",
+          "offsetSec": 0.14,
+          "gain": 0.22
+        },
+        {
+          "kind": "pen_scratch",
+          "offsetSec": 2.17,
+          "gain": 0.19,
+          "durationSec": 0.35
+        },
+        {
+          "kind": "data_chirp",
+          "offsetSec": 4.37,
+          "gain": 0.18,
+          "durationSec": 0.55
+        },
+        {
+          "kind": "error_buzzer",
+          "offsetSec": 6.47,
+          "gain": 0.22
+        }
+      ],
+      "showOnScreenCitation": false,
+      "chapterIndex": 2,
+      "topicId": "social_reality_trap",
+      "startSec": 60.22,
+      "endSec": 73.14,
+      "durationSec": 12.92,
+      "startFrame": 1807,
+      "endFrame": 2194,
+      "beatTimesSec": [
+        60.34,
+        62.37,
+        64.57,
+        66.67
+      ]
+    },
+    {
+      "shotIndex": 8,
+      "chunkId": "c08",
+      "targetDurationSec": 8.4,
+      "narrativeRole": "comic_punchline",
+      "polarity": "black",
+      "lightBg": false,
+      "polarityShiftReason": "深夜2時の現実逃避あるあるへ漆黒（black）極性へ切り替え情景没入を演出",
+      "layoutArchetype": "split_balanced",
+      "photoLayer": {
+        "assetId": "photo_smartphone_night",
+        "variant": "tape_scrap",
+        "placement": "left_card",
+        "labelJa": "深夜2時の読書＆スマホ",
+        "rotateDeg": -2.0,
+        "tape": true,
+        "beatIndex": 0
+      },
+      "diagram": {
+        "kind": "kinetic_list",
+        "params": {
+          "variant": "clip_cards",
+          "align": "left",
+          "items": [
+            {
+              "text": "朝5時起きの本を深夜2時に読む",
+              "badge": "矛盾",
+              "accentColor": "#FFCC00",
+              "width": 660,
+              "fontSize": 33,
+              "rotateDeg": -1.0,
+              "beatIndex": 1
+            },
+            {
+              "text": "「明日から本気出す」とメモ",
+              "badge": "満足",
+              "accentColor": "#0099FF",
+              "width": 660,
+              "fontSize": 33,
+              "rotateDeg": 1.0,
+              "beatIndex": 2
+            },
+            {
+              "text": "一番コスパの悪い現実逃避",
+              "badge": "本質",
+              "accentColor": "#FF4D4D",
+              "width": 660,
+              "fontSize": 36,
+              "rotateDeg": -0.8,
+              "beatIndex": 3
+            }
+          ]
+        }
+      },
+      "beats": [
+        {
+          "beatIndex": 0,
+          "offsetSec": 0.12,
+          "phraseJa": "つまり、朝5時起きの本を",
+          "action": "reveal_photo"
+        },
+        {
+          "beatIndex": 1,
+          "offsetSec": 2.05,
+          "phraseJa": "深夜2時に読んで",
+          "action": "reveal_diagram"
+        },
+        {
+          "beatIndex": 2,
+          "offsetSec": 4.15,
+          "phraseJa": "「明日から本気出す」とメモするあの時間は、",
+          "action": "reveal_diagram"
+        },
+        {
+          "beatIndex": 3,
+          "offsetSec": 6.15,
+          "phraseJa": "努力に見せかけた一番コスパの悪い現実逃避だったりします。",
+          "action": "stamp"
+        }
+      ],
+      "narrationJa": "つまり、朝5時起きの本を深夜2時に読んで、明日から本気出すとメモするあの時間は、努力に見せかけた一番コスパの悪い現実逃避だったりします。",
+      "subtitleSegments": [
+        {
+          "line1": "つまり、朝5時起きの本を",
+          "line2": "深夜2時に読んで"
+        },
+        {
+          "line1": "「明日から本気出す」とメモする",
+          "line2": "あの時間は、"
+        },
+        {
+          "line1": "努力に見せかけた一番コスパの悪い",
+          "line2": "現実逃避だったりします。"
+        }
+      ],
+      "sfx": [
+        {
+          "kind": "whoosh",
+          "offsetSec": 0.08,
+          "gain": 0.22
+        },
+        {
+          "kind": "paper_snap",
+          "offsetSec": 2.07,
+          "gain": 0.22
+        },
+        {
+          "kind": "pen_scratch",
+          "offsetSec": 4.17,
+          "gain": 0.19,
+          "durationSec": 0.35
+        },
+        {
+          "kind": "mallet_bonk",
+          "offsetSec": 6.17,
+          "gain": 0.24
+        }
+      ],
+      "comicPunchline": true,
+      "showOnScreenCitation": false,
+      "chapterIndex": 2,
+      "topicId": "social_reality_trap",
+      "startSec": 73.14,
+      "endSec": 84.09,
+      "durationSec": 10.95,
+      "startFrame": 2194,
+      "endFrame": 2523,
+      "beatTimesSec": [
+        73.26,
+        75.19,
+        77.29,
+        79.29
+      ]
+    },
+    {
+      "shotIndex": 9,
+      "chunkId": "c09",
+      "targetDurationSec": 8.2,
+      "narrativeRole": "rehook",
+      "polarity": "black",
+      "lightBg": false,
+      "layoutArchetype": "full_canvas_diagram",
+      "diagram": {
+        "kind": "compare_cards",
+        "params": {
+          "cards": [
+            {
+              "badge": "NGパターン",
+              "title": "積ん読で終わる人",
+              "body": "やる気と気分だのみ\n読んで満足して終了",
+              "tiltDeg": -2.2,
+              "beatIndex": 1,
+              "crossedOutBeatIndex": 2
+            },
+            {
+              "badge": "分岐点",
+              "title": "結果が出る人",
+              "body": "同じ1冊の知識でも\n決定的な「1つの設計」",
+              "highlight": true,
+              "tiltDeg": 2.0,
+              "beatIndex": 1
+            }
+          ]
+        }
+      },
+      "callout": {
+        "textJa": "たった1つの決定的な分かれ道",
+        "position": "top",
+        "fontSize": 46,
+        "beatIndex": 2
+      },
+      "stickFigures": [
+        {
+          "id": "fig_c09_rehook",
+          "pose": "talking_yellow",
+          "position": "bottom_left_corner",
+          "size": 195,
+          "beatIndex": 0,
+          "bubbleTextJa": "全部ムダなの？",
+          "bubbleTail": "bottom-left"
+        }
+      ],
+      "beats": [
+        {
+          "beatIndex": 0,
+          "offsetSec": 0.12,
+          "phraseJa": "じゃあ自己啓発本は全部ムダなのかというと、",
+          "action": "pop_figure"
+        },
+        {
+          "beatIndex": 1,
+          "offsetSec": 2.25,
+          "phraseJa": "じつは同じ知識でも「結果が出る人」と「積ん読で終わる人」には、",
+          "action": "reveal_diagram"
+        },
+        {
+          "beatIndex": 2,
+          "offsetSec": 4.45,
+          "phraseJa": "たった1つの決定的な",
+          "action": "draw_stroke"
+        },
+        {
+          "beatIndex": 3,
+          "offsetSec": 6.25,
+          "phraseJa": "分かれ道があります。",
+          "action": "pop_callout"
+        }
+      ],
+      "narrationJa": "じゃあ自己啓発本は全部ムダなのかというと、じつは同じ知識でも結果が出る人と、つんどくで終わる人には、たった1つの決定的な分かれ道があります。",
+      "subtitleSegments": [
+        {
+          "line1": "じゃあ自己啓発本は全部ムダなのか",
+          "line2": "というと、じつは同じ知識でも"
+        },
+        {
+          "line1": "「結果が出る人」と",
+          "line2": "「積ん読で終わる人」には、"
+        },
+        {
+          "line1": "たった1つの決定的な",
+          "line2": "分かれ道があります。"
+        }
+      ],
+      "sfx": [
+        {
+          "kind": "question_boing",
+          "offsetSec": 0.14,
+          "gain": 0.2
+        },
+        {
+          "kind": "paper_snap",
+          "offsetSec": 2.27,
+          "gain": 0.22
+        },
+        {
+          "kind": "pen_scratch",
+          "offsetSec": 4.47,
+          "gain": 0.2,
+          "durationSec": 0.4
+        },
+        {
+          "kind": "radar_beep",
+          "offsetSec": 6.27,
+          "gain": 0.2
+        }
+      ],
+      "openLoopAction": "close",
+      "showOnScreenCitation": false,
+      "chapterIndex": 3,
+      "topicId": "if_then_solution",
+      "startSec": 84.09,
+      "endSec": 95.49,
+      "durationSec": 11.4,
+      "startFrame": 2523,
+      "endFrame": 2865,
+      "beatTimesSec": [
+        84.21,
+        86.34,
+        88.54,
+        90.34
+      ]
+    },
+    {
+      "shotIndex": 10,
+      "chunkId": "c10",
+      "targetDurationSec": 9.4,
+      "narrativeRole": "pivot_contrast",
+      "polarity": "cream_notebook",
+      "lightBg": true,
+      "polarityShiftReason": "94研究メタ分析の実体連打と解決策ノートフェーズへクリームノート（cream_notebook）極性で切替",
+      "layoutArchetype": "full_canvas_diagram",
+      "diagram": {
+        "kind": "staggered_grid",
+        "params": {
+          "count": 94,
+          "itemShape": "paper_sheet",
+          "highlightCount": 62,
+          "columns": 16,
+          "spanSec": 2.2,
+          "beatIndex": 0,
+          "statOverlay": {
+            "text": "94",
+            "sub": "の研究をメタ分析"
+          }
+        }
+      },
+      "callout": {
+        "textJa": "もし X が起きたら → Y をする",
+        "position": "top_right",
+        "color": "#E62E2D",
+        "fontSize": 44,
+        "beatIndex": 2
+      },
+      "stamp": {
+        "text": "IF-THEN設計",
+        "position": "bottom_right",
+        "rotateDeg": -8,
+        "fontSize": 54,
+        "beatIndex": 3
+      },
+      "beats": [
+        {
+          "beatIndex": 0,
+          "offsetSec": 0.12,
+          "phraseJa": "ゴルヴィッツァーとシーランが94の研究をまとめたメタ分析によると、",
+          "action": "stagger_grid"
+        },
+        {
+          "beatIndex": 1,
+          "offsetSec": 2.55,
+          "phraseJa": "目標達成率を大きく押し上げたのはモチベーションの高さではなく、",
+          "action": "animate_metric"
+        },
+        {
+          "beatIndex": 2,
+          "offsetSec": 5.05,
+          "phraseJa": "「もしXが起きたらYをする」という",
+          "action": "pop_callout"
+        },
+        {
+          "beatIndex": 3,
+          "offsetSec": 7.15,
+          "phraseJa": "具体的な条件分岐の設計でした。",
+          "action": "stamp"
+        }
+      ],
+      "narrationJa": "ゴルヴィッツァーとシーランが94の研究をまとめたメタ分析によると、目標達成率を大きく押し上げたのはモチベーションの高さではなく、もしエックスが起きたらワイをするという具体的な条件分岐の設計でした。",
+      "subtitleSegments": [
+        {
+          "line1": "ゴルヴィッツァーとシーランが",
+          "line2": "94の研究をまとめた"
+        },
+        {
+          "line1": "メタ分析によると、目標達成率を",
+          "line2": "大きく押し上げたのは"
+        },
+        {
+          "line1": "モチベーションの高さではなく、",
+          "line2": "「もしXが起きたらYをする」という"
+        },
+        {
+          "line1": "具体的な条件分岐の設計でした。"
+        }
+      ],
+      "sfx": [
+        {
+          "kind": "whoosh",
+          "offsetSec": 0.08,
+          "gain": 0.2
+        },
+        {
+          "kind": "data_chirp",
+          "offsetSec": 0.42,
+          "gain": 0.18,
+          "durationSec": 0.85
+        },
+        {
+          "kind": "chart_tick",
+          "offsetSec": 1.35,
+          "gain": 0.18
+        },
+        {
+          "kind": "chart_tick",
+          "offsetSec": 1.85,
+          "gain": 0.18
+        },
+        {
+          "kind": "pen_scratch",
+          "offsetSec": 5.07,
+          "gain": 0.19,
+          "durationSec": 0.4
+        },
+        {
+          "kind": "stamp_thud",
+          "offsetSec": 7.17,
+          "gain": 0.25
+        }
+      ],
+      "showOnScreenCitation": false,
+      "chapterIndex": 3,
+      "topicId": "if_then_solution",
+      "startSec": 95.49,
+      "endSec": 110.89,
+      "durationSec": 15.4,
+      "startFrame": 2865,
+      "endFrame": 3327,
+      "beatTimesSec": [
+        95.61,
+        98.04,
+        100.54,
+        102.64
+      ]
+    },
+    {
+      "shotIndex": 11,
+      "chunkId": "c11",
+      "targetDurationSec": 9.0,
+      "narrativeRole": "example_illustration",
+      "polarity": "cream_notebook",
+      "lightBg": true,
+      "layoutArchetype": "full_canvas_diagram",
+      "diagram": {
+        "kind": "ruler_gauge",
+        "params": {
+          "variant": "ruler",
+          "label": "「帰宅→机で参考書3頁」の効果量 d",
+          "min": 0,
+          "max": 1,
+          "fromValue": 0.0,
+          "toValue": 0.65,
+          "beatIndex": 1,
+          "animateBeatIndex": 2
+        }
+      },
+      "callout": {
+        "textJa": "「毎日勉強する」→「帰宅して机で3頁」",
+        "position": "top",
+        "fontSize": 44,
+        "beatIndex": 0
+      },
+      "stickFigures": [
+        {
+          "id": "fig_c11_fix",
+          "pose": "pointing",
+          "position": "bottom_left_corner",
+          "size": 190,
+          "beatIndex": 1,
+          "bubbleTextJa": "動作を固定するだけ！",
+          "bubbleTail": "bottom-left"
+        }
+      ],
+      "stamp": {
+        "text": "効果量 0.65",
+        "position": "bottom_right",
+        "rotateDeg": -8,
+        "fontSize": 56,
+        "beatIndex": 3
+      },
+      "beats": [
+        {
+          "beatIndex": 0,
+          "offsetSec": 0.12,
+          "phraseJa": "「毎日勉強する」と気合を入れる代わりに、",
+          "action": "pop_callout"
+        },
+        {
+          "beatIndex": 1,
+          "offsetSec": 2.35,
+          "phraseJa": "「帰宅してカバンを置いたら、机で参考書を3ページ開く」と",
+          "action": "reveal_diagram"
+        },
+        {
+          "beatIndex": 2,
+          "offsetSec": 4.65,
+          "phraseJa": "動作を固定するだけで、",
+          "action": "animate_metric"
+        },
+        {
+          "beatIndex": 3,
+          "offsetSec": 6.85,
+          "phraseJa": "効果量は0.65まで跳ね上がります。",
+          "action": "stamp"
+        }
+      ],
+      "narrationJa": "毎日勉強すると気合を入れる代わりに、帰宅してカバンを置いたら机で参考書を3ページ開くと動作を固定するだけで、効果量はれいてんろくごまで跳ね上がります。",
+      "subtitleSegments": [
+        {
+          "line1": "「毎日勉強する」と気合を入れる",
+          "line2": "代わりに、"
+        },
+        {
+          "line1": "「帰宅してカバンを置いたら、",
+          "line2": "机で参考書を3ページ開く」と"
+        },
+        {
+          "line1": "動作を固定するだけで、",
+          "line2": "効果量は0.65まで跳ね上がります。"
+        }
+      ],
+      "sfx": [
+        {
+          "kind": "soft_pop",
+          "offsetSec": 0.14,
+          "gain": 0.2
+        },
+        {
+          "kind": "mech_slide",
+          "offsetSec": 2.37,
+          "gain": 0.2
+        },
+        {
+          "kind": "chart_tick",
+          "offsetSec": 4.67,
+          "gain": 0.2
+        },
+        {
+          "kind": "data_chirp",
+          "offsetSec": 5.15,
+          "gain": 0.18,
+          "durationSec": 0.4
+        },
+        {
+          "kind": "stamp_thud",
+          "offsetSec": 6.87,
+          "gain": 0.25
+        }
+      ],
+      "showOnScreenCitation": false,
+      "chapterIndex": 3,
+      "topicId": "if_then_solution",
+      "startSec": 110.89,
+      "endSec": 122.29,
+      "durationSec": 11.4,
+      "startFrame": 3327,
+      "endFrame": 3669,
+      "beatTimesSec": [
+        111.01,
+        113.24,
+        115.54,
+        117.74
+      ]
+    },
+    {
+      "shotIndex": 12,
+      "chunkId": "c12",
+      "targetDurationSec": 7.6,
+      "narrativeRole": "open_loop",
+      "polarity": "cream_notebook",
+      "lightBg": true,
+      "layoutArchetype": "collage_stage",
+      "photoLayer": {
+        "assetId": "photo_desk_notebook",
+        "variant": "tape_scrap",
+        "placement": "left_card",
+        "labelJa": "1冊を行動に変える",
+        "rotateDeg": -2.0,
+        "tape": true,
+        "beatIndex": 0
+      },
+      "diagram": {
+        "kind": "kinetic_list",
+        "params": {
+          "variant": "clip_cards",
+          "align": "left",
+          "items": [
+            {
+              "text": "STEP 1：トリガーを物理固定",
+              "badge": "導入",
+              "accentColor": "#E62E2D",
+              "width": 660,
+              "fontSize": 34,
+              "rotateDeg": -1.0,
+              "beatIndex": 1
+            },
+            {
+              "text": "STEP 2：初動を3ページに圧縮",
+              "badge": "実行",
+              "accentColor": "#0077CC",
+              "width": 660,
+              "fontSize": 34,
+              "rotateDeg": 1.0,
+              "beatIndex": 2
+            },
+            {
+              "text": "STEP 3：宣言は完了後のみ",
+              "badge": "定着",
+              "accentColor": "#16A34A",
+              "width": 660,
+              "fontSize": 34,
+              "rotateDeg": -0.7,
+              "beatIndex": 2
+            }
+          ]
+        }
+      },
+      "callout": {
+        "textJa": "「やった気バグ」を逆手に取る",
+        "position": "top_right",
+        "fontSize": 42,
+        "beatIndex": 0
+      },
+      "beats": [
+        {
+          "beatIndex": 0,
+          "offsetSec": 0.12,
+          "phraseJa": "ここからは、脳の「やった気バグ」を逆手にとって、",
+          "action": "reveal_photo"
+        },
+        {
+          "beatIndex": 1,
+          "offsetSec": 2.35,
+          "phraseJa": "1冊の知識をそのまま行動に変える",
+          "action": "reveal_diagram"
+        },
+        {
+          "beatIndex": 2,
+          "offsetSec": 4.45,
+          "phraseJa": "具体的な3ステップを順番に分解していきます。",
+          "action": "reveal_diagram"
+        }
+      ],
+      "narrationJa": "ここからは、脳のやった気バグを逆手にとって、いっさつの知識をそのまま行動に変える具体的な3ステップを、順番に分解していきます。",
+      "subtitleSegments": [
+        {
+          "line1": "ここからは、脳の「やった気バグ」を",
+          "line2": "逆手にとって、"
+        },
+        {
+          "line1": "1冊の知識をそのまま行動に変える",
+          "line2": "具体的な3ステップを"
+        },
+        {
+          "line1": "順番に分解していきます。"
+        }
+      ],
+      "sfx": [
+        {
+          "kind": "paper_snap",
+          "offsetSec": 0.14,
+          "gain": 0.22
+        },
+        {
+          "kind": "soft_pop",
+          "offsetSec": 2.37,
+          "gain": 0.2
+        },
+        {
+          "kind": "soft_pop",
+          "offsetSec": 4.47,
+          "gain": 0.2
+        },
+        {
+          "kind": "projector_click",
+          "offsetSec": 5.9,
+          "gain": 0.18
+        }
+      ],
+      "openLoopAction": "open",
+      "showOnScreenCitation": false,
+      "chapterIndex": 3,
+      "topicId": "if_then_solution",
+      "startSec": 122.29,
+      "endSec": 131.68,
+      "durationSec": 9.39,
+      "startFrame": 3669,
+      "endFrame": 3950,
+      "beatTimesSec": [
+        122.41,
+        124.64,
+        126.74
+      ]
+    }
+  ],
+  "subtitles": [
+    {
+      "startSec": 0.0,
+      "endSec": 4.595,
+      "line1": "本屋のビジネス書コーナーで、",
+      "line2": "「人生が変わる習慣」みたいな本を"
+    },
+    {
+      "startSec": 4.595,
+      "endSec": 9.19,
+      "line1": "3冊まとめて買った夜って、",
+      "line2": "妙に気分がいいですよね。"
+    },
+    {
+      "startSec": 9.19,
+      "endSec": 13.43,
+      "line1": "まだ1ページも行動していないのに、",
+      "line2": "帰り道のコンビニでなぜか"
+    },
+    {
+      "startSec": 13.43,
+      "endSec": 17.67,
+      "line1": "サラダチキンを選んでしまうくらい、",
+      "line2": "脳内ではもう成功者です。"
+    },
+    {
+      "startSec": 17.67,
+      "endSec": 21.55,
+      "line1": "ところが1週間後、その本は",
+      "line2": "ベッド脇の積ん読タワーに吸収され、"
+    },
+    {
+      "startSec": 21.55,
+      "endSec": 25.43,
+      "line1": "元の生活がきれいに復活します。",
+      "line2": null
+    },
+    {
+      "startSec": 25.43,
+      "endSec": 29.36,
+      "line1": "モントリオール大学の",
+      "line2": "ストレス研究センターが"
+    },
+    {
+      "startSec": 29.36,
+      "endSec": 33.29,
+      "line1": "行った調査でも、自己啓発本を",
+      "line2": "よく読む人ほどストレス反応や"
+    },
+    {
+      "startSec": 33.29,
+      "endSec": 37.22,
+      "line1": "抑うつ傾向が高いという、",
+      "line2": "ちょっと気まずい結果が出ています。"
+    },
+    {
+      "startSec": 37.22,
+      "endSec": 42.24,
+      "line1": "なぜ読めば読むほど空回りするのか。",
+      "line2": "理由はシンプルで、本を買う瞬間と"
+    },
+    {
+      "startSec": 42.24,
+      "endSec": 47.26,
+      "line1": "読む瞬間に、脳が「変わった気」を",
+      "line2": "先払いしてしまうからです。"
+    },
+    {
+      "startSec": 47.26,
+      "endSec": 51.58,
+      "line1": "ニューヨーク大学の心理学者",
+      "line2": "ピーター・ゴルヴィッツァーが"
+    },
+    {
+      "startSec": 51.58,
+      "endSec": 55.9,
+      "line1": "2009年に発表した実験では、",
+      "line2": "目標を周りに宣言して"
+    },
+    {
+      "startSec": 55.9,
+      "endSec": 60.22,
+      "line1": "認められた人ほど、実際の作業時間が",
+      "line2": "短くなる現象が確認されました。"
+    },
+    {
+      "startSec": 60.22,
+      "endSec": 64.5267,
+      "line1": "心理学ではこれを「社会的現実感」と",
+      "line2": "呼びます。"
+    },
+    {
+      "startSec": 64.5267,
+      "endSec": 68.8333,
+      "line1": "本に線を引いたりSNSで感想を",
+      "line2": "投稿しただけで、"
+    },
+    {
+      "startSec": 68.8333,
+      "endSec": 73.14,
+      "line1": "脳がゴールに近づいたと勘違いし、",
+      "line2": "行動エネルギーを切ってしまうんです。"
+    },
+    {
+      "startSec": 73.14,
+      "endSec": 76.79,
+      "line1": "つまり、朝5時起きの本を",
+      "line2": "深夜2時に読んで"
+    },
+    {
+      "startSec": 76.79,
+      "endSec": 80.44,
+      "line1": "「明日から本気出す」とメモする",
+      "line2": "あの時間は、"
+    },
+    {
+      "startSec": 80.44,
+      "endSec": 84.09,
+      "line1": "努力に見せかけた一番コスパの悪い",
+      "line2": "現実逃避だったりします。"
+    },
+    {
+      "startSec": 84.09,
+      "endSec": 87.89,
+      "line1": "じゃあ自己啓発本は全部ムダなのか",
+      "line2": "というと、じつは同じ知識でも"
+    },
+    {
+      "startSec": 87.89,
+      "endSec": 91.69,
+      "line1": "「結果が出る人」と",
+      "line2": "「積ん読で終わる人」には、"
+    },
+    {
+      "startSec": 91.69,
+      "endSec": 95.49,
+      "line1": "たった1つの決定的な",
+      "line2": "分かれ道があります。"
+    },
+    {
+      "startSec": 95.49,
+      "endSec": 99.34,
+      "line1": "ゴルヴィッツァーとシーランが",
+      "line2": "94の研究をまとめた"
+    },
+    {
+      "startSec": 99.34,
+      "endSec": 103.19,
+      "line1": "メタ分析によると、目標達成率を",
+      "line2": "大きく押し上げたのは"
+    },
+    {
+      "startSec": 103.19,
+      "endSec": 107.04,
+      "line1": "モチベーションの高さではなく、",
+      "line2": "「もしXが起きたらYをする」という"
+    },
+    {
+      "startSec": 107.04,
+      "endSec": 110.89,
+      "line1": "具体的な条件分岐の設計でした。",
+      "line2": null
+    },
+    {
+      "startSec": 110.89,
+      "endSec": 114.69,
+      "line1": "「毎日勉強する」と気合を入れる",
+      "line2": "代わりに、"
+    },
+    {
+      "startSec": 114.69,
+      "endSec": 118.49,
+      "line1": "「帰宅してカバンを置いたら、",
+      "line2": "机で参考書を3ページ開く」と"
+    },
+    {
+      "startSec": 118.49,
+      "endSec": 122.29,
+      "line1": "動作を固定するだけで、",
+      "line2": "効果量は0.65まで跳ね上がります。"
+    },
+    {
+      "startSec": 122.29,
+      "endSec": 125.42,
+      "line1": "ここからは、脳の「やった気バグ」を",
+      "line2": "逆手にとって、"
+    },
+    {
+      "startSec": 125.42,
+      "endSec": 128.55,
+      "line1": "1冊の知識をそのまま行動に変える",
+      "line2": "具体的な3ステップを"
+    },
+    {
+      "startSec": 128.55,
+      "endSec": 131.68,
+      "line1": "順番に分解していきます。",
+      "line2": null
+    }
+  ],
+  "endCta": null,
+  "apiCalls": 3,
+  "ttsVoiceDisplayName": "Liam - Energetic, Social Media Creator",
+  "ttsModel": "eleven_v4"
+}

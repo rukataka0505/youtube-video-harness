@@ -1,0 +1,635 @@
+{
+  "slug": "how-money-works-destroy-economy",
+  "title": "How Money Works 冒頭60秒ベンチマーク非公開再現 v2（案E：実写Bロール×ニュース速報×進行役アバター×ホワイトボード）",
+  "formatId": "planE_macro_econ",
+  "antiPowerPointCheck": true,
+  "output": {
+    "publicSubdir": "benchmarks/how_money_works_destroy_economy",
+    "timelineTsPath": "studio/src/compositions/benchmarks/how_money_works_destroy_economy/timelineData.ts",
+    "exportName": "TIMELINE"
+  },
+  "video": {
+    "fps": 30,
+    "width": 1920,
+    "height": 1080
+  },
+  "fonts": [
+    "Noto Sans JP",
+    "Noto Serif JP",
+    "Playfair Display"
+  ],
+  "tts": {
+    "models": [
+      "gemini-3.8-flash-tts",
+      "gemini-3.8-flash-lite-tts",
+      "gemini-2.5-flash-preview-tts"
+    ],
+    "voices": [
+      "Charon",
+      "Orus"
+    ],
+    "languageCode": "ja-JP",
+    "temperature": 0.30
+  },
+  "pacing": {
+    "mode": "fit_target",
+    "leadingSilenceSec": 0.15,
+    "targetTotalSec": 60.0,
+    "targetMinSec": 59.2,
+    "targetMaxSec": 60.8,
+    "minTempo": 0.92,
+    "maxTempo": 1.12
+  },
+  "legalChecklist": {
+    "primarySources": [
+      {
+        "title": "IMF COFER: Currency Composition of Official Foreign Exchange Reserves",
+        "url": "https://data.imf.org/",
+        "publisher": "International Monetary Fund"
+      },
+      {
+        "title": "Federal Reserve Economic Data (FRED): Economic Policy Uncertainty & Debt Service",
+        "url": "https://fred.stlouisfed.org/",
+        "publisher": "Federal Reserve Bank of St. Louis"
+      },
+      {
+        "title": "Benchmark Study Source: How Money Works (Pass 1 & Pass 2 Analysis)",
+        "url": "https://www.youtube.com/watch?v=OAVin6xxd8E",
+        "publisher": "How Money Works"
+      }
+    ],
+    "usesAcmlVoiceForCriticism": false,
+    "usesAiExpertAdvice": false,
+    "noFinancialAdviceClaim": true,
+    "fontsLicense": "SIL OFL 1.1"
+  },
+  "strictlyNoTextSuffix": "STRICTLY NO text, NO letters, NO words, NO numbers, NO brand logos, NO watermarks, NO UI boxes, NO cartoon stick figures.",
+  "images": [
+    {
+      "key": "nyse_facade",
+      "filename": "01_nyse_facade.png",
+      "aspectRatio": "16:9",
+      "prompt": "Low-angle editorial documentary photograph looking up through dark wrought-iron security gates at a classic neoclassical financial stock exchange building facade with a muted flag at dusk, moody slate lighting, subtle vignette, sharp architectural detail."
+    },
+    {
+      "key": "trading_floor",
+      "filename": "02_trading_floor_panic.png",
+      "aspectRatio": "16:9",
+      "prompt": "Editorial documentary wide shot of an intense financial trading room with rows of multi-monitor workstations bathed in cool blue and subtle red ambient light, shallow depth of field, high contrast journalistic photography."
+    },
+    {
+      "key": "financial_skyline",
+      "filename": "03_financial_skyline_night.png",
+      "aspectRatio": "16:9",
+      "prompt": "Nighttime architectural wide photograph of Lower Manhattan financial district skyscrapers reflecting warm amber and emerald lights over calm dark water, crisp editorial documentary style."
+    },
+    {
+      "key": "tech_research_hub",
+      "filename": "04_tech_research_hub.png",
+      "aspectRatio": "16:9",
+      "prompt": "Modern glass-walled technology and economic research campus atrium with engineers working near sleek glass partitions, clean natural daylight with cool slate shadows, editorial photojournalism style."
+    }
+  ],
+  "videoClips": [
+    {
+      "key": "wall_street_flag",
+      "filename": "01_wall_street_flag.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/40711/40711-1080.mp4",
+      "searchQuery": "usa flag",
+      "startOffsetSec": 0.0,
+      "durationSec": 6.5,
+      "extractPoster": true,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    },
+    {
+      "key": "trading_floor_vid",
+      "filename": "03_trading_floor.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/47214/47214-720.mp4",
+      "searchQuery": "stock market",
+      "startOffsetSec": 0.0,
+      "durationSec": 4.5,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    },
+    {
+      "key": "crisis_box_vid",
+      "filename": "04_crisis_box.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/5486/5486-720.mp4",
+      "searchQuery": "fired",
+      "startOffsetSec": 0.5,
+      "durationSec": 4.0,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    },
+    {
+      "key": "news_anchor_vid",
+      "filename": "05_news_anchor.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/23227/23227-720.mp4",
+      "searchQuery": "tv news",
+      "startOffsetSec": 0.0,
+      "durationSec": 5.0,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    },
+    {
+      "key": "park_meadow_vid",
+      "filename": "06_park_meadow.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/40647/40647-1080.mp4",
+      "searchQuery": "park",
+      "startOffsetSec": 0.0,
+      "durationSec": 9.5,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    },
+    {
+      "key": "manhattan_night_vid",
+      "filename": "09_manhattan_night.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/26917/26917-720.mp4",
+      "searchQuery": "manhattan",
+      "startOffsetSec": 0.0,
+      "durationSec": 4.5,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    },
+    {
+      "key": "control_room_vid",
+      "filename": "13_control_room.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/23103/23103-720.mp4",
+      "searchQuery": "control room",
+      "startOffsetSec": 0.0,
+      "durationSec": 4.5,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    },
+    {
+      "key": "tech_campus_vid",
+      "filename": "14_tech_campus.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/33955/33955-720.mp4",
+      "searchQuery": "corporate building",
+      "startOffsetSec": 0.0,
+      "durationSec": 5.0,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    },
+    {
+      "key": "marketplace_vid",
+      "filename": "16_marketplace.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/4147/4147-1080.mp4",
+      "searchQuery": "market",
+      "startOffsetSec": 0.0,
+      "durationSec": 5.0,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    },
+    {
+      "key": "intl_flags_vid",
+      "filename": "17_intl_flags.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/13129/13129-720.mp4",
+      "searchQuery": "flag",
+      "startOffsetSec": 0.0,
+      "durationSec": 4.5,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    },
+    {
+      "key": "signing_contracts_vid",
+      "filename": "18_signing_contracts.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/23112/23112-720.mp4",
+      "searchQuery": "contract",
+      "startOffsetSec": 0.0,
+      "durationSec": 4.5,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    }
+  ],
+  "stockImages": [
+    {
+      "key": "nyse_facade_real",
+      "filename": "s01_nyse_facade_real.jpg",
+      "source": "wikimedia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Wall_Street_-_New_York_Stock_Exchange.jpg",
+      "searchQuery": "New York Stock Exchange building flag facade",
+      "license": "wikimedia_commons",
+      "creditShort": "Wikimedia Commons"
+    },
+    {
+      "key": "frb_eccles",
+      "filename": "s08a_frb_eccles.jpg",
+      "source": "wikimedia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Eccles_Building_%2826088200676%29.jpg",
+      "searchQuery": "Eccles Building Federal Reserve Washington",
+      "license": "wikimedia_commons",
+      "creditShort": "Wikimedia Commons"
+    },
+    {
+      "key": "us_supreme_court",
+      "filename": "s08b_us_supreme_court.jpg",
+      "source": "wikimedia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/US_Supreme_Court_-_corrected.jpg",
+      "searchQuery": "United States Supreme Court Building front facade",
+      "license": "wikimedia_commons",
+      "creditShort": "Wikimedia Commons"
+    },
+    {
+      "key": "sec_hq",
+      "filename": "s08c_sec_hq.jpg",
+      "source": "wikimedia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Facade_of_the_U.S._Securities_and_Exchange_Commission_headquarters%2C_Washington%2C_D.C.jpg",
+      "searchQuery": "Securities and Exchange Commission headquarters Washington",
+      "license": "wikimedia_commons",
+      "creditShort": "Wikimedia Commons"
+    },
+    {
+      "key": "uncle_sam_cutout",
+      "filename": "s07a_uncle_sam_cutout.png",
+      "source": "wikimedia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/J._M._Flagg%2C_I_Want_You_for_U.S._Army_poster_%281917%29.jpg/960px-J._M._Flagg%2C_I_Want_You_for_U.S._Army_poster_%281917%29.jpg",
+      "searchQuery": "I Want You Uncle Sam Flagg poster",
+      "cutoutMode": "light_paper_sticker",
+      "cropBox": [0.12, 0.06, 0.76, 0.57],
+      "license": "public_domain",
+      "creditShort": "Public Domain (J.M. Flagg 1917)"
+    },
+    {
+      "key": "knight_armor_cutout",
+      "filename": "s07b_knight_armor_cutout.png",
+      "source": "wikimedia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/German_-_Maximilian_Armor_-_Walters_51584.jpg",
+      "searchQuery": "Maximilian armor suit of armor knight",
+      "cutoutMode": "corner_bg_alpha",
+      "cropBox": [0.04, 0.0, 0.72, 0.806],
+      "license": "public_domain",
+      "creditShort": "Walters Art Museum (CC0)"
+    },
+    {
+      "key": "us_dollar_bill",
+      "filename": "s16_us_dollar_bill.png",
+      "source": "wikimedia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Obverse_of_the_series_2009_%24100_Federal_Reserve_Note.jpg",
+      "searchQuery": "Obverse of the series 2009 $100 Federal Reserve Note",
+      "license": "public_domain",
+      "creditShort": "U.S. Bureau of Engraving (Public Domain)"
+    }
+  ],
+  "chunks": [
+    {
+      "chunkId": "c01_hook",
+      "text": "仮説の質問です。もしアメリカ経済を壊すなら、",
+      "pauseAfterSec": 0.35,
+      "shotRole": "scroll_stop_hook",
+      "shotLabel": "Shot 01 ウォール街・星条旗 実写Bロール導入",
+      "eventKey": "hookStartSec",
+      "speechEndEventKey": "hookSpeechEndSec",
+      "subtitle": {
+        "line1": "仮説の質問です。もし",
+        "line2": "アメリカ経済を壊すなら、"
+      }
+    },
+    {
+      "chunkId": "c02_pause_q",
+      "text": "あなたなら、何を変えてみますか？",
+      "pauseAfterSec": 0.70,
+      "minPauseSec": 0.45,
+      "shotRole": "scroll_stop_hook",
+      "shotLabel": "Shot 02 VHS一時停止＆リモコン進行役アバター",
+      "eventKey": "vhsPauseSec",
+      "speechEndEventKey": "vhsPauseEndSec",
+      "subtitle": {
+        "line1": "あなたなら、",
+        "line2": "何を変えてみますか？"
+      }
+    },
+    {
+      "chunkId": "c03_fragile_core",
+      "text": "アメリカ市場の構造や、金融システムは繊細で、時折こうして派手な暴落を起こしやすいものです。",
+      "pauseAfterSec": 0.32,
+      "shotRole": "context_lean_in",
+      "shotLabel": "Shot 03 グリッチ突入：取引所モニター実写Bロール",
+      "eventKey": "grooveStartSec",
+      "subtitle": {
+        "line1": "アメリカ市場の構造や、"
+      },
+      "splits": [
+        {
+          "charIndex": 11,
+          "shotRole": "context_lean_in",
+          "shotLabel": "Shot 04 金融危機：段ボール箱を抱える社員Bロール",
+          "eventKey": "crisisBoxSec",
+          "minOffsetFromPrevSec": 0.8,
+          "subtitle": {
+            "line1": "金融システムは繊細で、"
+          }
+        },
+        {
+          "charIndex": 22,
+          "shotRole": "example_illustration",
+          "shotLabel": "Shot 05 CNN風 株価暴落速報ニュース画面",
+          "eventKey": "crashNewsSec",
+          "minOffsetFromPrevSec": 0.8,
+          "subtitle": {
+            "line1": "時折こうして派手な暴落を",
+            "line2": "起こしやすいものです。"
+          }
+        }
+      ]
+    },
+    {
+      "chunkId": "c04_pivot_armor",
+      "text": "ところがその周りには強固な特権が何重にもあり、実は極めて壊しにくい構造になっています。",
+      "pauseAfterSec": 0.34,
+      "shotRole": "pivot_contrast",
+      "shotLabel": "Shot 06 晴天芝生公園Bロール＋進行役アバター登場",
+      "eventKey": "pivotStartSec",
+      "subtitle": {
+        "line1": "ところがその周りには",
+        "line2": "強固な特権が何重にもあり、"
+      },
+      "splits": [
+        {
+          "charIndex": 23,
+          "shotRole": "contrarian_claim",
+          "shotLabel": "Shot 07 アンクル・サム木槌→甲冑騎士変身ギャグ",
+          "eventKey": "shieldSec",
+          "minOffsetFromPrevSec": 1.5,
+          "subtitle": {
+            "line1": "実は極めて壊しにくい",
+            "line2": "構造になっています。"
+          }
+        }
+      ]
+    },
+    {
+      "chunkId": "c05_institutions",
+      "text": "国際的に信頼される諸機関が、世界最大の金融市場を監督し、",
+      "pauseAfterSec": 0.24,
+      "shotRole": "example_illustration",
+      "shotLabel": "Shot 08 FRB/最高裁/SEC 公的機関3連高速カット",
+      "eventKey": "institutionsSec",
+      "subtitle": {
+        "line1": "国際的に信頼される諸機関が、"
+      },
+      "splits": [
+        {
+          "charIndex": 14,
+          "shotRole": "example_illustration",
+          "shotLabel": "Shot 09 夜のマンハッタン金融街実写Bロール",
+          "eventKey": "skylineSec",
+          "minOffsetFromPrevSec": 1.0,
+          "subtitle": {
+            "line1": "世界最大の金融市場を監督し、"
+          }
+        }
+      ]
+    },
+    {
+      "chunkId": "c06_reserve_currency",
+      "text": "そのすべてが基軸通貨ドルで動いています。",
+      "pauseAfterSec": 0.26,
+      "shotRole": "example_illustration",
+      "shotLabel": "Shot 10 木枠ホワイトボード IMF外貨準備高＋指示棒アバター",
+      "eventKey": "reserveChartSec",
+      "subtitle": {
+        "line1": "そのすべてが基軸通貨",
+        "line2": "ドルで動いています。"
+      }
+    },
+    {
+      "chunkId": "c07_industries",
+      "text": "多様な主要産業が経済を支え、多国籍企業が世界中に圧倒的な影響力を広げ、",
+      "pauseAfterSec": 0.26,
+      "shotRole": "example_illustration",
+      "shotLabel": "Shot 11 ホワイトボード：米国主要企業ロゴ連続ポップイン",
+      "eventKey": "industriesSec",
+      "subtitle": {
+        "line1": "多様な主要産業が経済を支え、"
+      },
+      "splits": [
+        {
+          "charIndex": 14,
+          "shotRole": "example_illustration",
+          "shotLabel": "Shot 12 ホワイトボード緑世界地図＋グローバルブランド配置",
+          "eventKey": "worldMapBoardSec",
+          "minOffsetFromPrevSec": 1.3,
+          "subtitle": {
+            "line1": "多国籍企業が世界中に",
+            "line2": "圧倒的な影響力を広げ、"
+          }
+        }
+      ]
+    },
+    {
+      "chunkId": "c08_talent",
+      "text": "世界中の優秀な人材も集まります。どこよりも自分のアイデアで稼げる場所だからです。",
+      "pauseAfterSec": 0.28,
+      "shotRole": "example_illustration",
+      "shotLabel": "Shot 13 管制室モニター＆エンジニア実写ズーム",
+      "eventKey": "talentSec",
+      "subtitle": {
+        "line1": "世界中の優秀な人材も集まります。"
+      },
+      "splits": [
+        {
+          "charIndex": 16,
+          "shotRole": "example_illustration",
+          "shotLabel": "Shot 14 現代ガラス社屋と従業員実写Bロール",
+          "eventKey": "techCampusSec",
+          "minOffsetFromPrevSec": 1.2,
+          "subtitle": {
+            "line1": "どこよりも自分のアイデアで",
+            "line2": "稼げる場所だからです。"
+          }
+        }
+      ]
+    },
+    {
+      "chunkId": "c09_geopolitics",
+      "text": "さらに史上最も地政学的に絡み合った国でもあります。多くは良い意味で。",
+      "pauseAfterSec": 0.28,
+      "shotRole": "example_illustration",
+      "shotLabel": "Shot 15 暗室プロジェクター投影：地政学連結ネットワーク",
+      "eventKey": "geopoliticsSec",
+      "subtitleSegments": [
+        {
+          "startChar": 0,
+          "line1": "さらに史上最も地政学的に",
+          "line2": "絡み合った国でもあります。"
+        },
+        {
+          "startChar": 25,
+          "line1": "多くは良い意味で。"
+        }
+      ]
+    },
+    {
+      "chunkId": "c10_middleman",
+      "text": "優れたビジネスの極意は、優れた仲介役になることです。",
+      "pauseAfterSec": 0.26,
+      "shotRole": "contrarian_claim",
+      "shotLabel": "Shot 16 市場背景×NPC握手×仲介役アバター風刺コラージュ",
+      "eventKey": "middlemanSec",
+      "subtitle": {
+        "line1": "優れたビジネスの極意は、",
+        "line2": "優れた仲介役になることです。"
+      }
+    },
+    {
+      "chunkId": "c11_connections_loop",
+      "text": "同盟や貿易協定から、無数の契約や金融インフラまで、他国との間に数万もの結びつきが存在するのです。",
+      "pauseAfterSec": 0.65,
+      "minPauseSec": 0.35,
+      "shotRole": "open_loop",
+      "shotLabel": "Shot 17 各国国旗＆国際協調実写Bロール",
+      "eventKey": "bureaucracySec",
+      "subtitle": {
+        "line1": "同盟や貿易協定から、"
+      },
+      "splits": [
+        {
+          "charIndex": 10,
+          "shotRole": "open_loop",
+          "shotLabel": "Shot 18 会議テーブル契約署名クローズアップ実写",
+          "eventKey": "signingSec",
+          "minOffsetFromPrevSec": 1.0,
+          "subtitle": {
+            "line1": "無数の契約や金融インフラまで、"
+          }
+        },
+        {
+          "charIndex": 25,
+          "shotRole": "open_loop",
+          "shotLabel": "Shot 19 緑世界地図ズームアウト＆無数黒弧線拡散",
+          "eventKey": "worldWebSec",
+          "minOffsetFromPrevSec": 1.0,
+          "subtitle": {
+            "line1": "他国との間に数万もの",
+            "line2": "結びつきが存在するのです。"
+          }
+        }
+      ]
+    }
+  ],
+  "audio": {
+    "bpm": 115.0,
+    "loudnormTargetI": -14.0,
+    "loudnormTargetTp": -1.4,
+    "loudnormTargetLra": 9.0,
+    "bgm": {
+      "introDroneEndEvent": "vhsPauseSec",
+      "grooveStartEvent": "grooveStartSec",
+      "cutouts": [
+        {
+          "startEvent": "vhsPauseSec",
+          "endEvent": "grooveStartSec"
+        }
+      ]
+    },
+    "sfx": [
+      {
+        "kind": "vhs_pause",
+        "event": "vhsPauseSec",
+        "gain": 0.28
+      },
+      {
+        "kind": "glitch_burst",
+        "event": "grooveStartSec",
+        "gain": 0.26
+      },
+      {
+        "kind": "error_buzzer",
+        "event": "crashNewsSec",
+        "gain": 0.20
+      },
+      {
+        "kind": "soft_pop",
+        "event": "pivotStartSec",
+        "gain": 0.20
+      },
+      {
+        "kind": "mallet_bonk",
+        "event": "shieldSec",
+        "offsetSec": 0.85,
+        "gain": 0.30
+      },
+      {
+        "kind": "armor_clang",
+        "event": "shieldSec",
+        "offsetSec": 1.45,
+        "gain": 0.28
+      },
+      {
+        "kind": "dizzy_spin",
+        "event": "shieldSec",
+        "offsetSec": 1.95,
+        "gain": 0.24
+      },
+      {
+        "kind": "impact_thud",
+        "event": "institutionsSec",
+        "gain": 0.22
+      },
+      {
+        "kind": "whoosh",
+        "event": "reserveChartSec",
+        "gain": 0.22
+      },
+      {
+        "kind": "soft_pop",
+        "event": "industriesSec",
+        "offsetSec": 0.25,
+        "gain": 0.18
+      },
+      {
+        "kind": "soft_pop",
+        "event": "industriesSec",
+        "offsetSec": 0.70,
+        "gain": 0.18
+      },
+      {
+        "kind": "soft_pop",
+        "event": "industriesSec",
+        "offsetSec": 1.15,
+        "gain": 0.18
+      },
+      {
+        "kind": "soft_pop",
+        "event": "worldMapBoardSec",
+        "offsetSec": 0.25,
+        "gain": 0.18
+      },
+      {
+        "kind": "soft_pop",
+        "event": "worldMapBoardSec",
+        "offsetSec": 0.80,
+        "gain": 0.18
+      },
+      {
+        "kind": "projector_click",
+        "event": "geopoliticsSec",
+        "gain": 0.26
+      },
+      {
+        "kind": "whoosh",
+        "event": "middlemanSec",
+        "gain": 0.22
+      },
+      {
+        "kind": "chart_tick",
+        "event": "worldWebSec",
+        "pulses": 5,
+        "gain": 0.16
+      }
+    ]
+  }
+}

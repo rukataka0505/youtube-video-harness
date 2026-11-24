@@ -1,0 +1,88 @@
+{
+  "content_format": "explainer_essay",
+  "structural_roadmap_shown": false,
+  "body_avg_shot_len_sec": 3.5,
+  "pattern_interrupt_interval_sec": 23.0,
+  "visual_dominant_layer": "slides_motion_gfx",
+  "bgm_shift_count": 7,
+  "dead_air_eliminated": true,
+  "uses_j_l_cuts": true,
+  "open_loops": [
+    {
+      "opened_at": "00:20",
+      "hook_question": "実は『頭が良くなるのはとても簡単（becoming smart is easy, actually）』という主張の具体的な根拠と方法は何か？",
+      "closed_at": "05:25",
+      "is_closed": true
+    },
+    {
+      "opened_at": "01:32",
+      "hook_question": "ネット上のありきたりな6つの脳ハック（ブルーベリーやモーツァルト等）以外で、実際に頭を良くするために何をすべきか？",
+      "closed_at": "01:44",
+      "is_closed": true
+    },
+    {
+      "opened_at": "01:46",
+      "hook_question": "頭を良くするには具体的にどのような種類の本（フィクションかノンフィクションか）を読めばよいのか？",
+      "closed_at": "01:57",
+      "is_closed": true
+    },
+    {
+      "opened_at": "02:11",
+      "hook_question": "本で得た知識を嫌味なオタク（well, actually...）にならずに会話で披露し、尊敬されるコツは何か？",
+      "closed_at": "03:00",
+      "is_closed": true
+    },
+    {
+      "opened_at": "03:10",
+      "hook_question": "みんなが勧める定番の5冊に頼らず、本当に読むべき良い本はどうやって見つければいいのか？",
+      "closed_at": "03:21",
+      "is_closed": true
+    },
+    {
+      "opened_at": "03:51",
+      "hook_question": "スキルを学ぶ前に知っておくべき『10のこと（※実際は2つだけというギャグ）』とは何か？",
+      "closed_at": "04:05",
+      "is_closed": true
+    },
+    {
+      "opened_at": "04:42",
+      "hook_question": "車のバッテリー上がり対処のように、すぐには実地練習できない知識はどうすれば脳に定着させられるのか？",
+      "closed_at": "04:59",
+      "is_closed": true
+    },
+    {
+      "opened_at": "06:09",
+      "hook_question": "反復学習やポモドーロ等の人気勉強法よりも圧倒的に結果が出る最強の勉強法とSティア教材は何か？",
+      "closed_at": "06:46",
+      "is_closed": true
+    }
+  ],
+  "monetization_ctas": [
+    {
+      "timestamp": "02:36",
+      "cta_type": "subscribe_like",
+      "duration_sec": 4,
+      "placement_context": "after_value_peak",
+      "bridge_script_summary": "嫌われるフレーズ『well, actually』の『well』をチャンネル名の『easy』に変えれば好かれるという言葉遊びから、自然な流れでチャンネル登録ボタンのクリック演出へ接続"
+    },
+    {
+      "timestamp": "05:46",
+      "cta_type": "subscribe_like",
+      "duration_sec": 6,
+      "placement_context": "flat_transition",
+      "bridge_script_summary": "学校のテスト構造を解説する生物試験用紙（BIOLOGY 1-1）のイラスト内に『2. Are you subscribed? (100 pts)』と視覚的な小ネタとして埋め込んだサブリミナル訴求"
+    },
+    {
+      "timestamp": "07:21",
+      "cta_type": "subscribe_like",
+      "duration_sec": 5,
+      "placement_context": "end_screen",
+      "bridge_script_summary": "無料教科書サイト（LibGen）で行動する直前の流れを受け、『その前に次回動画の制作資金としてチャンネル登録という形の寄付を募っています』とユーモラスにクロージング登録を訴求"
+    }
+  ],
+  "has_finalizing_phrase": false,
+  "end_screen_continuous_value": false,
+  "faceless_reproducible": true,
+  "production_effort_tier": "low_template",
+  "replicable_winning_formula": "『常識の皮肉な否定（22年通学しても博士号ホームレス）＋一般論の切り捨て（ブルーベリー等の脳ハック批判）』で冒頭90秒の共感と好奇心を最大化し、黒背景×棒人間イラストという極低工数フォーマットに約3.5秒間隔の細かい視覚変化と約23秒間隔の寸劇・画面収録・図解転換を織り交ぜて維持率を牽引。『読書→実践・脳内シミュレーション→練習問題・教科書』へと段階的に具体策を展開し、チャンネル名の言葉遊びやテスト用紙の小ネタにCTAを自然に溶け込ませ、終了合図語を排して最後のジョークまで駆け抜けることで顔出し・高度編集なしでも高い完視聴と登録を生む解説エッセイ設計式。"
+}

@@ -1,0 +1,352 @@
+{
+  "slug": "ab_20261122_zero_inflation_trap",
+  "title": "なぜ給料が上がらない国ほど「激安」が増えるのか？ 経済を静かに壊すデフレの罠",
+  "formatId": "planE_macro_econ",
+  "antiPowerPointCheck": true,
+  "blueprintRef": "docs/evergreen/09_plan_e_longform_blueprint.md",
+  "harnessRef": "harnesses/plan-e-macro-econ/README.md",
+  "output": {
+    "publicSubdir": "ab_tests/2026-11-22_planE_zero_inflation_trap/base",
+    "timelineTsPath": "studio/src/compositions/ab_tests/zero_inflation_trap/baseTimelineData.ts",
+    "exportName": "BASE_TIMELINE"
+  },
+  "video": {
+    "fps": 30,
+    "width": 1920,
+    "height": 1080
+  },
+  "fonts": [
+    "Noto Sans JP",
+    "Noto Serif JP",
+    "Playfair Display"
+  ],
+  "tts": {
+    "provider": "elevenlabs",
+    "models": [
+      "eleven_v4",
+      "eleven_v4_turbo",
+      "eleven_multilingual_v2"
+    ],
+    "voices": [
+      "TX3LPaxmHKxFdv7VOQHJ"
+    ],
+    "languageCode": "ja",
+    "useTimestamps": true
+  },
+  "pacing": {
+    "mode": "natural",
+    "leadingSilenceSec": 0.15,
+    "minTempo": 0.94,
+    "maxTempo": 1.08
+  },
+  "legalChecklist": {
+    "primarySources": [
+      {
+        "title": "厚生労働省：毎月勤労統計調査（現金給与総額・実質賃金指数）",
+        "url": "https://www.mhlw.go.jp/toukei/list/30-1.html",
+        "publisher": "厚生労働省"
+      },
+      {
+        "title": "OECD Data Explorer: Average annual wages",
+        "url": "https://data-explorer.oecd.org/",
+        "publisher": "OECD"
+      },
+      {
+        "title": "日本銀行：生活意識に関するアンケート調査",
+        "url": "https://www.boj.or.jp/research/o_survey/index.htm",
+        "publisher": "日本銀行"
+      }
+    ],
+    "usesAcmlVoiceForCriticism": false,
+    "usesAiExpertAdvice": false,
+    "noFinancialAdviceClaim": true,
+    "fontsLicense": "SIL OFL 1.1"
+  },
+  "images": [],
+  "videoClips": [
+    {
+      "key": "tokyo_commuters_broll",
+      "filename": "01_tokyo_street_commuters.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/4437/4437-1080.mp4",
+      "searchQuery": "japan street",
+      "startOffsetSec": 0.0,
+      "durationSec": 8.0,
+      "extractPoster": true,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    },
+    {
+      "key": "news_studio_broll",
+      "filename": "02_news_studio.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/22976/22976-720.mp4",
+      "searchQuery": "tv news",
+      "startOffsetSec": 0.0,
+      "durationSec": 6.0,
+      "extractPoster": true,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    },
+    {
+      "key": "counting_cash_broll",
+      "filename": "03_counting_cash.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/18296/18296-720.mp4",
+      "searchQuery": "money",
+      "startOffsetSec": 0.0,
+      "durationSec": 7.0,
+      "extractPoster": true,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    },
+    {
+      "key": "supermarket_aisle_broll",
+      "filename": "04_supermarket_aisle.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/23045/23045-720.mp4",
+      "searchQuery": "supermarket shopping",
+      "startOffsetSec": 0.0,
+      "durationSec": 7.0,
+      "extractPoster": true,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    },
+    {
+      "key": "stock_ticker_broll",
+      "filename": "05_stock_ticker.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/41629/41629-720.mp4",
+      "searchQuery": "finance chart",
+      "startOffsetSec": 0.0,
+      "durationSec": 7.0,
+      "extractPoster": true,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    }
+  ],
+  "stockImages": [],
+  "chunks": [
+    {
+      "chunkId": "c01_paradox_hook",
+      "text": "ちょっと意地悪な思考実験をしてみましょう。もし本気で、一つの先進国の給料を30年間ほとんど上げずに止めてしまいたいなら、どうすればいいでしょうか。",
+      "pauseAfterSec": 0.55,
+      "minPauseSec": 0.40,
+      "shotRole": "scroll_stop_hook",
+      "shotLabel": "実写街並みBロール：給料を30年止める思考実験フック",
+      "eventKey": "hookStartSec",
+      "subtitleSegments": [
+        {
+          "startChar": 0,
+          "line1": "ちょっと意地悪な",
+          "line2": "思考実験をしてみましょう。"
+        },
+        {
+          "startChar": 21,
+          "line1": "もし本気で、一つの先進国の給料を30年間",
+          "line2": "ほとんど上げずに止めてしまいたいなら、"
+        },
+        {
+          "startChar": 60,
+          "line1": "どうすればいいでしょうか。"
+        }
+      ]
+    },
+    {
+      "chunkId": "c02_vhs_pause_naive",
+      "text": "税金を一気に2倍にする？それとも大企業を片っ端から潰す？いや、そんな派手なことをしたら、翌日には猛反発が起きて計画はすぐ失敗します。",
+      "pauseAfterSec": 0.35,
+      "shotRole": "contrarian_claim",
+      "shotLabel": "VHS一時停止＆素朴な破壊策の即却下",
+      "eventKey": "vhsPauseSec",
+      "subtitleSegments": [
+        {
+          "startChar": 0,
+          "line1": "税金を一気に2倍にする？",
+          "line2": "それとも大企業を片っ端から潰す？"
+        },
+        {
+          "startChar": 28,
+          "line1": "いや、そんな派手なことをしたら、",
+          "line2": "翌日には猛反発が起きて計画はすぐ失敗します。"
+        }
+      ]
+    },
+    {
+      "chunkId": "c03_reverse_truth",
+      "text": "一番うまくいく方法は、真逆です。モノの値段をじわじわ安くして、全員に「お得でありがたい」と思い込ませること。",
+      "pauseAfterSec": 0.35,
+      "shotRole": "context_lean_in",
+      "shotLabel": "115BPMグルーヴ解禁＆「激安の罠」逆転宣言",
+      "eventKey": "grooveStartSec",
+      "subtitleSegments": [
+        {
+          "startChar": 0,
+          "line1": "一番うまくいく方法は、真逆です。"
+        },
+        {
+          "startChar": 16,
+          "line1": "モノの値段をじわじわ安くして、全員に",
+          "line2": "「お得でありがたい」と思い込ませること。"
+        }
+      ]
+    },
+    {
+      "chunkId": "c04_oecd_wage_gap",
+      "text": "実際、この30年間でアメリカやヨーロッパの実質賃金が大きく伸びるなか、日本の給料はほとんど横ばいのままでした。",
+      "pauseAfterSec": 0.32,
+      "shotRole": "example_illustration",
+      "shotLabel": "ホワイトボード：OECD主要国vs日本の30年実質賃金グラフ",
+      "eventKey": "whiteboardChartSec",
+      "subtitleSegments": [
+        {
+          "startChar": 0,
+          "line1": "実際、この30年間でアメリカやヨーロッパの",
+          "line2": "実質賃金が大きく伸びるなか、"
+        },
+        {
+          "startChar": 35,
+          "line1": "日本の給料はほとんど",
+          "line2": "横ばいのままでした。"
+        }
+      ]
+    },
+    {
+      "chunkId": "c05_not_villains",
+      "text": "なぜそんな奇妙なことが起きたのか。犯人は悪徳企業でも、怠けた労働者でもありません。",
+      "pauseAfterSec": 0.28,
+      "shotRole": "contrarian_claim",
+      "shotLabel": "報道・風刺コラージュ：悪者論の否定",
+      "eventKey": "satireRevealSec",
+      "subtitleSegments": [
+        {
+          "startChar": 0,
+          "line1": "なぜそんな奇妙なことが起きたのか。"
+        },
+        {
+          "startChar": 17,
+          "line1": "犯人は悪徳企業でも、",
+          "line2": "怠けた労働者でもありません。"
+        }
+      ]
+    },
+    {
+      "chunkId": "c06_rational_trap",
+      "text": "企業は「値上げしたら客が逃げる」と価格を凍らせ、消費者は「給料が増えないから安い店しか行かない」と財布を締める。",
+      "pauseAfterSec": 0.28,
+      "shotRole": "example_illustration",
+      "shotLabel": "企業×消費者のデフレ・インセンティブループ",
+      "eventKey": "incentiveLoopSec",
+      "subtitleSegments": [
+        {
+          "startChar": 0,
+          "line1": "企業は「値上げしたら客が逃げる」と",
+          "line2": "価格を凍らせ、"
+        },
+        {
+          "startChar": 24,
+          "line1": "消費者は「給料が増えないから安い店しか",
+          "line2": "行かない」と財布を締める。"
+        }
+      ]
+    },
+    {
+      "chunkId": "c07_fallacy_of_composition",
+      "text": "全員が自分の生活を守るために最も合理的な選択をした結果、国全体の給料だけが静かに止まり続けたのです。",
+      "pauseAfterSec": 0.35,
+      "shotRole": "contrarian_claim",
+      "shotLabel": "合成の誤謬：合理的行動が全体停滞を生む構造",
+      "eventKey": "systemFreezeSec",
+      "subtitleSegments": [
+        {
+          "startChar": 0,
+          "line1": "全員が自分の生活を守るために",
+          "line2": "最も合理的な選択をした結果、"
+        },
+        {
+          "startChar": 28,
+          "line1": "国全体の給料だけが",
+          "line2": "静かに止まり続けたのです。"
+        }
+      ]
+    },
+    {
+      "chunkId": "c08_open_loop",
+      "text": "ところが、一度この「激安の罠」にハマると、中央銀行が何百兆円のお金を刷っても簡単には抜け出せなくなります。その隠れた仕組みを、これから解剖していきましょう。",
+      "pauseAfterSec": 0.50,
+      "shotRole": "open_loop",
+      "shotLabel": "暗室プロジェクター／日銀・金融緩和オープンループ",
+      "eventKey": "openLoopSec",
+      "subtitleSegments": [
+        {
+          "startChar": 0,
+          "line1": "ところが、一度この「激安の罠」にハマると、",
+          "line2": "中央銀行が何百兆円のお金を刷っても"
+        },
+        {
+          "startChar": 38,
+          "line1": "簡単には抜け出せなくなります。"
+        },
+        {
+          "startChar": 53,
+          "line1": "その隠れた仕組みを、",
+          "line2": "これから解剖していきましょう。"
+        }
+      ]
+    }
+  ],
+  "audio": {
+    "bpm": 115.0,
+    "loudnormTargetI": -14.0,
+    "loudnormTargetTp": -1.4,
+    "loudnormTargetLra": 9.0,
+    "bgm": {
+      "introDroneEndEvent": "vhsPauseSec",
+      "grooveStartEvent": "grooveStartSec",
+      "cutouts": [
+        {
+          "startEvent": "vhsPauseSec",
+          "endEvent": "grooveStartSec"
+        }
+      ]
+    },
+    "sfx": [
+      {
+        "kind": "vhs_pause",
+        "event": "vhsPauseSec",
+        "gain": 0.24
+      },
+      {
+        "kind": "glitch_burst",
+        "event": "grooveStartSec",
+        "gain": 0.22
+      },
+      {
+        "kind": "chart_tick",
+        "event": "whiteboardChartSec",
+        "pulses": 5,
+        "gain": 0.16
+      },
+      {
+        "kind": "paper_snap",
+        "event": "satireRevealSec",
+        "gain": 0.24
+      },
+      {
+        "kind": "mech_slide",
+        "event": "incentiveLoopSec",
+        "gain": 0.20
+      },
+      {
+        "kind": "impact_thud",
+        "event": "systemFreezeSec",
+        "gain": 0.24
+      },
+      {
+        "kind": "projector_click",
+        "event": "openLoopSec",
+        "gain": 0.22
+      }
+    ]
+  }
+}

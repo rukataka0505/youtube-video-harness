@@ -1,0 +1,304 @@
+{
+  "slug": "ab_sc_v2_4cut_neon",
+  "compositionId": "AB-StickmanV2-4Cut-Neon",
+  "title": "なぜ「自己啓発本を読む人」ほど変われないのか（stickman-collage v2 4カット先行試作 v1_neon）",
+  "formatId": "stickman_collage",
+  "blueprintRef": "docs/evergreen/07_plan_c_longform_blueprint.md",
+  "harnessRef": "harnesses/stickman-collage/README.md",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "safeMarginX": 96,
+    "safeMarginY": 54
+  },
+  "realAssetTargets": [
+    {
+      "labelJa": "本屋",
+      "category": "place",
+      "assetId": "photo_bookstore",
+      "chunkIds": ["c01"]
+    },
+    {
+      "labelJa": "サラダチキン",
+      "category": "object",
+      "assetId": "photo_salad_chicken",
+      "chunkIds": ["c02"]
+    },
+    {
+      "labelJa": "積ん読タワー",
+      "category": "object",
+      "assetId": "photo_book_stack_room",
+      "chunkIds": ["c03"]
+    },
+    {
+      "labelJa": "ピーター・ゴルヴィッツァー",
+      "category": "person",
+      "assetId": "person_gollwitzer",
+      "chunkIds": ["c10"]
+    }
+  ],
+  "assetCatalog": [
+    {
+      "id": "photo_bookstore",
+      "kind": "scene_photo",
+      "src": "ab_tests/2026-11-22_stickman-collage_self-help-trap/bookstore.jpg",
+      "labelJa": "本屋の平台コーナー（実写）",
+      "subjectNameJa": "本屋",
+      "tags": ["本屋", "書店", "平台", "ビジネス書コーナー"],
+      "license": "cc_by",
+      "creditShort": "写真：Wikimedia Commons（1周目収集分。作者名・ライセンス表記は公開前に要特定）",
+      "objectPosition": "50% 45%"
+    },
+    {
+      "id": "photo_salad_chicken",
+      "kind": "object_photo",
+      "src": "ab_tests/2026-11-22_stickman-collage_self-help-trap/salad_chicken.jpg",
+      "labelJa": "コンビニのサラダチキン（実写）",
+      "subjectNameJa": "サラダチキン",
+      "tags": ["サラダチキン", "コンビニ", "鶏むね肉"],
+      "license": "cc_by",
+      "creditShort": "写真：Wikimedia Commons「サラダチキン」by Meguromaguro (CC BY-SA 4.0)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E3%82%B5%E3%83%A9%E3%83%80%E3%83%81%E3%82%AD%E3%83%B3.jpg",
+      "objectPosition": "50% 45%"
+    },
+    {
+      "id": "photo_book_stack_room",
+      "kind": "object_photo",
+      "src": "ab_tests/2026-11-22_stickman-collage_self-help-trap/book_stack_room.jpg",
+      "labelJa": "室内に積まれた本（積ん読タワー・実写）",
+      "subjectNameJa": "積ん読タワー",
+      "tags": ["積ん読", "積ん読タワー", "本の山", "ベッド脇"],
+      "license": "cc_by",
+      "creditShort": "写真：Wikimedia Commons「Stack of Books for decor」by Mycaccount (CC BY-SA 4.0)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stack_of_Books_for_decor.jpg",
+      "objectPosition": "50% 62%"
+    },
+    {
+      "id": "person_gollwitzer",
+      "kind": "person_photo",
+      "src": "ab_tests/2026-11-22_stickman-collage_self-help-trap/peter_gollwitzer.jpg",
+      "labelJa": "心理学者 ピーター・ゴルヴィッツァー（本人写真）",
+      "subjectNameJa": "ピーター・ゴルヴィッツァー",
+      "tags": ["ピーター・ゴルヴィッツァー", "ゴルヴィッツァー", "ニューヨーク大学", "心理学者"],
+      "license": "short_quotation",
+      "creditShort": "写真：ニューヨーク大学 教員プロフィール（研究紹介のための引用。公開前に権利確認）",
+      "sourceUrl": "https://as.nyu.edu/content/dam/nyu-as/faculty/images/PeterGollwitzer.jpg",
+      "objectPosition": "50% 20%"
+    }
+  ],
+  "chapters": [
+    {
+      "chapterIndex": 1,
+      "topicId": "bookstore_illusion_3cut",
+      "titleJa": "導入：買った夜の高揚と積ん読の現実（3カット）",
+      "defaultPolarity": "black",
+      "targetDurationSec": 26.2,
+      "openLoopQuestionJa": "なぜ自己啓発本を読む人ほど変われないのか？",
+      "shots": [
+        {
+          "shotIndex": 1,
+          "chunkId": "c01",
+          "targetDurationSec": 9.19,
+          "narrativeRole": "scroll_stop_hook",
+          "polarity": "black",
+          "lightBg": false,
+          "layoutArchetype": "tsx_scene",
+          "scene": {
+            "mode": "tsx",
+            "component": "C01BookstoreHook",
+            "assetIds": ["photo_bookstore"]
+          },
+          "beats": [
+            { "beatIndex": 0, "phraseJa": "本屋", "action": "reveal_photo" },
+            { "beatIndex": 1, "phraseJa": "人生が変わる習慣", "action": "reveal_diagram" },
+            { "beatIndex": 2, "phraseJa": "さんさつ", "action": "reveal_diagram" },
+            { "beatIndex": 3, "phraseJa": "まとめて買った", "action": "draw_stroke" },
+            { "beatIndex": 4, "phraseJa": "みょうに気分がいい", "action": "pop_figure" }
+          ],
+          "narrationJa": "本屋のビジネス書コーナーで、人生が変わる習慣みたいな本を、さんさつまとめて買った夜って、みょうに気分がいいですよね。",
+          "subtitleSegments": [
+            { "line1": "本屋のビジネス書コーナーで、", "line2": "「人生が変わる習慣」みたいな本を" },
+            { "line1": "3冊まとめて買った夜って、", "line2": "妙に気分がいいですよね。" }
+          ],
+          "sfx": [
+            { "kind": "paper_snap", "offsetSec": 0.36, "gain": 0.24, "notes": "本屋スクラップ貼付" },
+            { "kind": "impact_thud", "offsetSec": 2.52, "gain": 0.2, "pan": 0.1, "notes": "1冊目ドン落下" },
+            { "kind": "impact_thud", "offsetSec": 5.08, "gain": 0.22, "pan": 0.12, "notes": "2冊目ドン落下" },
+            { "kind": "impact_thud", "offsetSec": 5.36, "gain": 0.24, "pan": 0.15, "notes": "3冊目ドン落下" },
+            { "kind": "pen_scratch", "offsetSec": 5.75, "gain": 0.16, "durationSec": 0.35, "notes": "レシート描画" },
+            { "kind": "data_chirp", "offsetSec": 7.02, "gain": 0.16, "durationSec": 0.32, "notes": "浮かれ棒人間登場" }
+          ],
+          "visualNotesJa": "黒舞台。左に書店実写スクラップ、中央〜右に手描き帯付き自己啓発本3冊が重力落下＋着地バウンドで積み上がり、レシート＆三日月を経て紙袋を持った浮かれ棒人間が弾む。",
+          "openLoopAction": "open",
+          "showOnScreenCitation": false
+        },
+        {
+          "shotIndex": 2,
+          "chunkId": "c02",
+          "targetDurationSec": 8.48,
+          "narrativeRole": "comic_punchline",
+          "polarity": "black",
+          "lightBg": false,
+          "layoutArchetype": "tsx_scene",
+          "scene": {
+            "mode": "tsx",
+            "component": "C02SaladChickenIllusion",
+            "assetIds": ["photo_salad_chicken"]
+          },
+          "beats": [
+            { "beatIndex": 0, "phraseJa": "1ページも", "action": "reveal_diagram" },
+            { "beatIndex": 1, "phraseJa": "帰り道のコンビニ", "action": "draw_stroke" },
+            { "beatIndex": 2, "phraseJa": "サラダチキン", "action": "reveal_photo" },
+            { "beatIndex": 3, "phraseJa": "脳内では", "action": "pop_figure" },
+            { "beatIndex": 4, "phraseJa": "成功者", "action": "stamp" }
+          ],
+          "narrationJa": "まだ1ページも行動していないのに、帰り道のコンビニでなぜかサラダチキンを選んでしまうくらい、脳内ではもう成功者です。",
+          "subtitleSegments": [
+            { "line1": "まだ1ページも行動していないのに、", "line2": "帰り道のコンビニでなぜか" },
+            { "line1": "サラダチキンを選んでしまうくらい、", "line2": "脳内ではもう成功者です。" }
+          ],
+          "sfx": [
+            { "kind": "pen_scratch", "offsetSec": 0.2, "gain": 0.18, "durationSec": 0.35, "notes": "真っ白0ページ本" },
+            { "kind": "soft_pop", "offsetSec": 2.35, "gain": 0.18, "pan": -0.1, "notes": "帰り道コンビニ手描き" },
+            { "kind": "paper_snap", "offsetSec": 4.02, "gain": 0.26, "pan": 0.05, "notes": "サラダチキン実写投下" },
+            { "kind": "question_boing", "offsetSec": 4.9, "gain": 0.17, "notes": "なぜか選んでしまうツッコミ" },
+            { "kind": "data_chirp", "offsetSec": 6.08, "gain": 0.18, "durationSec": 0.38, "notes": "後光＋王冠棒人間" },
+            { "kind": "stamp_thud", "offsetSec": 6.9, "gain": 0.28, "notes": "もう成功者スタンプ" }
+          ],
+          "visualNotesJa": "黒舞台。左に真っ白な0ページ本＆空チェックリスト、中央に手描きコンビニ看板からサラダチキン実写スクラップが主役投下、右に黄金後光＆王冠のドヤ顔棒人間＋脳内妄想クラウド。",
+          "comicPunchline": true,
+          "showOnScreenCitation": false
+        },
+        {
+          "shotIndex": 3,
+          "chunkId": "c03",
+          "targetDurationSec": 8.2,
+          "narrativeRole": "contrarian_claim",
+          "polarity": "black",
+          "lightBg": false,
+          "layoutArchetype": "tsx_scene",
+          "scene": {
+            "mode": "tsx",
+            "component": "C03TsundokuRevival",
+            "assetIds": ["photo_book_stack_room"]
+          },
+          "beats": [
+            { "beatIndex": 0, "phraseJa": "1週間後", "action": "reveal_diagram" },
+            { "beatIndex": 1, "phraseJa": "ベッドわき", "action": "reveal_photo" },
+            { "beatIndex": 2, "phraseJa": "つんどくタワー", "action": "draw_stroke" },
+            { "beatIndex": 3, "phraseJa": "吸収され", "action": "animate_metric" },
+            { "beatIndex": 4, "phraseJa": "元の生活", "action": "pop_figure" },
+            { "beatIndex": 5, "phraseJa": "復活します", "action": "stamp" }
+          ],
+          "narrationJa": "ところが1週間後、その本はベッドわきのつんどくタワーに吸収され、元の生活がきれいに復活します。",
+          "subtitleSegments": [
+            { "line1": "ところが1週間後、", "line2": "その本はベッド脇の積ん読タワーに" },
+            { "line1": "吸収され、元の生活が", "line2": "きれいに復活します。" }
+          ],
+          "sfx": [
+            { "kind": "whoosh", "offsetSec": 0.18, "gain": 0.2, "notes": "日めくりカレンダー高速めくり" },
+            { "kind": "paper_snap", "offsetSec": 1.85, "gain": 0.22, "pan": -0.2, "notes": "ベッド脇積ん読実写" },
+            { "kind": "impact_thud", "offsetSec": 3.85, "gain": 0.26, "pan": -0.1, "notes": "3冊がタワーに落下吸収" },
+            { "kind": "pen_scratch", "offsetSec": 5.2, "gain": 0.18, "durationSec": 0.4, "notes": "回帰ループ矢印" },
+            { "kind": "mallet_bonk", "offsetSec": 6.4, "gain": 0.22, "pan": 0.25, "notes": "寝転びスマホ復活オチ" }
+          ],
+          "visualNotesJa": "黒舞台。左上から手描き日めくりカレンダーが1→7日へ千切れ飛び、c01の3冊が積ん読タワー上へ落下して色が褪せて吸収される。右でループ矢印からベッドでスマホを見る怠惰棒人間＆完全復活スタンプ。",
+          "showOnScreenCitation": false
+        }
+      ]
+    },
+    {
+      "chapterIndex": 2,
+      "topicId": "meta_analysis_if_then",
+      "titleJa": "科学の設計図：94研究メタ分析とIf-Then条件分岐",
+      "defaultPolarity": "grid_paper",
+      "targetDurationSec": 16.2,
+      "openLoopQuestionJa": "気合ではなく何が目標達成率を押し上げたのか？",
+      "shots": [
+        {
+          "shotIndex": 4,
+          "chunkId": "c10",
+          "targetDurationSec": 16.2,
+          "narrativeRole": "pivot_contrast",
+          "polarity": "grid_paper",
+          "lightBg": true,
+          "polarityShiftReason": "黒舞台3連続（日常の錯覚）から方眼紙（94研究メタ分析＆If-Then条件分岐の設計図）へ1カット極性反転",
+          "layoutArchetype": "tsx_scene",
+          "scene": {
+            "mode": "tsx",
+            "component": "C10MetaIfThenBlueprint",
+            "assetIds": ["person_gollwitzer"]
+          },
+          "beats": [
+            { "beatIndex": 0, "phraseJa": "ゴルヴィッツァー", "action": "reveal_photo" },
+            { "beatIndex": 1, "phraseJa": "94の研究", "action": "stagger_grid" },
+            { "beatIndex": 2, "phraseJa": "メタ分析", "action": "highlight_ring" },
+            { "beatIndex": 3, "phraseJa": "目標達成率", "action": "animate_metric" },
+            { "beatIndex": 4, "phraseJa": "モチベーション", "action": "draw_stroke" },
+            { "beatIndex": 5, "phraseJa": "もしエックス", "action": "reveal_diagram" },
+            { "beatIndex": 6, "phraseJa": "ワイをする", "action": "draw_stroke" },
+            { "beatIndex": 7, "phraseJa": "条件分岐の設計", "action": "stamp" }
+          ],
+          "narrationJa": "ゴルヴィッツァーとシーランが94の研究をまとめたメタ分析によると、目標達成率を大きく押し上げたのはモチベーションの高さではなく、もしエックスが起きたらワイをするという具体的な条件分岐の設計でした。",
+          "subtitleSegments": [
+            { "line1": "ゴルヴィッツァーとシーランが", "line2": "94の研究をまとめた" },
+            { "line1": "メタ分析によると、", "line2": "目標達成率を大きく" },
+            { "line1": "押し上げたのは", "line2": "モチベーションの高さではなく、" },
+            { "line1": "「もしXが起きたら", "line2": "Yをする」という" },
+            { "line1": "具体的な条件分岐の設計でした。" }
+          ],
+          "sfx": [
+            { "kind": "whoosh", "offsetSec": 0.04, "gain": 0.2, "notes": "黒→方眼紙への極性反転" },
+            { "kind": "paper_snap", "offsetSec": 0.14, "gain": 0.22, "pan": -0.3, "notes": "ゴルヴィッツァー本人ポラロイド貼付" },
+            { "kind": "chart_tick", "offsetSec": 1.5, "gain": 0.14, "pan": -0.25, "notes": "94枚連打開始" },
+            { "kind": "chart_tick", "offsetSec": 1.85, "gain": 0.13, "pan": 0.25 },
+            { "kind": "chart_tick", "offsetSec": 2.2, "gain": 0.14, "pan": -0.15 },
+            { "kind": "impact_thud", "offsetSec": 2.6, "gain": 0.2, "notes": "94特大赤インク着地" },
+            { "kind": "chart_tick", "offsetSec": 2.95, "gain": 0.12, "pan": 0.2 },
+            { "kind": "pen_scratch", "offsetSec": 3.35, "gain": 0.16, "durationSec": 0.4, "notes": "メタ分析統合ブラケット" },
+            { "kind": "data_chirp", "offsetSec": 5.1, "gain": 0.14, "durationSec": 0.45, "notes": "達成率フォーカス" },
+            { "kind": "error_buzzer", "offsetSec": 8.4, "gain": 0.16, "notes": "モチベーションに巨大赤バツ" },
+            { "kind": "paper_snap", "offsetSec": 9.8, "gain": 0.22, "pan": -0.2, "notes": "IF紙片貼付" },
+            { "kind": "pen_scratch", "offsetSec": 11.35, "gain": 0.18, "durationSec": 0.45, "notes": "赤分岐矢印＆THEN紙片" },
+            { "kind": "data_chirp", "offsetSec": 13.0, "gain": 0.16, "durationSec": 0.5, "notes": "達成曲線急上昇" },
+            { "kind": "stamp_thud", "offsetSec": 13.85, "gain": 0.28, "notes": "条件分岐の設計スタンプ" }
+          ],
+          "visualNotesJa": "方眼紙極性。前半：左上にゴルヴィッツァー本人実写ポラロイド、右に94枚論文シート実体連打＋特大赤インク「94」、中段の「やる気ゲージ」を赤ペン大バツで叩き斬る。後半：上部へ evid を収め、主舞台に「IF もしXが起きたら ◇ → THEN Yをする ✓」の手描き設計図と右肩上がり達成曲線＆指差し棒人間＆スタンプを決める。",
+          "openLoopAction": "close",
+          "showOnScreenCitation": false
+        }
+      ]
+    }
+  ],
+  "endCta": {
+    "enabled": false
+  },
+  "tts": {
+    "provider": "elevenlabs",
+    "models": ["eleven_v4"],
+    "voices": ["TX3LPaxmHKxFdv7VOQHJ"],
+    "languageCode": "ja",
+    "useTimestamps": true,
+    "targetTempoMin": 310,
+    "targetTempoMax": 360
+  },
+  "audio": {
+    "mode": "silent_sfx_only",
+    "leadingSilenceSec": 0.35,
+    "sfxGain": 0.56,
+    "targetLufs": -14.0,
+    "truePeakDbtp": -1.4,
+    "lra": 9.0
+  },
+  "legalChecklist": {
+    "primarySources": [
+      "Raymond, Marin, Lupien et al., \"Salivary Cortisol Levels and Depressive Symptomatology in Consumers and Nonconsumers of Self-Help Books: A Pilot Study\", Neural Plasticity（モントリオール大学 ストレス研究センター）",
+      "Gollwitzer, Sheeran, Michalski & Seifert (2009), \"When Intentions Go Public: Does Social Reality Widen the Intention-Behavior Gap?\", Psychological Science, 20(5), 612-618",
+      "Gollwitzer & Sheeran (2006), \"Implementation Intentions and Goal Achievement: A Meta-Analysis of Effects and Processes\", Advances in Experimental Social Psychology（94の独立テスト, d=0.65）"
+    ],
+    "usesAcmlVoiceForCriticism": false,
+    "usesAiExpertAdvice": false,
+    "fontsLicense": "SIL OFL 1.1 / Apache 2.0 (Yomogi, Zen Maru Gothic, Noto Sans JP, Noto Serif JP, Playfair Display)"
+  }
+}

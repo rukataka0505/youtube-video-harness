@@ -1,0 +1,129 @@
+# YouTube 異常値発掘パイプライン設定（pipeline/ で読み込む外出しパラメータ）
+# 根拠: docs/evergreen/06_outlier_methodology.md および docs/sources/05_outlier_pipeline_design.md
+
+schema_version: 1
+last_verified: "2026-11-21"
+
+# 2026年6月刷新の細分化クォータ安全上限（ PT 00:00 リセット、デフォルト10,000/100枠に対する安全マージン込み ）
+quota_limits:
+  search: 85          # 公式日次100回枠（新規シード探索専用）
+  batch_stats: 9000   # 公式日次10,000回枠（videos.batchGetStats・50 ID/回推奨）
+  general: 8500       # 公式一般共有プール10,000ユニット枠
+  batch_stats_chunk_size: 50
+  shorts_max_duration_ms: 180000  # 2024/10以降の3分(180秒)Shorts定義
+
+# YouTube API Developer Policies 30暦日保持ルール対応
+compliance:
+  non_authorized_ttl_days: 29  # 30暦日上限に対し1日安全余裕を持って更新・削除
+  allow_local_video_download: false
+  redact_api_key_in_logs: true
+
+# LOO異常値計算ウィンドウ設定
+baseline:
+  window_size: 20
+  min_sample_size: 5
+  low_confidence_threshold: 10
+  max_age_days: 365
+  min_post_age_hours: 48
+  subscriber_floor: 100
+  decay_tau_days: 2.0
+  decay_alpha: 1.0
+
+# 市場別スクリーニングしきい値（JP / Global EN）
+markets:
+  jp:
+    long_os_loo:
+      candidate: 3.0
+      review: 5.0
+      breakout: 10.0
+    shorts_os_loo:
+      candidate: 5.0
+      breakout: 15.0
+    vsr:
+      min: 3.0
+      strong: 10.0
+    vph:
+      ratio_min: 3.0
+      abs_min_per_hour: 50
+      age_days_min: 2
+      age_days_max: 90
+    channel_filters:
+      subs_min: 500
+      subs_max: 50000
+      active_days_max: 365
+      long_videos_min: 5
+      long_videos_max: 60
+    min_views:
+      long_standard: 10000
+      long_high_ltv_b2b: 3000
+    cross_channel_validation:
+      lookback_days: 180
+      min_independent_channels: 2
+      min_os_loo: 5.0
+
+  global_en:
+    long_os_loo:
+      candidate: 3.0
+      review: 5.0
+      breakout: 10.0
+    shorts_os_loo:
+      candidate: 5.0
+      breakout: 20.0
+    vsr:
+      min: 5.0
+      strong: 15.0
+    vph:
+      ratio_min: 3.0
+      abs_min_per_hour: 150
+      age_days_min: 2
+      age_days_max: 90
+    channel_filters:
+      subs_min: 1000
+      subs_max: 50000
+      niche_subs_max: 10000
+      active_days_max: 365
+    min_views:
+      long_standard: 30000
+      long_micro_niche: 15000
+    cross_channel_validation:
+      lookback_days: 180
+      min_independent_channels: 3
+      min_os_loo: 5.0
+
+# 広告ブースト・bot・著名人・買収チャンネル除外ルール
+noise_filters:
+  ad_boost:
+    min_os_loo: 1.5
+    min_views: 1000
+    min_relative_like_ratio: 0.40  # チャンネル通常高評価率の40%未満で即時除外
+  engagement_floor:
+    like_rate_warn: 0.0040   # 0.40%
+    like_rate_drop: 0.0025   # 0.25%
+    comments_per_1k_warn: 0.20
+    comments_per_1k_drop: 0.10
+  bot_uniformity:
+    iqr_median_warn: 0.35
+    iqr_median_drop: 0.20
+    like_cv_warn: 0.15
+    like_cv_drop: 0.08
+  celebrity_or_bought:
+    bought_total_views_per_sub_min: 30
+    bought_new_ch_views_per_sub_min: 15
+    celebrity_subs_min: 200000
+    celebrity_subs_per_video_warn: 10000
+    celebrity_subs_per_video_drop: 40000
+
+# Gemini Two-Pass Static Hybrid 動画解析設定
+gemini_video_analysis:
+  model_env_override: "YT_ENGINE_GEMINI_MODEL"
+  default_model: "gemini-3.8-flash"
+  post_2027_fallback_model: "gemini-4-hydrogen"
+  use_batch_api: true
+  pass1:
+    start_offset: "0s"
+    end_offset: "60s"
+    fps: 2.0
+    media_resolution: "high"
+  pass2:
+    fps: 0.5
+    media_resolution: "low"

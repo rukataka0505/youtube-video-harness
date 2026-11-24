@@ -1,0 +1,412 @@
+{
+  "slug": "ep_sample_stickman_collage_self_help",
+  "compositionId": "StickmanCollage-Sample-SelfHelpTrap",
+  "title": "自己啓発本を読むほど動けなくなる脳の仕組み（stickman-collage v2 ハイブリッド見本Spec）",
+  "formatId": "stickman_collage",
+  "blueprintRef": "harnesses/stickman-collage/README.md",
+  "harnessRef": "harnesses/stickman-collage/README.md",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "safeMarginX": 96,
+    "safeMarginY": 54
+  },
+  "realAssetTargets": [
+    {
+      "labelJa": "本屋",
+      "category": "specific_place",
+      "assetId": "photo_bookstore",
+      "chunkIds": ["c01_bookstore_hook"]
+    },
+    {
+      "labelJa": "サラダチキン（行為・比喩小道具）",
+      "category": "object",
+      "chunkIds": ["c02_salad_chicken"],
+      "allowHandDrawnFallback": true,
+      "reasonIfOmitted": "一般名詞の小道具・ボケ表現につき 7.5fps ボイル手描き小道具として TSX シーン内で描画"
+    },
+    {
+      "labelJa": "ピーター・ゴルヴィッツァー",
+      "category": "person",
+      "assetId": "person_gollwitzer",
+      "chunkIds": ["c04_gollwitzer_2009"]
+    },
+    {
+      "labelJa": "深夜のスマートフォン情景",
+      "category": "specific_place",
+      "assetId": "photo_smartphone_night",
+      "chunkIds": ["c07_smartphone_rehook"]
+    }
+  ],
+  "assetCatalog": [
+    {
+      "id": "photo_bookstore",
+      "kind": "scene_photo",
+      "src": "ab_tests/2026-11-22_planC_self-help-trap/assets/bookstore.jpg",
+      "labelJa": "本屋のビジネス書コーナー（実写）",
+      "subjectNameJa": "本屋",
+      "tags": ["書店", "ビジネス書", "本屋"],
+      "license": "royalty_free",
+      "creditShort": "写真：商用フリー素材（書店コーナー）",
+      "objectPosition": "50% 50%"
+    },
+    {
+      "id": "person_gollwitzer",
+      "kind": "person_photo",
+      "src": "ab_tests/2026-11-22_planC_self-help-trap/assets/peter_gollwitzer.jpg",
+      "labelJa": "心理学者 ピーター・ゴルヴィッツァー（本人写真）",
+      "subjectNameJa": "ピーター・ゴルヴィッツァー",
+      "tags": ["ピーター・ゴルヴィッツァー", "ゴルヴィッツァー"],
+      "license": "cc_by",
+      "creditShort": "写真：Wikimedia Commons / NYU Faculty Profile (CC BY)",
+      "objectPosition": "50% 20%"
+    },
+    {
+      "id": "photo_smartphone_night",
+      "kind": "scene_photo",
+      "src": "ab_tests/2026-11-22_planC_self-help-trap/assets/smartphone_night.jpg",
+      "labelJa": "深夜のスマートフォン画面（実写）",
+      "subjectNameJa": "スマートフォン",
+      "tags": ["スマホ", "スマートフォン", "深夜"],
+      "license": "royalty_free",
+      "creditShort": "写真：商用フリー素材（夜間スマートフォン）",
+      "objectPosition": "50% 50%"
+    }
+  ],
+  "chapters": [
+    {
+      "chapterIndex": 1,
+      "topicId": "prepaid_illusion",
+      "titleJa": "導入〜脳の報酬先払いメカニズム",
+      "defaultPolarity": "black",
+      "targetDurationSec": 28.3,
+      "openLoopQuestionJa": "なぜ自己啓発本を買うほど行動しなくなるのか？",
+      "shots": [
+        {
+          "shotIndex": 1,
+          "chunkId": "c01_bookstore_hook",
+          "targetDurationSec": 6.5,
+          "narrativeRole": "scroll_stop_hook",
+          "polarity": "black",
+          "lightBg": false,
+          "layoutArchetype": "tsx_scene",
+          "scene": {
+            "mode": "tsx",
+            "component": "BookstoreHookScene",
+            "assetIds": ["photo_bookstore"],
+            "params": {
+              "bookTitles": ["人生が変わる習慣", "朝の一分で変わる", "最強の自分になる"]
+            }
+          },
+          "beats": [
+            { "beatIndex": 0, "offsetSec": 0.1, "phraseJa": "仕事終わりに本屋へ寄って、", "action": "reveal_photo" },
+            { "beatIndex": 1, "offsetSec": 1.8, "phraseJa": "人生が変わる習慣の本を", "action": "pop_figure" },
+            { "beatIndex": 2, "offsetSec": 3.6, "phraseJa": "三冊まとめて買った夜。", "action": "stamp" }
+          ],
+          "narrationJa": "仕事終わりに本屋へ寄って、人生が変わる習慣の本を三冊まとめて買った夜。",
+          "subtitleSegments": [
+            { "line1": "仕事終わりに本屋へ寄って、", "line2": "人生が変わる習慣の本を" },
+            { "line1": "3冊まとめて買った夜。" }
+          ],
+          "sfx": [
+            { "kind": "paper_snap", "offsetSec": 0.12, "gain": 0.24 },
+            { "kind": "paper_snap", "offsetSec": 1.82, "gain": 0.22 },
+            { "kind": "soft_pop", "offsetSec": 3.62, "gain": 0.22 }
+          ],
+          "openLoopAction": "open",
+          "showOnScreenCitation": false
+        },
+        {
+          "shotIndex": 2,
+          "chunkId": "c02_salad_chicken",
+          "targetDurationSec": 7.4,
+          "narrativeRole": "comic_punchline",
+          "polarity": "black",
+          "lightBg": false,
+          "layoutArchetype": "tsx_scene",
+          "scene": {
+            "mode": "tsx",
+            "component": "SaladChickenIronyScene"
+          },
+          "beats": [
+            { "beatIndex": 0, "offsetSec": 0.1, "phraseJa": "まだ一ページも開いていないのに、", "action": "draw_stroke" },
+            { "beatIndex": 1, "offsetSec": 2.4, "phraseJa": "帰り道のコンビニでなぜか", "action": "pop_figure" },
+            { "beatIndex": 2, "offsetSec": 4.6, "phraseJa": "サラダチキンを買います。", "action": "stamp" }
+          ],
+          "narrationJa": "まだ一ページも開いていないのに、帰り道のコンビニでなぜかサラダチキンを買います。",
+          "subtitleSegments": [
+            { "line1": "まだ1ページも開いていないのに、", "line2": "帰り道のコンビニでなぜか" },
+            { "line1": "サラダチキンを買います。" }
+          ],
+          "sfx": [
+            { "kind": "soft_pop", "offsetSec": 0.12, "gain": 0.2 },
+            { "kind": "question_boing", "offsetSec": 2.42, "gain": 0.2 },
+            { "kind": "stamp_thud", "offsetSec": 4.62, "gain": 0.24 }
+          ],
+          "comicPunchline": true,
+          "showOnScreenCitation": false
+        },
+        {
+          "shotIndex": 3,
+          "chunkId": "c03_prepay_mechanism",
+          "targetDurationSec": 6.5,
+          "narrativeRole": "contrarian_claim",
+          "polarity": "grid_paper",
+          "lightBg": true,
+          "polarityShiftReason": "認知メカニズムの因果図解フェーズへ方眼紙極性で切替",
+          "layoutArchetype": "tsx_scene",
+          "scene": {
+            "mode": "tsx",
+            "component": "PrepayMechanismScene"
+          },
+          "beats": [
+            { "beatIndex": 0, "offsetSec": 0.15, "phraseJa": "本を買って少し読んだだけで、", "action": "reveal_diagram" },
+            { "beatIndex": 1, "offsetSec": 2.2, "phraseJa": "脳がもう変わった気を", "action": "animate_metric" },
+            { "beatIndex": 2, "offsetSec": 4.0, "phraseJa": "先払いしてしまいます。", "action": "stamp" }
+          ],
+          "narrationJa": "本を買って少し読んだだけで、脳がもう変わった気を先払いしてしまいます。",
+          "subtitleSegments": [
+            { "line1": "本を買って少し読んだだけで、", "line2": "脳がもう変わった気を" },
+            { "line1": "先払いしてしまいます。" }
+          ],
+          "sfx": [
+            { "kind": "whoosh", "offsetSec": 0.08, "gain": 0.22 },
+            { "kind": "pen_scratch", "offsetSec": 2.2, "gain": 0.18, "durationSec": 0.35 },
+            { "kind": "impact_thud", "offsetSec": 4.02, "gain": 0.24 }
+          ],
+          "showOnScreenCitation": false
+        },
+        {
+          "shotIndex": 4,
+          "chunkId": "c04_gollwitzer_2009",
+          "targetDurationSec": 7.9,
+          "narrativeRole": "example_illustration",
+          "polarity": "black",
+          "lightBg": false,
+          "polarityShiftReason": "実在人物写真と紙面切り抜き証拠フェーズへ黒背景復帰",
+          "layoutArchetype": "collage_stage",
+          "photoLayer": {
+            "assetId": "person_gollwitzer",
+            "variant": "polaroid_person",
+            "placement": "left_card",
+            "labelJa": "P. ゴルヴィッツァー",
+            "rotateDeg": -2.2,
+            "tape": true,
+            "beatIndex": 0
+          },
+          "diagram": {
+            "kind": "newspaper_card",
+            "params": {
+              "variant": "broadsheet",
+              "publicationName": "PSYCHOLOGICAL SCIENCE",
+              "categoryLabel": "2009 / NYU 行動実験",
+              "headlinePrefix": "目標を周りに宣言すると、",
+              "highlightedHeadline": "実際の作業時間が短くなる",
+              "subHeadline": "自己完結の社会的現実感が生む逆転現象",
+              "width": 760,
+              "rotateDeg": 1.3,
+              "highlightDelaySec": 2.3,
+              "highlightDurationSec": 0.7
+            }
+          },
+          "beats": [
+            { "beatIndex": 0, "offsetSec": 0.12, "phraseJa": "心理学者ピーター・ゴルヴィッツァーの実験では、", "action": "reveal_photo" },
+            { "beatIndex": 1, "offsetSec": 2.3, "phraseJa": "目標を周りに宣言すると", "action": "reveal_diagram" },
+            { "beatIndex": 2, "offsetSec": 4.4, "phraseJa": "作業時間が短くなりました。", "action": "pop_callout" }
+          ],
+          "narrationJa": "心理学者ピーター・ゴルヴィッツァーの実験では、目標を周りに宣言すると作業時間が短くなりました。",
+          "subtitleSegments": [
+            { "line1": "心理学者ピーター・", "line2": "ゴルヴィッツァーの実験では、" },
+            { "line1": "目標を周りに宣言すると", "line2": "作業時間が短くなりました。" }
+          ],
+          "sfx": [
+            { "kind": "paper_snap", "offsetSec": 0.14, "gain": 0.24 },
+            { "kind": "pen_scratch", "offsetSec": 2.32, "gain": 0.18, "durationSec": 0.45 },
+            { "kind": "data_chirp", "offsetSec": 4.45, "gain": 0.18 }
+          ],
+          "openLoopAction": "close",
+          "showOnScreenCitation": false
+        }
+      ]
+    },
+    {
+      "chapterIndex": 2,
+      "topicId": "if_then_evidence",
+      "titleJa": "メタ分析と行動へ変える設計",
+      "defaultPolarity": "cream_notebook",
+      "targetDurationSec": 22.0,
+      "eyecatch": {
+        "variant": "zoom",
+        "showName": true,
+        "withSfx": true,
+        "leadInSec": 0.25,
+        "durationSec": 1.0,
+        "postPauseSec": 0.25
+      },
+      "shots": [
+        {
+          "shotIndex": 5,
+          "chunkId": "c05_94_meta_analysis",
+          "targetDurationSec": 7.4,
+          "narrativeRole": "pivot_contrast",
+          "polarity": "cream_notebook",
+          "lightBg": true,
+          "polarityShiftReason": "94研究メタ分析の実体連打フェーズへクリームノート極性で切替",
+          "layoutArchetype": "full_canvas_diagram",
+          "diagram": {
+            "kind": "staggered_grid",
+            "params": {
+              "count": 94,
+              "itemShape": "paper_sheet",
+              "highlightCount": 62,
+              "columns": 16,
+              "spanSec": 2.4,
+              "statOverlay": {
+                "text": "94",
+                "sub": "の研究を統合分析"
+              }
+            }
+          },
+          "callout": {
+            "textJa": "やる気ではなく「条件分岐」",
+            "position": "top_right",
+            "beatIndex": 2
+          },
+          "beats": [
+            { "beatIndex": 0, "offsetSec": 0.12, "phraseJa": "九十四の研究をまとめた分析で", "action": "stagger_grid" },
+            { "beatIndex": 1, "offsetSec": 2.4, "phraseJa": "分かったのは、やる気ではなく", "action": "animate_metric" },
+            { "beatIndex": 2, "offsetSec": 4.4, "phraseJa": "具体的な条件分岐でした。", "action": "pop_callout" }
+          ],
+          "narrationJa": "九十四の研究をまとめた分析で分かったのは、やる気ではなく具体的な条件分岐でした。",
+          "subtitleSegments": [
+            { "line1": "94の研究をまとめた分析で", "line2": "分かったのは、やる気ではなく" },
+            { "line1": "具体的な条件分岐でした。" }
+          ],
+          "sfx": [
+            { "kind": "whoosh", "offsetSec": 0.08, "gain": 0.2 },
+            { "kind": "data_chirp", "offsetSec": 0.45, "gain": 0.18, "durationSec": 0.8 },
+            { "kind": "soft_pop", "offsetSec": 4.42, "gain": 0.22 }
+          ],
+          "showOnScreenCitation": false
+        },
+        {
+          "shotIndex": 6,
+          "chunkId": "c06_before_after_d",
+          "targetDurationSec": 8.1,
+          "narrativeRole": "example_illustration",
+          "polarity": "cream_notebook",
+          "lightBg": true,
+          "layoutArchetype": "full_canvas_diagram",
+          "diagram": {
+            "kind": "compare_cards",
+            "params": {
+              "cards": [
+                {
+                  "badge": "BEFORE",
+                  "title": "「毎日勉強する」",
+                  "body": "気合だのみ\nいつ・どこでが曖昧",
+                  "tiltDeg": -2.2,
+                  "beatIndex": 0,
+                  "crossedOutBeatIndex": 1
+                },
+                {
+                  "badge": "AFTER (IF-THEN)",
+                  "title": "「帰宅→参考書3頁」",
+                  "body": "トリガーと動作を固定\n効果量 d = 0.65",
+                  "highlight": true,
+                  "tiltDeg": 1.6,
+                  "beatIndex": 1
+                }
+              ]
+            }
+          },
+          "stamp": {
+            "text": "効果量 0.65",
+            "position": "top_right",
+            "rotateDeg": -8,
+            "fontSize": 56,
+            "beatIndex": 2
+          },
+          "beats": [
+            { "beatIndex": 0, "offsetSec": 0.12, "phraseJa": "毎日勉強するより、帰宅して", "action": "reveal_diagram" },
+            { "beatIndex": 1, "offsetSec": 2.4, "phraseJa": "参考書を三ページ開くと決める方が", "action": "draw_stroke" },
+            { "beatIndex": 2, "offsetSec": 4.6, "phraseJa": "効果量は大きく跳ね上がります。", "action": "stamp" }
+          ],
+          "narrationJa": "毎日勉強するより、帰宅して参考書を三ページ開くと決める方が効果量は大きく跳ね上がります。",
+          "subtitleSegments": [
+            { "line1": "毎日勉強するより、帰宅して", "line2": "参考書を3ページ開くと決める方が" },
+            { "line1": "効果量は大きく跳ね上がります。" }
+          ],
+          "sfx": [
+            { "kind": "paper_snap", "offsetSec": 0.14, "gain": 0.22 },
+            { "kind": "pen_scratch", "offsetSec": 2.42, "gain": 0.2, "durationSec": 0.35 },
+            { "kind": "stamp_thud", "offsetSec": 4.62, "gain": 0.24 }
+          ],
+          "showOnScreenCitation": false
+        },
+        {
+          "shotIndex": 7,
+          "chunkId": "c07_smartphone_rehook",
+          "targetDurationSec": 6.5,
+          "narrativeRole": "rehook",
+          "polarity": "black",
+          "lightBg": false,
+          "polarityShiftReason": "深夜スマホ現実シーン＋3ステップ設計への引き戻し",
+          "layoutArchetype": "tsx_scene",
+          "scene": {
+            "mode": "tsx",
+            "component": "SmartphoneRehookScene",
+            "assetIds": ["photo_smartphone_night"]
+          },
+          "beats": [
+            { "beatIndex": 0, "offsetSec": 0.12, "phraseJa": "深夜二時にスマホを閉じる前に、", "action": "reveal_photo" },
+            { "beatIndex": 1, "offsetSec": 2.0, "phraseJa": "行動へ変える三つの設計を", "action": "draw_stroke" },
+            { "beatIndex": 2, "offsetSec": 3.8, "phraseJa": "切り分けましょう。", "action": "pop_callout" }
+          ],
+          "narrationJa": "深夜二時にスマホを閉じる前に、行動へ変える三つの設計を切り分けましょう。",
+          "subtitleSegments": [
+            { "line1": "深夜2時にスマホを閉じる前に、", "line2": "行動へ変える3つの設計を" },
+            { "line1": "切り分けましょう。" }
+          ],
+          "sfx": [
+            { "kind": "paper_snap", "offsetSec": 0.14, "gain": 0.22 },
+            { "kind": "soft_pop", "offsetSec": 2.02, "gain": 0.2 },
+            { "kind": "soft_pop", "offsetSec": 3.82, "gain": 0.2 }
+          ],
+          "showOnScreenCitation": false
+        }
+      ]
+    }
+  ],
+  "endCta": {
+    "enabled": false
+  },
+  "tts": {
+    "provider": "elevenlabs",
+    "models": ["eleven_v4"],
+    "voices": ["TX3LPaxmHKxFdv7VOQHJ"],
+    "languageCode": "ja",
+    "useTimestamps": true,
+    "targetTempoMin": 310,
+    "targetTempoMax": 360
+  },
+  "audio": {
+    "mode": "silent_sfx_only",
+    "leadingSilenceSec": 0.35,
+    "sfxGain": 0.58,
+    "targetLufs": -14.0,
+    "truePeakDbtp": -1.4,
+    "lra": 9.0
+  },
+  "legalChecklist": {
+    "primarySources": [
+      "モントリオール大学 ストレス研究センター 自己啓発本読者ストレス調査",
+      "Gollwitzer et al. (2009), Psychological Science: When Intentions Go Public",
+      "Gollwitzer & Sheeran (2006), Advances in Experimental Social Psychology: 94研究メタ分析 (d=0.65)"
+    ],
+    "usesAcmlVoiceForCriticism": false,
+    "usesAiExpertAdvice": false,
+    "fontsLicense": "SIL OFL 1.1 / Apache 2.0 (Yomogi, Zen Maru Gothic, Noto Sans JP, Noto Serif JP, Playfair Display)"
+  }
+}

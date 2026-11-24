@@ -1,0 +1,63 @@
+{
+  "content_format": "explainer_essay",
+  "structural_roadmap_shown": false,
+  "body_avg_shot_len_sec": 4.5,
+  "pattern_interrupt_interval_sec": 28.0,
+  "visual_dominant_layer": "slides_motion_gfx",
+  "bgm_shift_count": 11,
+  "dead_air_eliminated": true,
+  "uses_j_l_cuts": true,
+  "open_loops": [
+    {
+      "opened_at": "00:01",
+      "hook_question": "カリスマ性は実は簡単に身につくはずであり、社会（学校）もそのために完璧に設計されているのに、なぜ多くの人が身につけられないのか？",
+      "closed_at": "00:36",
+      "is_closed": true
+    },
+    {
+      "opened_at": "01:40",
+      "hook_question": "行儀よく礼儀正しいまま周囲を惹きつける『ソーシャル・ウィザード』は、具体的にどのような心理テクニックを使っているのか？",
+      "closed_at": "02:10",
+      "is_closed": true
+    },
+    {
+      "opened_at": "03:39",
+      "hook_question": "『相手を良い気分にさせる』というカリスマ性の原則には、絶対に知っておくべき非常に重要な注意点（VERY IMPORTANT DISCLAIMER）がある。",
+      "closed_at": "04:56",
+      "is_closed": true
+    },
+    {
+      "opened_at": "08:46",
+      "hook_question": "褒めるだけでは不十分であり、誰も語らないカリスマ性のもう一つの要素『期待を超えること（going above and beyond）』とは何か？",
+      "closed_at": "08:56",
+      "is_closed": true
+    },
+    {
+      "opened_at": "09:35",
+      "hook_question": "ほとんどの人が見落としている、相手を良い気分にさせる最も効果的な方法とは何か？",
+      "closed_at": "09:42",
+      "is_closed": true
+    }
+  ],
+  "monetization_ctas": [
+    {
+      "timestamp": "03:43",
+      "cta_type": "sponsor_read",
+      "duration_sec": 72,
+      "placement_context": "after_rehook",
+      "bridge_script_summary": "『重要な注意点がある』と強いオープンループを開いて視聴者の関心を最大化した直後に、『でもその前に社交スキルをより早く学べるツールを紹介する』と繋いでスポンサー案件（Shortform）へ自然に移行する型。"
+    },
+    {
+      "timestamp": "10:01",
+      "cta_type": "subscribe_like",
+      "duration_sec": 5,
+      "placement_context": "after_value_peak",
+      "bridge_script_summary": "本編のクライマックスである『お願い事（favors）や行動で関係性を深める』という文脈を受け、『お願い事といえば（Speaking of favors）、次の動画の資金としてチャンネル登録という形の寄付を集めています』とユーモラスに接続する型。"
+    }
+  ],
+  "has_finalizing_phrase": false,
+  "end_screen_continuous_value": true,
+  "faceless_reproducible": true,
+  "production_effort_tier": "medium_editorial",
+  "replicable_winning_formula": "【逆説・皮肉フックで常識を覆す導入】→【親しみやすい低画質風・手描き棒人間アニメ×テンポの良い箇条書き解説】→【本編中盤の最重要ポイント直前でオープンループ（重要な注意点）を仕掛けてスポンサー案件の離脱を防止】→【抽象論を『気まずい雑談』などの共感寸劇と声色・BGM停止の緩急で具体化】→【終了合図語を使わず本編の文脈（お願い事）をそのままボケに転用した超短尺CTA＋最後の5秒で全要点を1画面に凝縮した実用まとめで締める構成】"
+}

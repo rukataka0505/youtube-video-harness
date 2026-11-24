@@ -1,0 +1,130 @@
+# 異常値（Outlier）発掘クローラ MVP 用シードチャンネル一覧
+#
+# 指定形式:
+#   - handle（例: "@easyactually"）または channel_id（例: "UC..."）のいずれか（または両方）を指定可能。
+#   - channel_id を明記した場合は channels.list(id=...) を使用し、@handle のみ指定時は channels.list(forHandle=...) で自動解決して SQLite キャッシュに保存する。
+#   - market: "global_en" | "jp"
+#   - category: --category フィルタ用ラベル（海外ベンチマーク / 日本の教養・心理・経済解説系）
+#   - format_plan: 対応する制作フォーマット（plan_c / plan_b / plan_e / plan_a / stickman_collage）
+
+schema_version: 1
+last_verified: "2026-11-23"
+
+channels:
+  # =========================================================================
+  # 海外ベンチマーク（Global EN）
+  # =========================================================================
+  - name: "easy, actually"
+    handle: "@easyactually"
+    market: "global_en"
+    category: "overseas_psychology_essay"
+    format_plan: "plan_c"
+    notes: "案C路線A（棒人間×コラージュ・逆張り心理/生き方エッセイ）主力ベンチマーク"
+
+  - name: "The Paint Explainer"
+    handle: "@ThePaintExplainer"
+    market: "global_en"
+    category: "overseas_paint_stickman"
+    format_plan: "plan_b"
+    notes: "案B（2Dペイント棒人間×実写ハイブリッド網羅解説）主力ベンチマーク"
+
+  - name: "How Money Works"
+    handle: "@HowMoneyWorks"
+    market: "global_en"
+    category: "overseas_macro_econ"
+    format_plan: "plan_e"
+    notes: "案E（逆説・シニカル経済構造解剖）主力ベンチマーク"
+
+  - name: "Horses"
+    handle: "@HorsesOnYT"
+    market: "global_en"
+    category: "overseas_psychology_essay"
+    format_plan: "plan_c"
+    notes: "案C 補助ベンチマーク（ミニマル図解・哲学/文化エッセイ）"
+
+  - name: "Einzelgänger"
+    handle: "@Einzelgänger"
+    market: "global_en"
+    category: "overseas_psychology_essay"
+    format_plan: "plan_c"
+    notes: "案C 補助ベンチマーク（哲学・心理・生き方ミニマル解説）"
+
+  - name: "Economics Explained"
+    handle: "@EconomicsExplained"
+    market: "global_en"
+    category: "overseas_macro_econ"
+    format_plan: "plan_e"
+    notes: "案E 補助ベンチマーク（マクロ経済・国家経済解説）"
+
+  - name: "Logically Answered"
+    handle: "@LogicallyAnswered"
+    market: "global_en"
+    category: "overseas_corporate_cinema"
+    format_plan: "plan_a"
+    notes: "案A（企業興亡・ビジネスモデル解剖）ベンチマーク"
+
+  - name: "MagnatesMedia"
+    handle: "@MagnatesMedia"
+    market: "global_en"
+    category: "overseas_corporate_cinema"
+    format_plan: "plan_a"
+    notes: "案A（シネマティック企業ドキュメンタリー）ベンチマーク"
+
+  - name: "Modern MBA"
+    handle: "@ModernMBA"
+    market: "global_en"
+    category: "overseas_corporate_cinema"
+    format_plan: "plan_a"
+    notes: "案A（ビジネスケーススタディ解剖）ベンチマーク"
+
+  - name: "ColdFusion"
+    handle: "@ColdFusion"
+    market: "global_en"
+    category: "overseas_corporate_cinema"
+    format_plan: "plan_a"
+    notes: "案A（テック・企業興亡解説）ベンチマーク"
+
+  # =========================================================================
+  # 日本市場：教養・心理・経済解説系（JP）
+  # =========================================================================
+  - name: "フェルミ漫画大学"
+    handle: "@ferumi"
+    market: "jp"
+    category: "jp_education_books"
+    format_plan: "plan_c"
+    notes: "日本・書籍/教養・心理・自己啓発の非属人解説"
+
+  - name: "学識サロン"
+    handle: "@gakushikisaron"
+    market: "jp"
+    category: "jp_education_books"
+    format_plan: "plan_b"
+    notes: "日本・ホワイトボード/イラストによるビジネス書・心理・教養解説"
+
+  - name: "大人の学び直しTV"
+    handle: "@suasi_shacho"
+    market: "jp"
+    category: "jp_macro_econ"
+    format_plan: "plan_e"
+    notes: "日本・世界情勢・経済・地政学の教養解説"
+
+  - name: "ゆる言語学ラジオ"
+    handle: "@yurugengo"
+    market: "jp"
+    category: "jp_education_culture"
+    format_plan: "plan_c"
+    notes: "日本・教養/言語学/思考法の深掘り企画リファレンス"
+
+  - name: "精神科医・樺沢紫苑の樺チャンネル"
+    handle: "@kabasawa3"
+    market: "jp"
+    category: "jp_psychology"
+    format_plan: "plan_c"
+    notes: "日本・心理学/脳科学/メンタル改善の視聴者悩みリファレンス"
+
+  - name: "両学長 リベラルアーツ大学"
+    handle: "@ryogakucho"
+    market: "jp"
+    category: "jp_macro_econ"
+    format_plan: "plan_e"
+    notes: "日本・金融リテラシー/経済・お金の教養解説（非属人アニメ）"

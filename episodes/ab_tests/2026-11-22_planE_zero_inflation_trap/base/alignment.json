@@ -1,0 +1,416 @@
+{
+  "slug": "ab_20261122_zero_inflation_trap",
+  "title": "なぜ給料が上がらない国ほど「激安」が増えるのか？ 経済を静かに壊すデフレの罠",
+  "formatId": "planE_macro_econ",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "totalDurationSec": 82.01,
+  "totalFrames": 2461,
+  "appliedTempo": 1.0,
+  "audioSrc": "ab_tests/2026-11-22_planE_zero_inflation_trap/base/master_audio.wav",
+  "imageMap": {
+    "tokyo_commuters_broll_poster": "ab_tests/2026-11-22_planE_zero_inflation_trap/base/images/01_tokyo_street_commuters_poster.png",
+    "news_studio_broll_poster": "ab_tests/2026-11-22_planE_zero_inflation_trap/base/images/02_news_studio_poster.png",
+    "counting_cash_broll_poster": "ab_tests/2026-11-22_planE_zero_inflation_trap/base/images/03_counting_cash_poster.png",
+    "supermarket_aisle_broll_poster": "ab_tests/2026-11-22_planE_zero_inflation_trap/base/images/04_supermarket_aisle_poster.png",
+    "stock_ticker_broll_poster": "ab_tests/2026-11-22_planE_zero_inflation_trap/base/images/05_stock_ticker_poster.png"
+  },
+  "videoMap": {
+    "tokyo_commuters_broll": "ab_tests/2026-11-22_planE_zero_inflation_trap/base/videos/01_tokyo_street_commuters.mp4",
+    "news_studio_broll": "ab_tests/2026-11-22_planE_zero_inflation_trap/base/videos/02_news_studio.mp4",
+    "counting_cash_broll": "ab_tests/2026-11-22_planE_zero_inflation_trap/base/videos/03_counting_cash.mp4",
+    "supermarket_aisle_broll": "ab_tests/2026-11-22_planE_zero_inflation_trap/base/videos/04_supermarket_aisle.mp4",
+    "stock_ticker_broll": "ab_tests/2026-11-22_planE_zero_inflation_trap/base/videos/05_stock_ticker.mp4"
+  },
+  "chunks": {
+    "c01_paradox_hook": {
+      "text": "ちょっと意地悪な思考実験をしてみましょう。もし本気で、一つの先進国の給料を30年間ほとんど上げずに止めてしまいたいなら、どうすればいいでしょうか。",
+      "startSec": 0.15,
+      "speechEndSec": 11.11,
+      "endSec": 11.66,
+      "durationSec": 10.96,
+      "pauseSec": 0.55,
+      "internalPausesSec": [
+        0.3975,
+        1.6349,
+        1.9909,
+        2.9502,
+        4.4428,
+        5.7664,
+        7.1407,
+        7.402,
+        7.6044,
+        8.4652,
+        9.678
+      ],
+      "alignmentSource": "elevenlabs_with_timestamps",
+      "provider": "elevenlabs",
+      "modelUsed": "eleven_v4",
+      "voice": "TX3LPaxmHKxFdv7VOQHJ"
+    },
+    "c02_vhs_pause_naive": {
+      "text": "税金を一気に2倍にする？それとも大企業を片っ端から潰す？いや、そんな派手なことをしたら、翌日には猛反発が起きて計画はすぐ失敗します。",
+      "startSec": 11.66,
+      "speechEndSec": 22.94,
+      "endSec": 23.29,
+      "durationSec": 11.28,
+      "pauseSec": 0.35,
+      "internalPausesSec": [
+        12.563,
+        13.8378,
+        15.3508,
+        15.4968,
+        15.6385,
+        16.0052,
+        16.7164,
+        17.5374,
+        19.152,
+        19.3505,
+        20.7928,
+        21.0591,
+        22.1042
+      ],
+      "alignmentSource": "elevenlabs_with_timestamps",
+      "provider": "elevenlabs",
+      "modelUsed": "eleven_v4",
+      "voice": "TX3LPaxmHKxFdv7VOQHJ"
+    },
+    "c03_reverse_truth": {
+      "text": "一番うまくいく方法は、真逆です。モノの値段をじわじわ安くして、全員に「お得でありがたい」と思い込ませること。",
+      "startSec": 23.29,
+      "speechEndSec": 32.65,
+      "endSec": 33.0,
+      "durationSec": 9.36,
+      "pauseSec": 0.35,
+      "internalPausesSec": [
+        26.0724,
+        28.4031,
+        28.7087,
+        29.5871,
+        29.7474,
+        29.9325,
+        30.7193,
+        31.1497,
+        32.0706,
+        32.1728,
+        32.4913
+      ],
+      "alignmentSource": "elevenlabs_with_timestamps",
+      "provider": "elevenlabs",
+      "modelUsed": "eleven_v4",
+      "voice": "TX3LPaxmHKxFdv7VOQHJ"
+    },
+    "c04_oecd_wage_gap": {
+      "text": "実際、この30年間でアメリカやヨーロッパの実質賃金が大きく伸びるなか、日本の給料はほとんど横ばいのままでした。",
+      "startSec": 33.0,
+      "speechEndSec": 42.04,
+      "endSec": 42.36,
+      "durationSec": 9.04,
+      "pauseSec": 0.32,
+      "internalPausesSec": [
+        33.7721,
+        35.2596,
+        36.36,
+        36.8857,
+        37.9178,
+        38.4541,
+        38.8921,
+        40.1643,
+        40.3148,
+        40.7955,
+        41.8724
+      ],
+      "alignmentSource": "elevenlabs_with_timestamps",
+      "provider": "elevenlabs",
+      "modelUsed": "eleven_v4",
+      "voice": "TX3LPaxmHKxFdv7VOQHJ"
+    },
+    "c05_not_villains": {
+      "text": "なぜそんな奇妙なことが起きたのか。犯人は悪徳企業でも、怠けた労働者でもありません。",
+      "startSec": 42.36,
+      "speechEndSec": 49.16,
+      "endSec": 49.44,
+      "durationSec": 6.8,
+      "pauseSec": 0.28,
+      "internalPausesSec": [
+        43.1414,
+        44.3299,
+        44.9836,
+        46.3967,
+        47.1128,
+        48.9987
+      ],
+      "alignmentSource": "elevenlabs_with_timestamps",
+      "provider": "elevenlabs",
+      "modelUsed": "eleven_v4",
+      "voice": "TX3LPaxmHKxFdv7VOQHJ"
+    },
+    "c06_rational_trap": {
+      "text": "企業は「値上げしたら客が逃げる」と価格を凍らせ、消費者は「給料が増えないから安い店しか行かない」と財布を締める。",
+      "startSec": 49.44,
+      "speechEndSec": 59.2,
+      "endSec": 59.48,
+      "durationSec": 9.76,
+      "pauseSec": 0.28,
+      "internalPausesSec": [
+        50.2453,
+        51.1342,
+        52.1958,
+        52.4473,
+        52.9467,
+        53.7576,
+        54.8256,
+        57.2392,
+        57.7963,
+        58.9505
+      ],
+      "alignmentSource": "elevenlabs_with_timestamps",
+      "provider": "elevenlabs",
+      "modelUsed": "eleven_v4",
+      "voice": "TX3LPaxmHKxFdv7VOQHJ"
+    },
+    "c07_fallacy_of_composition": {
+      "text": "全員が自分の生活を守るために最も合理的な選択をした結果、国全体の給料だけが静かに止まり続けたのです。",
+      "startSec": 59.48,
+      "speechEndSec": 68.84,
+      "endSec": 69.19,
+      "durationSec": 9.36,
+      "pauseSec": 0.35,
+      "internalPausesSec": [
+        60.3662,
+        62.5391,
+        63.7679,
+        64.1479,
+        64.3251,
+        64.8513,
+        65.5816,
+        65.8647,
+        67.4632,
+        67.5286,
+        67.7963
+      ],
+      "alignmentSource": "elevenlabs_with_timestamps",
+      "provider": "elevenlabs",
+      "modelUsed": "eleven_v4",
+      "voice": "TX3LPaxmHKxFdv7VOQHJ"
+    },
+    "c08_open_loop": {
+      "text": "ところが、一度この「激安の罠」にハマると、中央銀行が何百兆円のお金を刷っても簡単には抜け出せなくなります。その隠れた仕組みを、これから解剖していきましょう。",
+      "startSec": 69.19,
+      "speechEndSec": 81.51,
+      "endSec": 82.01,
+      "durationSec": 12.32,
+      "pauseSec": 0.5,
+      "internalPausesSec": [
+        70.0238,
+        70.5833,
+        70.9609,
+        71.0678,
+        72.9185,
+        74.598,
+        75.5684,
+        75.958,
+        76.2673,
+        78.0562,
+        79.7103,
+        81.3523
+      ],
+      "alignmentSource": "elevenlabs_with_timestamps",
+      "provider": "elevenlabs",
+      "modelUsed": "eleven_v4",
+      "voice": "TX3LPaxmHKxFdv7VOQHJ"
+    }
+  },
+  "shots": [
+    {
+      "shotIndex": 1,
+      "startSec": 0.0,
+      "endSec": 11.66,
+      "startFrame": 0,
+      "endFrame": 350,
+      "narrativeRole": "scroll_stop_hook",
+      "label": "実写街並みBロール：給料を30年止める思考実験フック"
+    },
+    {
+      "shotIndex": 2,
+      "startSec": 11.66,
+      "endSec": 23.29,
+      "startFrame": 350,
+      "endFrame": 699,
+      "narrativeRole": "contrarian_claim",
+      "label": "VHS一時停止＆素朴な破壊策の即却下"
+    },
+    {
+      "shotIndex": 3,
+      "startSec": 23.29,
+      "endSec": 33.0,
+      "startFrame": 699,
+      "endFrame": 990,
+      "narrativeRole": "context_lean_in",
+      "label": "115BPMグルーヴ解禁＆「激安の罠」逆転宣言"
+    },
+    {
+      "shotIndex": 4,
+      "startSec": 33.0,
+      "endSec": 42.36,
+      "startFrame": 990,
+      "endFrame": 1271,
+      "narrativeRole": "example_illustration",
+      "label": "ホワイトボード：OECD主要国vs日本の30年実質賃金グラフ"
+    },
+    {
+      "shotIndex": 5,
+      "startSec": 42.36,
+      "endSec": 49.44,
+      "startFrame": 1271,
+      "endFrame": 1483,
+      "narrativeRole": "contrarian_claim",
+      "label": "報道・風刺コラージュ：悪者論の否定"
+    },
+    {
+      "shotIndex": 6,
+      "startSec": 49.44,
+      "endSec": 59.48,
+      "startFrame": 1483,
+      "endFrame": 1784,
+      "narrativeRole": "example_illustration",
+      "label": "企業×消費者のデフレ・インセンティブループ"
+    },
+    {
+      "shotIndex": 7,
+      "startSec": 59.48,
+      "endSec": 69.19,
+      "startFrame": 1784,
+      "endFrame": 2076,
+      "narrativeRole": "contrarian_claim",
+      "label": "合成の誤謬：合理的行動が全体停滞を生む構造"
+    },
+    {
+      "shotIndex": 8,
+      "startSec": 69.19,
+      "endSec": 82.01,
+      "startFrame": 2076,
+      "endFrame": 2461,
+      "narrativeRole": "open_loop",
+      "label": "暗室プロジェクター／日銀・金融緩和オープンループ"
+    }
+  ],
+  "subtitles": [
+    {
+      "startSec": 0.15,
+      "endSec": 3.31,
+      "line1": "ちょっと意地悪な",
+      "line2": "思考実験をしてみましょう。"
+    },
+    {
+      "startSec": 3.31,
+      "endSec": 9.87,
+      "line1": "もし本気で、一つの先進国の給料を30年間",
+      "line2": "ほとんど上げずに止めてしまいたいなら、"
+    },
+    {
+      "startSec": 9.87,
+      "endSec": 11.27,
+      "line1": "どうすればいいでしょうか。"
+    },
+    {
+      "startSec": 11.66,
+      "endSec": 16.9,
+      "line1": "税金を一気に2倍にする？",
+      "line2": "それとも大企業を片っ端から潰す？"
+    },
+    {
+      "startSec": 16.9,
+      "endSec": 23.1,
+      "line1": "いや、そんな派手なことをしたら、",
+      "line2": "翌日には猛反発が起きて計画はすぐ失敗します。"
+    },
+    {
+      "startSec": 23.29,
+      "endSec": 26.29,
+      "line1": "一番うまくいく方法は、真逆です。"
+    },
+    {
+      "startSec": 26.29,
+      "endSec": 32.81,
+      "line1": "モノの値段をじわじわ安くして、全員に",
+      "line2": "「お得でありがたい」と思い込ませること。"
+    },
+    {
+      "startSec": 33.0,
+      "endSec": 39.04,
+      "line1": "実際、この30年間でアメリカやヨーロッパの",
+      "line2": "実質賃金が大きく伸びるなか、"
+    },
+    {
+      "startSec": 39.04,
+      "endSec": 42.2,
+      "line1": "日本の給料はほとんど",
+      "line2": "横ばいのままでした。"
+    },
+    {
+      "startSec": 42.36,
+      "endSec": 45.28,
+      "line1": "なぜそんな奇妙なことが起きたのか。"
+    },
+    {
+      "startSec": 45.28,
+      "endSec": 49.32,
+      "line1": "犯人は悪徳企業でも、",
+      "line2": "怠けた労働者でもありません。"
+    },
+    {
+      "startSec": 49.44,
+      "endSec": 53.96,
+      "line1": "企業は「値上げしたら客が逃げる」と",
+      "line2": "価格を凍らせ、"
+    },
+    {
+      "startSec": 53.96,
+      "endSec": 59.36,
+      "line1": "消費者は「給料が増えないから安い店しか",
+      "line2": "行かない」と財布を締める。"
+    },
+    {
+      "startSec": 59.48,
+      "endSec": 65.04,
+      "line1": "全員が自分の生活を守るために",
+      "line2": "最も合理的な選択をした結果、"
+    },
+    {
+      "startSec": 65.04,
+      "endSec": 69.0,
+      "line1": "国全体の給料だけが",
+      "line2": "静かに止まり続けたのです。"
+    },
+    {
+      "startSec": 69.19,
+      "endSec": 76.07,
+      "line1": "ところが、一度この「激安の罠」にハマると、",
+      "line2": "中央銀行が何百兆円のお金を刷っても"
+    },
+    {
+      "startSec": 76.07,
+      "endSec": 78.35,
+      "line1": "簡単には抜け出せなくなります。"
+    },
+    {
+      "startSec": 78.35,
+      "endSec": 81.67,
+      "line1": "その隠れた仕組みを、",
+      "line2": "これから解剖していきましょう。"
+    }
+  ],
+  "events": {
+    "totalDurationSec": 82.01,
+    "hookStartSec": 0.0,
+    "vhsPauseSec": 11.66,
+    "grooveStartSec": 23.29,
+    "whiteboardChartSec": 33.0,
+    "satireRevealSec": 42.36,
+    "incentiveLoopSec": 49.44,
+    "systemFreezeSec": 59.48,
+    "openLoopSec": 69.19
+  }
+}

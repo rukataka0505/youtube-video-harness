@@ -1,0 +1,28 @@
+{
+  "source_video_url": "",
+  "target_format": "",
+  "captured_at": "",
+  "pass1_settings": {
+    "start_offset": "0s",
+    "end_offset": "60s",
+    "fps": 2.0,
+    "media_resolution": "high"
+  },
+  "hook_micro_spec": {
+    "click_confirm_sec": null,
+    "has_greeting_or_logo_waste": null,
+    "hook_format": null,
+    "uses_negative_stakes": null,
+    "context_lean_in": "",
+    "scroll_stop_pivot": null,
+    "contrarian_snapback": null,
+    "opening_curiosity_loop": "",
+    "cut_count_0_60s": 0,
+    "avg_shot_len_sec": 0.0,
+    "first_interrupt_sec": null,
+    "telop_style": null,
+    "opening_sfx_present": null,
+    "vocal_energy_level": null,
+    "shorts_seamless_loop": null
+  }
+}

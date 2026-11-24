@@ -1,0 +1,109 @@
+{
+  "content_format": "explainer_essay",
+  "structural_roadmap_shown": true,
+  "body_avg_shot_len_sec": 3.8,
+  "pattern_interrupt_interval_sec": 18.5,
+  "visual_dominant_layer": "slides_motion_gfx",
+  "bgm_shift_count": 7,
+  "dead_air_eliminated": true,
+  "uses_j_l_cuts": true,
+  "open_loops": [
+    {
+      "opened_at": "00:00",
+      "hook_question": "もしアメリカ経済を破壊したいとしたら、現状から何を変えて何をすべきか？（If you wanted to destroy the American economy, what would you do differently?）",
+      "closed_at": "17:26",
+      "is_closed": true
+    },
+    {
+      "opened_at": "01:18",
+      "hook_question": "世界最強クラスの経済基盤を持つアメリカを理論上破壊するなら、具体的にどこから手をつけるべきか？（Where exactly would you start?）",
+      "closed_at": "02:18",
+      "is_closed": true
+    },
+    {
+      "opened_at": "02:06",
+      "hook_question": "経済混乱を最大化するためのチェックリスト（Min-Maxing Economic Turmoil）に並ぶデバフ戦略の全貌とは何か？",
+      "closed_at": "17:16",
+      "is_closed": true
+    },
+    {
+      "opened_at": "04:44",
+      "hook_question": "伏線予告：政策の不確実性にタイトな信用市場や過熱した投資市場が組み合わさると、経済はどうさらに悪化するか？（As a bit of foreshadowing）",
+      "closed_at": "16:46",
+      "is_closed": true
+    },
+    {
+      "opened_at": "11:16",
+      "hook_question": "2つの基本ツール（不確実性と制度破壊）を揃えた後、鎧を剥がしたアメリカ経済の急所を突くさらに創造的なコンボとは何か？",
+      "closed_at": "13:06",
+      "is_closed": true
+    },
+    {
+      "opened_at": "14:04",
+      "hook_question": "後で重要になる伏線：国際貿易の仲介役であることで米国はGDP比20%多く債務を背負える特権を持つが、これがどう弱点に変わるか？（Remember this because it's important for later）",
+      "closed_at": "16:44",
+      "is_closed": true
+    },
+    {
+      "opened_at": "16:17",
+      "hook_question": "頭脳流出が引き起こす知的ハブ移動の歴史的ケーススタディについて、関連チャンネル（How Business Worked）で扱う予定の内容とは何か？",
+      "closed_at": null,
+      "is_closed": false
+    },
+    {
+      "opened_at": "17:27",
+      "hook_question": "さらに高度な経済破壊戦略を解説する『延長ガイド（An Extended Guide To Killing An Economy）』では何が語られるのか？",
+      "closed_at": null,
+      "is_closed": false
+    }
+  ],
+  "monetization_ctas": [
+    {
+      "timestamp": "09:35",
+      "cta_type": "next_video",
+      "duration_sec": 13,
+      "placement_context": "flat_transition",
+      "bridge_script_summary": "公的機関の信頼が低い環境で起きる現象の具体例として、関連チャンネル『Micro』の動画（アジアの巨大財閥が何でも手掛ける理由）を紹介し視聴を促す。"
+    },
+    {
+      "timestamp": "11:06",
+      "cta_type": "affiliate_shopping",
+      "duration_sec": 6,
+      "placement_context": "after_value_peak",
+      "bridge_script_summary": "制度破壊の『取扱説明書』としてノーベル賞経済学者の著書『Why Nations Fail』を紹介し、概要欄のおすすめ書籍ライブラリへのリンクを案内する。"
+    },
+    {
+      "timestamp": "11:24",
+      "cta_type": "sponsor_read",
+      "duration_sec": 77,
+      "placement_context": "after_rehook",
+      "bridge_script_summary": "中盤の大型リフック直後に『もし本当に米国経済をダメにしてしまったら、特定の雇用主や国に依存しない収入源があると安心』という本編テーマと直結する皮肉な切り口から、Printifyの仕組み・実績・限定クーポン（HOWMONEYWORKS）へ自然に接続する。"
+    },
+    {
+      "timestamp": "16:16",
+      "cta_type": "next_video",
+      "duration_sec": 6,
+      "placement_context": "flat_transition",
+      "bridge_script_summary": "頭脳流出の歴史的ケーススタディに触れ、姉妹チャンネル『How Business Worked』での動画制作をユーモラスに予告して関心をつなぐ。"
+    },
+    {
+      "timestamp": "17:27",
+      "cta_type": "next_video",
+      "duration_sec": 8,
+      "placement_context": "end_screen",
+      "bridge_script_summary": "『まだこのボス（米国経済）に苦戦していて、より高度な戦略を解説する延長ガイドを見たいなら』とRPG比喩を崩さず次動画へ強く送客する。"
+    },
+    {
+      "timestamp": "17:35",
+      "cta_type": "subscribe_like",
+      "duration_sec": 4,
+      "placement_context": "end_screen",
+      "bridge_script_summary": "次動画送客の直後に『お金の仕組みを学び続けるために高評価とチャンネル登録を忘れずに』と4秒で簡潔に締める。"
+    }
+  ],
+  "has_finalizing_phrase": true,
+  "end_screen_continuous_value": true,
+  "faceless_reproducible": true,
+  "production_effort_tier": "medium_editorial",
+  "replicable_winning_formula": "『あえて最強の対象を破壊・失敗させる方法』という逆説的・風刺的仮説で冒頭フックを作り、RPGボス戦（デバフ付与・装甲破壊・HP減少）のゲーミフィケーション演出を全編の進行軸に据える。難解な経済学論文や統計を『黒板チェックリスト→極端で身近な例え話（川の通行税など）→ノーベル賞論文・ニュース見出しによる権威付け→ボスへのダメージ可視化』のサイクルで反復提示しつつ、中盤のリフック直後に本編の危機感と地続きの切り口でスポンサー案件を差し込み、終盤は総括を省いてRPG比喩のまま次動画『上級・延長ガイド』へ送客する高維持率・顔出し不要の解説設計式。"
+}

@@ -1,0 +1,84 @@
+# 価格改定・サービス終了・プラットフォーム締切 監視アラート
+# 最終更新: 2026-11-21
+
+schema_version: 1
+last_verified: "2026-11-21"
+
+watches:
+  - id: gemini_4_carbon_argon_price_double
+    effective_date: "2026-12-01"
+    category: llm_pricing
+    summary: "Gemini 4 Carbon / Argon のAPI標準単価が2倍に改定（Carbon: $2/$10 -> $4/$20 per 1M tok）"
+    impact_roles: ["research_llm"]
+    action_required: "11月30日までに初期大型リサーチを消化し、12月1日以降は常用モデルを gemini-4-neon ($3/$15) へ完全切替する"
+    status: upcoming
+
+  - id: google_flow_legacy_models_sunset
+    effective_date: "2026-12-05"
+    category: video_generation_sunset
+    summary: "Google Flow 内の Veo 3.1 Fast/Quality および Omni Flash 1.1 提供終了（Gemini API Omni 1.1 も 12/3 に 1.2 へ切替）"
+    impact_roles: ["broll_primary"]
+    action_required: "新規ワークフローでは一切参照せず、gemini-omni-1.2-flash を前提とする"
+    status: upcoming
+
+  - id: ypp_christmas_newyear_dip
+    effective_date: "2026-12-26"
+    end_date: "2027-01-03"
+    category: jp_market_seasonality
+    summary: "日本の年末年始により学習・ビジネス系視聴が急落しやすい期間"
+    impact_roles: []
+    action_required: "該当週の公開2本は「年次総まとめ・リビングCTV向け・新年の習慣/目標検索」企画へ切り替える"
+    status: planned
+
+  - id: gemini_38_flash_and_tts_price_double
+    effective_date: "2027-01-01"
+    category: llm_and_tts_pricing
+    summary: "gemini-3.8-flash / 3.6-flash / gemini-3.8-flash-tts の標準単価が2倍に改定"
+    impact_roles: ["outlier_batch_llm", "tts_primary"]
+    action_required: "Batch API（50%オフ）を必須化、またはテキスト処理を gemini-4-hydrogen へ移行する"
+    status: upcoming
+
+  - id: ypp_target_4000h_milestone
+    effective_date: "2027-01-07"
+    category: ypp_deadline_internal
+    summary: "安全余裕（Earnラグ＋AdSense＋本審査）を見込んだ Analytics 4,000時間到達推奨目標日（安全圏は2026-12-20）"
+    impact_roles: []
+    action_required: "Co-Views除外を意識し Analytics 4,600〜4,900h・Earnタブ 4,000h 確認後に一発申請する"
+    status: active_goal
+
+  - id: ypp_final_submission_deadline
+    effective_date: "2027-01-21"
+    category: ypp_deadline_internal
+    summary: "Earnラグ(5〜7日)と新規AdSense審査遅延を考慮した実質最終申請着手ライン"
+    impact_roles: []
+    action_required: "この日までにステップ1・2完了とステップ3申請ボタン押下を確実に終える"
+    status: active_goal
+
+  - id: ypp_legacy_cutoff_utc
+    effective_date: "2027-01-31T23:59:59Z"
+    jst_equivalent: "2027-02-01T08:59:59+09:00"
+    category: platform_deadline
+    summary: "旧4,000時間基準でのYPP申請および既存YPP新モジュール同意の最終締切"
+    impact_roles: []
+    action_required: "Earnタブでステップ3「進行中」以上を確認。合格済み場合は更新利用規約へ同意完了させる"
+    status: critical_deadline
+
+  - id: ypp_8000h_new_regime
+    effective_date: "2027-02-01"
+    category: platform_policy
+    summary: "新規YPP要件が長尺8,000時間（Shorts 2,000万回）へ倍増、Premium Lite拡大・新アクティブ維持要件開始"
+    impact_roles: []
+    action_required: "2027-02-01以降は本プロジェクトの新規2ch目立ち上げ時の計算基準を8,000時間へ更新する"
+    status: scheduled
+
+# 既に終了済みの記録（誤参照防止用）
+expired_or_sunset:
+  - id: nijivoice_shutdown
+    date: "2026-02-04"
+    summary: "にじボイス サービス終了済み"
+  - id: openai_sora_shutdown
+    date: "2026-09-24"
+    summary: "OpenAI Sora Web(4/26)・API(9/24)・Azure(10/15) 完全終了済み"
+  - id: davinci_studio_21_sale_end
+    date: "2026-11-20"
+    summary: "DaVinci Resolve Studio 21 の20%オフセール(¥40,980)終了済み。通常価格ベースで試算すること"

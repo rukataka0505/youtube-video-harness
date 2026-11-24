@@ -1,0 +1,153 @@
+{
+  "slug": "ep_placeholder_plan_e",
+  "title": "企画タイトルのプレースホルダ（planE_macro_econ v3.1 最小スキーマ例）",
+  "formatId": "planE_macro_econ",
+  "antiPowerPointCheck": true,
+  "blueprintRef": "docs/evergreen/09_plan_e_longform_blueprint.md",
+  "harnessRef": "harnesses/plan-e-macro-econ/README.md",
+  "output": {
+    "publicSubdir": "episodes/<slug>",
+    "timelineTsPath": "studio/src/compositions/episodes/<slugCamel>/timelineData.ts",
+    "exportName": "TIMELINE"
+  },
+  "video": {
+    "fps": 30,
+    "width": 1920,
+    "height": 1080
+  },
+  "fonts": [
+    "Noto Sans JP",
+    "Noto Serif JP",
+    "Playfair Display"
+  ],
+  "tts": {
+    "provider": "elevenlabs",
+    "models": [
+      "eleven_v4",
+      "eleven_v4_turbo",
+      "eleven_multilingual_v2"
+    ],
+    "voices": [
+      "TX3LPaxmHKxFdv7VOQHJ"
+    ],
+    "languageCode": "ja",
+    "useTimestamps": true
+  },
+  "pacing": {
+    "mode": "natural",
+    "leadingSilenceSec": 0.15,
+    "minTempo": 0.94,
+    "maxTempo": 1.08
+  },
+  "legalChecklist": {
+    "primarySources": [
+      {
+        "title": "一次情報ソース1（タイトル）",
+        "url": "https://example.org/source-1",
+        "publisher": "発行機関名1"
+      },
+      {
+        "title": "一次情報ソース2（タイトル）",
+        "url": "https://example.org/source-2",
+        "publisher": "発行機関名2"
+      },
+      {
+        "title": "一次情報ソース3（タイトル）",
+        "url": "https://example.org/source-3",
+        "publisher": "発行機関名3"
+      }
+    ],
+    "usesAcmlVoiceForCriticism": false,
+    "usesAiExpertAdvice": false,
+    "noFinancialAdviceClaim": true,
+    "fontsLicense": "SIL OFL 1.1"
+  },
+  "images": [
+    {
+      "key": "local_photo_01",
+      "filename": "01_sample_photo.png",
+      "source": "local",
+      "intent": "この素材を使う意図（視覚的な役割）",
+      "description": "ネット収集した実写・資料素材の説明"
+    }
+  ],
+  "videoClips": [
+    {
+      "key": "broll_clip_01",
+      "filename": "01_sample_broll.mp4",
+      "source": "mixkit",
+      "url": "https://example.org/stock-video.mp4",
+      "searchQuery": "search keyword",
+      "startOffsetSec": 0.0,
+      "durationSec": 5.0,
+      "extractPoster": true,
+      "license": "mixkit_free",
+      "creditShort": "概要欄転記用クレジット",
+      "intent": "この動画クリップを使う意図"
+    }
+  ],
+  "stockImages": [
+    {
+      "key": "stock_photo_01",
+      "filename": "s01_sample_stock.jpg",
+      "source": "wikimedia",
+      "searchQuery": "search keyword",
+      "license": "wikimedia_commons",
+      "creditShort": "Wikimedia Commons",
+      "intent": "この実写写真を使う意図"
+    }
+  ],
+  "chunks": [
+    {
+      "chunkId": "c01_hook",
+      "text": "最初のチャンクでは、挨拶なしでテーマの違和感を突きつけます。",
+      "pauseAfterSec": 0.35,
+      "shotRole": "scroll_stop_hook",
+      "shotLabel": "導入カット",
+      "eventKey": "hookStartSec",
+      "subtitleSegments": [
+        {
+          "line1": "最初のチャンクでは、挨拶なしで",
+          "line2": "テーマの違和感を突きつけます。"
+        }
+      ]
+    },
+    {
+      "chunkId": "c02_structure",
+      "text": "次のチャンクでは、語句の途中で視覚イベントを切り替えます。後半で構造の核心を見せます。",
+      "pauseAfterSec": 0.35,
+      "shotRole": "context_lean_in",
+      "shotLabel": "構造展開カットA",
+      "eventKey": "grooveStartSec",
+      "subtitle": {
+        "line1": "次のチャンクでは、語句の途中で",
+        "line2": "視覚イベントを切り替えます。"
+      },
+      "splits": [
+        {
+          "atText": "後半で構造の核心",
+          "shotRole": "example_illustration",
+          "shotLabel": "構造展開カットB",
+          "eventKey": "coreRevealSec",
+          "minOffsetFromPrevSec": 1.5,
+          "subtitle": {
+            "line1": "後半で構造の核心を見せます。",
+            "line2": ""
+          }
+        }
+      ]
+    }
+  ],
+  "audio": {
+    "bpm": 115.0,
+    "loudnormTargetI": -14.0,
+    "loudnormTargetTp": -1.4,
+    "loudnormTargetLra": 9.0,
+    "exportSfxLibrary": true,
+    "bgm": {
+      "introDroneEndEvent": "grooveStartSec",
+      "grooveStartEvent": "grooveStartSec",
+      "cutouts": []
+    }
+  }
+}

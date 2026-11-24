@@ -1,0 +1,116 @@
+# 2チャンネル運用 YouTube チャンネル定義・誤爆防止設定
+# 参照: docs/evergreen/10_youtube_publish_operations.md / AGENTS.md
+
+schema_version: 1
+last_verified: "2026-11-23"
+
+oauth:
+  # Google Cloud Console から取得した OAuth 2.0 デスクトップクライアント JSON
+  # 環境変数 YOUTUBE_OAUTH_CLIENT_SECRET_PATH で上書き可能
+  client_secret_path: "pipeline/.secrets/client_secret.json"
+  # チャンネル別 OAuth トークン保存先（.gitignore 対象のローカル秘匿ディレクトリ）
+  # 環境変数 YOUTUBE_OAUTH_TOKEN_DIR で上書き可能
+  token_dir: "pipeline/.secrets/youtube_tokens"
+  # 動画アップロード・メタデータ更新・サムネイル・字幕・再生リスト・チャンネル検証用スコープ
+  scopes:
+    - "https://www.googleapis.com/auth/youtube.upload"
+    - "https://www.googleapis.com/auth/youtube"
+    - "https://www.googleapis.com/auth/youtube.force-ssl"
+    - "https://www.googleapis.com/auth/youtube.readonly"
+
+defaults:
+  # デフォルト公開設定は必ず限定公開（公開24時間以上前の自己診断バッファ運用に準拠）
+  privacy_status: "unlisted"
+  made_for_kids: false
+  self_declared_made_for_kids: false
+  default_language: "ja"
+  default_audio_language: "ja"
+  embeddable: true
+  public_stats_viewable: true
+  license: "youtube"
+  # 誤爆防止ガード設定
+  require_channel_id_match: true
+  require_format_match: true
+  # メタデータ検証基準
+  max_title_length: 100
+  max_description_length: 5000
+  max_tags_total_chars: 500
+  max_thumbnail_api_bytes: 2097152      # YouTube Data API thumbnails.set 推奨上限 2MB
+  max_thumbnail_hard_bytes: 52428800    # 絶対上限 50MB（4K入稿基準）
+
+# YouTube Data API v3 公式クォータ単価（yt_engine.quota の general バケットへ記録）
+quota_costs:
+  channels_list: 1
+  videos_list: 1
+  videos_insert: 1600
+  videos_update: 50
+  thumbnails_set: 50
+  captions_insert: 400
+  captions_update: 450
+  playlist_items_insert: 50
+  playlists_list: 1
+
+channels:
+  ch1_buguru:
+    display_name: "バグる棒人間"
+    format_id: "stickman_collage"
+    format_aliases:
+      - "stickman-collage"
+      - "buguru"
+    path_keywords:
+      - "stickman"
+      - "buguru"
+    harness: "harnesses/stickman-collage/README.md"
+    theme: "人間や世界のバグ・奇妙な仕組み（人体・進化・科学・歴史・生き物・言葉・確率・AI・社会・心理など多ジャンル）"
+    # 初回認証後に youtube_auth.py --channel ch1_buguru --verify --write-channel-id で確定させる
+    # 環境変数 YOUTUBE_CHANNEL_ID_CH1_BUGURU でも上書き可能
+    expected_channel_id: ""
+    expected_channel_id_env: "YOUTUBE_CHANNEL_ID_CH1_BUGURU"
+    handle: "@your_channel_1"
+    token_filename: "ch1_buguru_token.json"
+    default_category_id: "27"  # Education
+    default_privacy_status: "unlisted"
+    default_language: "ja"
+    default_audio_language: "ja"
+    default_tags:
+      - "バグる棒人間"
+      - "仕組み解説"
+      - "教養"
+    playlists:
+      default: ""
+    description_footer: |
+      ※本動画で使用した参考文献・データ出典は概要欄内に記載しています。
+
+  ch2_akapen:
+    display_name: "経済の赤ペン"
+    format_id: "planE_macro_econ"
+    format_aliases:
+      - "plan-e"
+      - "plan_e"
+      - "plane_macro_econ"
+      - "akapen"
+    path_keywords:
+      - "plane"
+      - "plan-e"
+      - "plan_e"
+      - "akapen"
+    harness: "harnesses/plan-e-macro-econ/README.md"
+    theme: "お金とインセンティブの構造（マクロ経済・家計に限定せず、恋愛・医療・スポーツ・アート・エンタメ・冠婚葬祭・家電・歴史・教育・都市など多ジャンル）"
+    # 初回認証後に youtube_auth.py --channel ch2_akapen --verify --write-channel-id で確定させる
+    # 環境変数 YOUTUBE_CHANNEL_ID_CH2_AKAPEN でも上書き可能
+    expected_channel_id: ""
+    expected_channel_id_env: "YOUTUBE_CHANNEL_ID_CH2_AKAPEN"
+    handle: "@your_channel_2"
+    token_filename: "ch2_akapen_token.json"
+    default_category_id: "27"  # Education
+    default_privacy_status: "unlisted"
+    default_language: "ja"
+    default_audio_language: "ja"
+    default_tags:
+      - "経済の赤ペン"
+      - "お金の仕組み"
+      - "インセンティブ"
+    playlists:
+      default: ""
+    description_footer: |
+      ※本動画は情報提供および経済構造の解説を目的としており、特定の金融商品の売買を推奨するものではありません。

@@ -1,0 +1,138 @@
+{
+  "slug": "ep_placeholder_stickman",
+  "compositionId": "StickmanCollage-EpisodePascal",
+  "title": "企画タイトルのプレースホルダ（stickman_collage 最小スキーマ例）",
+  "formatId": "stickman_collage",
+  "blueprintRef": "harnesses/stickman-collage/README.md",
+  "harnessRef": "harnesses/stickman-collage/README.md",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "safeMarginX": 96,
+    "safeMarginY": 54
+  },
+  "realAssetTargets": [
+    {
+      "labelJa": "実在の対象物・人物ラベル",
+      "category": "object",
+      "assetId": "asset_sample_01",
+      "chunkIds": ["c01_hook"]
+    }
+  ],
+  "assetCatalog": [
+    {
+      "id": "asset_sample_01",
+      "kind": "scene_photo",
+      "src": "episodes/<slug>/assets/sample_photo.jpg",
+      "labelJa": "実写素材の説明ラベル",
+      "subjectNameJa": "対象名",
+      "tags": ["タグ1"],
+      "license": "royalty_free",
+      "creditShort": "概要欄転記用クレジット",
+      "objectPosition": "50% 50%"
+    }
+  ],
+  "chapters": [
+    {
+      "chapterIndex": 1,
+      "topicId": "ch01_topic",
+      "titleJa": "第1章タイトル",
+      "defaultPolarity": "black",
+      "targetDurationSec": 13.0,
+      "openLoopQuestionJa": "この章で解く問い",
+      "shots": [
+        {
+          "shotIndex": 1,
+          "chunkId": "c01_hook",
+          "targetDurationSec": 6.5,
+          "narrativeRole": "scroll_stop_hook",
+          "polarity": "black",
+          "lightBg": false,
+          "layoutArchetype": "tsx_scene",
+          "scene": {
+            "mode": "tsx",
+            "component": "HookScene",
+            "assetIds": ["asset_sample_01"]
+          },
+          "beats": [
+            { "beatIndex": 0, "offsetSec": 0.1, "phraseJa": "冒頭の最初のフレーズ、", "action": "reveal_photo" },
+            { "beatIndex": 1, "offsetSec": 2.2, "phraseJa": "ここで視覚を切り替える", "action": "pop_figure" },
+            { "beatIndex": 2, "offsetSec": 4.2, "phraseJa": "要点のフレーズです。", "action": "stamp" }
+          ],
+          "narrationJa": "冒頭の最初のフレーズ、ここで視覚を切り替える要点のフレーズです。",
+          "subtitleSegments": [
+            { "line1": "冒頭の最初のフレーズ、", "line2": "ここで視覚を切り替える" },
+            { "line1": "要点のフレーズです。" }
+          ],
+          "sfx": [
+            { "kind": "paper_snap", "offsetSec": 0.12, "gain": 0.22 },
+            { "kind": "soft_pop", "offsetSec": 2.22, "gain": 0.22 }
+          ],
+          "openLoopAction": "open",
+          "showOnScreenCitation": false
+        },
+        {
+          "shotIndex": 2,
+          "chunkId": "c02_shift",
+          "targetDurationSec": 6.5,
+          "narrativeRole": "contrarian_claim",
+          "polarity": "grid_paper",
+          "lightBg": true,
+          "polarityShiftReason": "背景極性を切り替える理由",
+          "layoutArchetype": "tsx_scene",
+          "scene": {
+            "mode": "tsx",
+            "component": "MechanismScene"
+          },
+          "beats": [
+            { "beatIndex": 0, "offsetSec": 0.12, "phraseJa": "次の展開では背景を切り替え、", "action": "reveal_diagram" },
+            { "beatIndex": 1, "offsetSec": 2.3, "phraseJa": "仕組みの核心を", "action": "draw_stroke" },
+            { "beatIndex": 2, "offsetSec": 4.2, "phraseJa": "ひと目で示します。", "action": "pop_callout" }
+          ],
+          "narrationJa": "次の展開では背景を切り替え、仕組みの核心をひと目で示します。",
+          "subtitleSegments": [
+            { "line1": "次の展開では背景を切り替え、", "line2": "仕組みの核心を" },
+            { "line1": "ひと目で示します。" }
+          ],
+          "sfx": [
+            { "kind": "whoosh", "offsetSec": 0.08, "gain": 0.2 },
+            { "kind": "stamp_thud", "offsetSec": 4.22, "gain": 0.24 }
+          ],
+          "openLoopAction": "close",
+          "showOnScreenCitation": false
+        }
+      ]
+    }
+  ],
+  "endCta": {
+    "enabled": false
+  },
+  "tts": {
+    "provider": "elevenlabs",
+    "models": ["eleven_v4"],
+    "voices": ["TX3LPaxmHKxFdv7VOQHJ"],
+    "languageCode": "ja",
+    "useTimestamps": true,
+    "targetTempoMin": 310,
+    "targetTempoMax": 360
+  },
+  "audio": {
+    "mode": "silent_sfx_only",
+    "leadingSilenceSec": 0.35,
+    "sfxGain": 0.58,
+    "targetLufs": -14.0,
+    "truePeakDbtp": -1.4,
+    "lra": 9.0
+  },
+  "legalChecklist": {
+    "primarySources": [
+      "一次情報ソース1（タイトル・機関名・年）",
+      "一次情報ソース2（タイトル・機関名・年）",
+      "一次情報ソース3（タイトル・機関名・年）"
+    ],
+    "usesAcmlVoiceForCriticism": false,
+    "usesAiExpertAdvice": false,
+    "fontsLicense": "SIL OFL 1.1 / Apache 2.0"
+  }
+}

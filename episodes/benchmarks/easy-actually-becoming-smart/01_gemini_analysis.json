@@ -1,0 +1,17 @@
+{
+  "click_confirm_sec": 0.5,
+  "has_greeting_or_logo_waste": false,
+  "hook_format": "bold_claim",
+  "uses_negative_stakes": true,
+  "context_lean_in": "賢くなるには22年の学校教育が必要だという世間の常識",
+  "scroll_stop_pivot": "しかし実際に得られるのはホームレス生活だ（but what you actually become is homeless）",
+  "contrarian_snapback": "実は賢くなるのはとても簡単だ（becoming smart is actually very easy）",
+  "opening_curiosity_loop": "学歴や曖昧な助言に頼らず、簡単に賢くなる具体的な方法の提示",
+  "cut_count_0_60s": 15,
+  "avg_shot_len_sec": 3.75,
+  "first_interrupt_sec": 1.5,
+  "telop_style": "minimal_keyword",
+  "opening_sfx_present": false,
+  "vocal_energy_level": "conversational",
+  "shorts_seamless_loop": null
+}

@@ -1,0 +1,89 @@
+{
+  "content_format": "tutorial",
+  "structural_roadmap_shown": false,
+  "body_avg_shot_len_sec": 3.5,
+  "pattern_interrupt_interval_sec": 12.5,
+  "visual_dominant_layer": "slides_motion_gfx",
+  "bgm_shift_count": 5,
+  "dead_air_eliminated": true,
+  "uses_j_l_cuts": true,
+  "open_loops": [
+    {
+      "opened_at": "00:00",
+      "hook_question": "『語学学習は実はとても簡単（Learning a language is actually very easy）』と逆説的な主張を提示し、アプリや6週間習得動画などの失敗パターンを否定して本当に効く方法を示唆する",
+      "closed_at": "05:56",
+      "is_closed": true
+    },
+    {
+      "opened_at": "00:18",
+      "hook_question": "『本当に学びたいなら間違った理由で始めてはいけない』と問題提起し、初心者が挫折しない言語難易度と正しい動機の選び方を予告する",
+      "closed_at": "01:48",
+      "is_closed": true
+    },
+    {
+      "opened_at": "01:49",
+      "hook_question": "『言語を選び終えたら次は簡単なパート』と切り出し、他者との会話なしで自宅だけで流暢になれる独学法（the easy way）を予告する",
+      "closed_at": "05:56",
+      "is_closed": true
+    },
+    {
+      "opened_at": "02:17",
+      "hook_question": "Step 1『基礎学習』でDuolingoや語学系YouTube沼を否定し、たった1ヶ月で2年分以上の効果を出す無料教材の入手・活用法を提示する",
+      "closed_at": "03:06",
+      "is_closed": true
+    },
+    {
+      "opened_at": "03:08",
+      "hook_question": "Step 2『リスニング』で『まだ話すことを気にしなくていい』と宣言し、YouTube動画で無意識に語学を吸収するコツと絶対に避けるべき字幕設定を解説する",
+      "closed_at": "04:48",
+      "is_closed": true
+    },
+    {
+      "opened_at": "04:51",
+      "hook_question": "Step 3『スピーキング』で誰とも話さずに発話力を鍛える具体的な録音・模倣メソッドを提示し、それが実は『独学者』の正体であることを明かす",
+      "closed_at": "05:55",
+      "is_closed": true
+    },
+    {
+      "opened_at": "06:07",
+      "hook_question": "『いつかは旅行してネイティブと話す日が来る。必要なのは文化と政治を知ることだけ』とフランス旅行時の意外な光景（農家デモ）へ引き込み、スポンサー導線へ繋ぐ",
+      "closed_at": "06:39",
+      "is_closed": true
+    }
+  ],
+  "monetization_ctas": [
+    {
+      "timestamp": "00:29",
+      "cta_type": "subscribe_like",
+      "duration_sec": 5,
+      "placement_context": "flat_transition",
+      "bridge_script_summary": "難しい言語を話せばYouTubeで再生数や登録者、収益まで得られると皮肉りつつ、自身の収益化不可画面と『登録を寄付してください（please donate a subscribe）』のテキストを表示する自虐型登録訴求"
+    },
+    {
+      "timestamp": "05:20",
+      "cta_type": "subscribe_like",
+      "duration_sec": 4,
+      "placement_context": "flat_transition",
+      "bridge_script_summary": "フランス語動画の視聴を説明するイラスト内のPC画面字幕に『高評価とチャンネル登録してね（aimez et abonnez-vous!!）』を紛れ込ませる視覚的イースターエッグ訴求"
+    },
+    {
+      "timestamp": "06:37",
+      "cta_type": "sponsor_read",
+      "duration_sec": 73,
+      "placement_context": "after_value_peak",
+      "bridge_script_summary": "3ステップ習得法の総括直後に『現地でネイティブと話すには文化と政治の把握が必要』とフランスの農家デモ記事へ話を広げ、報道の偏りを比較できるニュースツールとしてGround News（30%オフ導線）へ自然に接続"
+    },
+    {
+      "timestamp": "07:51",
+      "cta_type": "subscribe_like",
+      "duration_sec": 4,
+      "placement_context": "end_screen",
+      "bridge_script_summary": "スポンサー紹介終了後に『登録をお願いしようと思ったが、登録者数の数字がもう円に収まりきらない』というメタな自虐ネタでさりげなく登録を促す"
+    }
+  ],
+  "has_finalizing_phrase": true,
+  "end_screen_continuous_value": false,
+  "faceless_reproducible": true,
+  "production_effort_tier": "medium_editorial",
+  "replicable_winning_formula": "『〇〇は実はとても簡単』という逆説的フックから入り、視聴者がやりがちな失敗あるあるを黒背景×手描き棒人間と皮肉ユーモアで否定して共感を獲得。その後、心理的ハードルを下げた『自宅で1人で完結する3ステップ手順』を約3.5秒ごとの視覚変化・実画面キャプチャ・画面内小ネタでテンポ良く解説し、本編総括直後に『実践時の次の課題（現地文化・政治の理解）』を架け橋としてスポンサー案件へ違和感なく接続する、顔出し不要・脚本主導型の再現性の高い解説フォーマット"
+}

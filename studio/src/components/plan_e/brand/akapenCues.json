@@ -1,0 +1,63 @@
+{
+  "_comment": "ch2「経済の赤ペン」公式アイキャッチ（3種・各1.3秒・115BPMの8分グリッド＝0.26s刻み）の尺とSFX配置の唯一正本。TS（AkapenEyecatch.tsx）と pipeline/scripts/build_akapen_brand_sfx.py の両方がこれを読む。時刻はアイキャッチ先頭からの相対秒。",
+  "fps": 30,
+  "bpm": 115,
+  "durationSec": 1.3,
+  "postPauseSec": 0.3,
+  "wavTailSec": 0.35,
+  "variants": {
+    "swipe": {
+      "label": "二連スワイプ",
+      "durationSec": 1.3,
+      "surface": "dark_desk",
+      "sfx": [
+        { "kind": "whoosh", "offset": 0.0, "gain": 0.22, "duration": 0.16, "pan": 0.35, "pitchStart": 260, "pitchEnd": 1200 },
+        { "kind": "paper_snap", "offset": 0.12, "gain": 0.34 },
+        { "kind": "impact_thud", "offset": 0.12, "gain": 0.14 },
+        { "kind": "whoosh", "offset": 0.22, "gain": 0.13, "duration": 0.12, "pan": -0.25, "pitchStart": 1400, "pitchEnd": 3000 },
+        { "kind": "pen_scratch", "offset": 0.22, "gain": 0.26, "duration": 0.12, "pan": -0.15 },
+        { "kind": "whoosh", "offset": 0.4, "gain": 0.13, "duration": 0.12, "pan": 0.0, "pitchStart": 1400, "pitchEnd": 3000 },
+        { "kind": "pen_scratch", "offset": 0.4, "gain": 0.26, "duration": 0.12, "pan": 0.15 },
+        { "kind": "impact_thud", "offset": 0.52, "gain": 0.24 },
+        { "kind": "paper_snap", "offset": 0.52, "gain": 0.2 },
+        { "kind": "price_ping", "offset": 0.52, "gain": 0.12 },
+        { "kind": "whoosh", "offset": 1.03, "gain": 0.22, "duration": 0.25, "pan": -0.4, "pitchStart": 1300, "pitchEnd": 220 }
+      ]
+    },
+    "pullback": {
+      "label": "赤からの引き",
+      "durationSec": 1.3,
+      "surface": "dark_desk",
+      "sfx": [
+        { "kind": "impact_thud", "offset": 0.0, "gain": 0.26 },
+        { "kind": "paper_snap", "offset": 0.0, "gain": 0.22 },
+        { "kind": "whoosh", "offset": 0.05, "gain": 0.2, "duration": 0.34, "pitchStart": 1800, "pitchEnd": 240 },
+        { "kind": "soft_pop", "offset": 0.3, "gain": 0.11, "f0": 220, "f1": 520 },
+        { "kind": "paper_snap", "offset": 0.46, "gain": 0.18, "pan": 0.2 },
+        { "kind": "stamp_thud", "offset": 0.52, "gain": 0.32, "duration": 0.18 },
+        { "kind": "whoosh", "offset": 0.64, "gain": 0.12, "duration": 0.12, "pan": 0.2, "pitchStart": 1400, "pitchEnd": 3000 },
+        { "kind": "pen_scratch", "offset": 0.64, "gain": 0.22, "duration": 0.12, "pan": 0.25 },
+        { "kind": "whoosh", "offset": 1.04, "gain": 0.22, "duration": 0.23, "pitchStart": 240, "pitchEnd": 1600 }
+      ]
+    },
+    "slit": {
+      "label": "二重線スリット",
+      "durationSec": 1.3,
+      "surface": "dark_desk",
+      "sfx": [
+        { "kind": "whoosh", "offset": 0.0, "gain": 0.18, "duration": 0.13, "pan": -0.4, "pitchStart": 900, "pitchEnd": 2600 },
+        { "kind": "pen_scratch", "offset": 0.0, "gain": 0.24, "duration": 0.13, "pan": -0.3 },
+        { "kind": "whoosh", "offset": 0.13, "gain": 0.18, "duration": 0.13, "pan": 0.4, "pitchStart": 900, "pitchEnd": 2600 },
+        { "kind": "pen_scratch", "offset": 0.13, "gain": 0.24, "duration": 0.13, "pan": 0.3 },
+        { "kind": "whoosh", "offset": 0.24, "gain": 0.1, "duration": 0.14, "pitchStart": 300, "pitchEnd": 900 },
+        { "kind": "impact_thud", "offset": 0.26, "gain": 0.26 },
+        { "kind": "paper_snap", "offset": 0.26, "gain": 0.3 },
+        { "kind": "soft_pop", "offset": 0.52, "gain": 0.14, "f0": 330, "f1": 660 },
+        { "kind": "whoosh", "offset": 1.02, "gain": 0.18, "duration": 0.13, "pitchStart": 1600, "pitchEnd": 400 },
+        { "kind": "paper_snap", "offset": 1.15, "gain": 0.28 },
+        { "kind": "impact_thud", "offset": 1.15, "gain": 0.12 },
+        { "kind": "pen_scratch", "offset": 1.16, "gain": 0.14, "duration": 0.1, "pan": 0.4 }
+      ]
+    }
+  }
+}

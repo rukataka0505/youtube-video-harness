@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yt-engine"
+version = "0.1.0"
+description = "YouTube outlier discovery, monetization funnel extraction, and Two-Pass Gemini video analysis pipeline"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "google-api-python-client>=2.150.0",
+    "google-auth-oauthlib>=1.2.0",
+    "google-genai>=2.20.0",
+    "pydantic>=2.7.0",
+    "httpx>=0.27.0",
+    "pyyaml>=6.0",
+    "duckdb>=1.1.0",
+]
+
+[project.optional-dependencies]
+nlp = [
+    "bertopic>=0.16.0",
+    "sudachipy>=0.6.8",
+    "sudachidict-core>=20240409",
+]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

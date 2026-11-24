@@ -1,0 +1,17 @@
+{
+  "click_confirm_sec": 3.5,
+  "has_greeting_or_logo_waste": false,
+  "hook_format": "question",
+  "uses_negative_stakes": true,
+  "context_lean_in": "「アメリカ経済を破壊するならどう変えるか」という刺激的な仮説の問いかけで引き込む。",
+  "scroll_stop_pivot": "しかし（But）、脆い金融市場の周囲には米国経済を極めて強固にする独自の優位性がある。",
+  "contrarian_snapback": "市場は時折暴落するものの、米国経済は多層的な特権により実は極めて破壊困難であるという逆説。",
+  "opening_curiosity_loop": "世界最強の優位性を持つアメリカ経済を、もし破壊するとしたら何を変えればよいのかという未解決の問い。",
+  "cut_count_0_60s": 19,
+  "avg_shot_len_sec": 3.0,
+  "first_interrupt_sec": 5.5,
+  "telop_style": "none",
+  "opening_sfx_present": true,
+  "vocal_energy_level": "conversational",
+  "shorts_seamless_loop": null
+}

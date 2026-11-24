@@ -1,0 +1,105 @@
+{
+  "compare": [
+    {
+      "metrics": {
+        "name": "v1_neon_high",
+        "format_id": "planE",
+        "display_style": "chunk_bullets",
+        "reading_style": "segment_headings",
+        "display_chars": 912,
+        "reading_chars": 943,
+        "length_ratio": 1.034,
+        "content_similarity": 0.964,
+        "target_sec": 150.0,
+        "estimated_sec": 166.4,
+        "sentence_count": 32,
+        "avg_sentence_len": 29.5,
+        "max_sentence_len": 46,
+        "long_sentences_70": 0,
+        "opening_15s_chars": 109,
+        "opening_15s_sentences": 4,
+        "opening_15s_hook_signals": 2,
+        "rehook_count": 8,
+        "rehook_avg_interval_sec": 20.8,
+        "concrete_irony_count": 23,
+        "concrete_irony_per_min": 8.3,
+        "display_kanji_ratio": 0.328,
+        "reading_kanji_ratio": 0.31,
+        "ai_phrase_hits": 0,
+        "translationese_hits": 0,
+        "stage_direction_hits": 0,
+        "error_count": 0,
+        "warning_count": 4,
+        "passed": true
+      },
+      "issues": [
+        {
+          "severity": "WARNING",
+          "code": "generic_preview_transition",
+          "file": "02_script_display.md",
+          "line": 100,
+          "message": "テンプレ予告締め「〜していきます」（疑問形オープンループへ置換推奨）",
+          "snippet": "解体していきます。"
+        },
+        {
+          "severity": "WARNING",
+          "code": "explanatory_nodesu_overuse",
+          "file": "02_script_display.md",
+          "line": null,
+          "message": "解説書調の文末「〜のです」が多すぎます（3回 / 32文）。乾いた話し言葉の語尾へ分散してください。",
+          "snippet": ""
+        },
+        {
+          "severity": "WARNING",
+          "code": "generic_preview_transition",
+          "file": "03_script_reading.md",
+          "line": 36,
+          "message": "テンプレ予告締め「〜していきます」（疑問形オープンループへ置換推奨）",
+          "snippet": "解体していきます。"
+        },
+        {
+          "severity": "WARNING",
+          "code": "explanatory_nodesu_overuse",
+          "file": "03_script_reading.md",
+          "line": null,
+          "message": "解説書調の文末「〜のです」が多すぎます（3回 / 32文）。乾いた話し言葉の語尾へ分散してください。",
+          "snippet": ""
+        }
+      ]
+    },
+    {
+      "metrics": {
+        "name": "v2_opus_high",
+        "format_id": "planE",
+        "display_style": "chunk_bullets",
+        "reading_style": "segment_headings",
+        "display_chars": 870,
+        "reading_chars": 891,
+        "length_ratio": 1.024,
+        "content_similarity": 0.977,
+        "target_sec": 150.0,
+        "estimated_sec": 157.2,
+        "sentence_count": 29,
+        "avg_sentence_len": 30.7,
+        "max_sentence_len": 54,
+        "long_sentences_70": 0,
+        "opening_15s_chars": 112,
+        "opening_15s_sentences": 4,
+        "opening_15s_hook_signals": 3,
+        "rehook_count": 7,
+        "rehook_avg_interval_sec": 22.5,
+        "concrete_irony_count": 33,
+        "concrete_irony_per_min": 12.6,
+        "display_kanji_ratio": 0.309,
+        "reading_kanji_ratio": 0.302,
+        "ai_phrase_hits": 0,
+        "translationese_hits": 0,
+        "stage_direction_hits": 0,
+        "error_count": 0,
+        "warning_count": 0,
+        "passed": true
+      },
+      "issues": []
+    }
+  ]
+}

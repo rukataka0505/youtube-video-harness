@@ -1,0 +1,602 @@
+{
+  "slug": "ab_sc_v2_4cut_opus",
+  "compositionId": "AB-StickmanV2-4Cut-Opus",
+  "title": "なぜ「自己啓発本を読む人」ほど変われないのか（stickman-collage v2 4カット先行試作 v2_opus）",
+  "formatId": "stickman_collage",
+  "blueprintRef": "docs/evergreen/07_plan_c_longform_blueprint.md",
+  "harnessRef": "harnesses/stickman-collage/README.md",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "safeMarginX": 96,
+    "safeMarginY": 54
+  },
+  "realAssetTargets": [
+    {
+      "labelJa": "ピーター・ゴルヴィッツァー",
+      "category": "person",
+      "assetId": "person_gollwitzer",
+      "chunkIds": [
+        "c10"
+      ]
+    },
+    {
+      "labelJa": "サラダチキン",
+      "category": "object",
+      "chunkIds": [
+        "c02"
+      ],
+      "allowHandDrawnFallback": true,
+      "reasonIfOmitted": "一般名詞の食品。『成功者のトロフィー』として掲げる比喩小道具なので手描きの方が笑いが立つ"
+    },
+    {
+      "labelJa": "積ん読タワー",
+      "category": "object",
+      "chunkIds": [
+        "c03"
+      ],
+      "allowHandDrawnFallback": true,
+      "reasonIfOmitted": "本がタワーに『吸収される』物理ギャグのため、手描きの積み本を落下・ぐらつき演出で描く"
+    }
+  ],
+  "assetCatalog": [
+    {
+      "id": "person_gollwitzer",
+      "kind": "person_photo",
+      "src": "ab_tests/2026-11-22_stickman-collage_self-help-trap/peter_gollwitzer.jpg",
+      "labelJa": "心理学者 ピーター・ゴルヴィッツァー（本人写真）",
+      "subjectNameJa": "ピーター・ゴルヴィッツァー",
+      "tags": [
+        "ピーター・ゴルヴィッツァー",
+        "ゴルヴィッツァー",
+        "ニューヨーク大学",
+        "心理学者"
+      ],
+      "license": "short_quotation",
+      "creditShort": "写真：ニューヨーク大学 教員プロフィール（研究紹介のための引用。公開前に権利確認）",
+      "sourceUrl": "https://as.nyu.edu/content/dam/nyu-as/faculty/images/PeterGollwitzer.jpg",
+      "objectPosition": "50% 20%"
+    }
+  ],
+  "chapters": [
+    {
+      "chapterIndex": 1,
+      "topicId": "opus4cut_prepaid_high",
+      "titleJa": "導入：買った夜の高揚と積ん読の現実",
+      "defaultPolarity": "black",
+      "openLoopQuestionJa": "なぜ自己啓発本を読む人ほど変われないのか？",
+      "shots": [
+        {
+          "shotIndex": 1,
+          "chunkId": "c01",
+          "targetDurationSec": 9.2,
+          "narrativeRole": "scroll_stop_hook",
+          "polarity": "black",
+          "lightBg": false,
+          "layoutArchetype": "tsx_scene",
+          "scene": {
+            "mode": "tsx",
+            "component": "OpusBookstoreHigh"
+          },
+          "visualNotesJa": "手描きの本屋（棚の背表紙が詰まり、平台に面陳、吊り看板が揺れて止まる）。平台の黄・青・赤の3冊が放物線で棒人間の腕に飛び込み積み上がる。『夜って』で店が暗転し月が昇り、『みょうに』で足が地面から浮く。",
+          "beats": [
+            {
+              "beatIndex": 0,
+              "phraseJa": "本屋のビジネス書コーナーで",
+              "action": "reveal_photo"
+            },
+            {
+              "beatIndex": 1,
+              "phraseJa": "人生が変わる習慣",
+              "action": "draw_stroke"
+            },
+            {
+              "beatIndex": 2,
+              "phraseJa": "さんさつまとめて",
+              "action": "stagger_grid"
+            },
+            {
+              "beatIndex": 3,
+              "phraseJa": "夜って",
+              "action": "draw_stroke"
+            },
+            {
+              "beatIndex": 4,
+              "phraseJa": "みょうに気分がいい",
+              "action": "pop_figure"
+            }
+          ],
+          "narrationJa": "本屋のビジネス書コーナーで、人生が変わる習慣みたいな本を、さんさつまとめて買った夜って、みょうに気分がいいですよね。",
+          "subtitleSegments": [
+            {
+              "line1": "本屋のビジネス書コーナーで、",
+              "line2": "「人生が変わる習慣」みたいな本を"
+            },
+            {
+              "line1": "3冊まとめて買った夜って、",
+              "line2": "妙に気分がいいですよね。"
+            }
+          ],
+          "sfx": [
+            {
+              "kind": "paper_snap",
+              "offsetSec": 0.37,
+              "gain": 0.22
+            },
+            {
+              "kind": "pen_scratch",
+              "offsetSec": 1.03,
+              "gain": 0.15
+            },
+            {
+              "kind": "whoosh",
+              "offsetSec": 2.51,
+              "gain": 0.13
+            },
+            {
+              "kind": "soft_pop",
+              "offsetSec": 3.13,
+              "gain": 0.2
+            },
+            {
+              "kind": "soft_pop",
+              "offsetSec": 5.49,
+              "gain": 0.19
+            },
+            {
+              "kind": "soft_pop",
+              "offsetSec": 5.79,
+              "gain": 0.2
+            },
+            {
+              "kind": "chart_tick",
+              "offsetSec": 5.97,
+              "gain": 0.15
+            },
+            {
+              "kind": "whoosh",
+              "offsetSec": 6.99,
+              "gain": 0.1
+            },
+            {
+              "kind": "soft_pop",
+              "offsetSec": 7.95,
+              "gain": 0.16
+            }
+          ],
+          "openLoopAction": "open",
+          "showOnScreenCitation": false
+        },
+        {
+          "shotIndex": 2,
+          "chunkId": "c02",
+          "targetDurationSec": 8.5,
+          "narrativeRole": "comic_punchline",
+          "polarity": "black",
+          "lightBg": false,
+          "layoutArchetype": "tsx_scene",
+          "scene": {
+            "mode": "tsx",
+            "component": "OpusSaladChickenVictory"
+          },
+          "visualNotesJa": "ページ数メーターが『0』のまま固まる → 手描きのサラダチキンを掲げると脳内の表彰台がせり上がり、紙吹雪。行動ゲージは0のまま。",
+          "beats": [
+            {
+              "beatIndex": 0,
+              "phraseJa": "まだ1ページも",
+              "action": "animate_metric"
+            },
+            {
+              "beatIndex": 1,
+              "phraseJa": "帰り道のコンビニ",
+              "action": "draw_stroke"
+            },
+            {
+              "beatIndex": 2,
+              "phraseJa": "サラダチキン",
+              "action": "pop_callout"
+            },
+            {
+              "beatIndex": 3,
+              "phraseJa": "脳内ではもう成功者",
+              "action": "stamp"
+            }
+          ],
+          "narrationJa": "まだ1ページも行動していないのに、帰り道のコンビニでなぜかサラダチキンを選んでしまうくらい、脳内ではもう成功者です。",
+          "subtitleSegments": [
+            {
+              "line1": "まだ1ページも行動していないのに、",
+              "line2": "帰り道のコンビニでなぜか"
+            },
+            {
+              "line1": "サラダチキンを選んでしまうくらい、",
+              "line2": "脳内ではもう成功者です。"
+            }
+          ],
+          "sfx": [
+            {
+              "kind": "chart_tick",
+              "offsetSec": 0.46,
+              "gain": 0.15
+            },
+            {
+              "kind": "chart_tick",
+              "offsetSec": 0.99,
+              "gain": 0.13
+            },
+            {
+              "kind": "error_buzzer",
+              "offsetSec": 1.63,
+              "gain": 0.11
+            },
+            {
+              "kind": "whoosh",
+              "offsetSec": 2.28,
+              "gain": 0.15
+            },
+            {
+              "kind": "mech_slide",
+              "offsetSec": 3.29,
+              "gain": 0.13
+            },
+            {
+              "kind": "question_boing",
+              "offsetSec": 3.56,
+              "gain": 0.14
+            },
+            {
+              "kind": "whoosh",
+              "offsetSec": 4.04,
+              "gain": 0.12
+            },
+            {
+              "kind": "soft_pop",
+              "offsetSec": 4.44,
+              "gain": 0.21
+            },
+            {
+              "kind": "pen_scratch",
+              "offsetSec": 4.72,
+              "gain": 0.13
+            },
+            {
+              "kind": "paper_snap",
+              "offsetSec": 5.68,
+              "gain": 0.18
+            },
+            {
+              "kind": "soft_pop",
+              "offsetSec": 6.29,
+              "gain": 0.18
+            },
+            {
+              "kind": "stamp_thud",
+              "offsetSec": 7.08,
+              "gain": 0.23
+            }
+          ],
+          "comicPunchline": true,
+          "showOnScreenCitation": false
+        },
+        {
+          "shotIndex": 3,
+          "chunkId": "c03",
+          "targetDurationSec": 8.6,
+          "narrativeRole": "pivot_contrast",
+          "polarity": "black",
+          "lightBg": false,
+          "layoutArchetype": "tsx_scene",
+          "scene": {
+            "mode": "tsx",
+            "component": "OpusTsundokuAbsorb"
+          },
+          "visualNotesJa": "日めくりが7枚めくれて1週間後。3冊がベッド脇の積ん読タワーへ落下して吸い込まれ、タワーがぐらり。棒人間はソファ＆スマホの『元の生活』ポーズに戻る。",
+          "beats": [
+            {
+              "beatIndex": 0,
+              "phraseJa": "ところが1週間後",
+              "action": "draw_stroke"
+            },
+            {
+              "beatIndex": 1,
+              "phraseJa": "ベッドわきのつんどくタワー",
+              "action": "reveal_diagram"
+            },
+            {
+              "beatIndex": 2,
+              "phraseJa": "吸収され",
+              "action": "stagger_grid"
+            },
+            {
+              "beatIndex": 3,
+              "phraseJa": "元の生活がきれいに復活",
+              "action": "pop_figure"
+            }
+          ],
+          "narrationJa": "ところが1週間後、その本はベッドわきのつんどくタワーに吸収され、元の生活がきれいに復活します。",
+          "subtitleSegments": [
+            {
+              "line1": "ところが1週間後、",
+              "line2": "その本はベッド脇の積ん読タワーに"
+            },
+            {
+              "line1": "吸収され、元の生活が",
+              "line2": "きれいに復活します。"
+            }
+          ],
+          "sfx": [
+            {
+              "kind": "paper_snap",
+              "offsetSec": 0.17,
+              "gain": 0.12
+            },
+            {
+              "kind": "paper_snap",
+              "offsetSec": 0.49,
+              "gain": 0.11
+            },
+            {
+              "kind": "paper_snap",
+              "offsetSec": 0.82,
+              "gain": 0.11
+            },
+            {
+              "kind": "paper_snap",
+              "offsetSec": 1.14,
+              "gain": 0.14
+            },
+            {
+              "kind": "pen_scratch",
+              "offsetSec": 1.74,
+              "gain": 0.13
+            },
+            {
+              "kind": "whoosh",
+              "offsetSec": 2.44,
+              "gain": 0.14
+            },
+            {
+              "kind": "pen_scratch",
+              "offsetSec": 3.26,
+              "gain": 0.12
+            },
+            {
+              "kind": "whoosh",
+              "offsetSec": 4.12,
+              "gain": 0.14
+            },
+            {
+              "kind": "impact_thud",
+              "offsetSec": 4.86,
+              "gain": 0.2
+            },
+            {
+              "kind": "dizzy_spin",
+              "offsetSec": 4.92,
+              "gain": 0.11
+            },
+            {
+              "kind": "soft_pop",
+              "offsetSec": 5.16,
+              "gain": 0.17
+            },
+            {
+              "kind": "pen_scratch",
+              "offsetSec": 6.22,
+              "gain": 0.13
+            },
+            {
+              "kind": "stamp_thud",
+              "offsetSec": 6.6,
+              "gain": 0.22
+            }
+          ],
+          "openLoopAction": "none",
+          "showOnScreenCitation": false
+        }
+      ]
+    },
+    {
+      "chapterIndex": 2,
+      "topicId": "opus4cut_if_then",
+      "titleJa": "解決：94研究メタ分析と If-Then 条件分岐",
+      "defaultPolarity": "grid_paper",
+      "shots": [
+        {
+          "shotIndex": 4,
+          "chunkId": "c10",
+          "targetDurationSec": 16.2,
+          "narrativeRole": "pivot_contrast",
+          "polarity": "grid_paper",
+          "lightBg": true,
+          "layoutArchetype": "tsx_scene",
+          "scene": {
+            "mode": "tsx",
+            "component": "OpusIfThenMeta",
+            "assetIds": [
+              "person_gollwitzer"
+            ]
+          },
+          "visualNotesJa": "方眼紙の研究ノート。ゴルヴィッツァー本人ポラロイド＋シーランの名札 → 94枚の論文シートが束ねられる → 天秤で『モチベーション』が軽く浮き『条件分岐』が沈む → 鉛筆で If→Then の分岐路が描かれ、棒人間がY側へ進む。",
+          "beats": [
+            {
+              "beatIndex": 0,
+              "phraseJa": "ゴルヴィッツァーとシーラン",
+              "action": "reveal_photo"
+            },
+            {
+              "beatIndex": 1,
+              "phraseJa": "94の研究",
+              "action": "stagger_grid"
+            },
+            {
+              "beatIndex": 2,
+              "phraseJa": "目標達成率",
+              "action": "animate_metric"
+            },
+            {
+              "beatIndex": 3,
+              "phraseJa": "モチベーションの高さではなく",
+              "action": "highlight_ring"
+            },
+            {
+              "beatIndex": 4,
+              "phraseJa": "もしエックスが起きたら",
+              "action": "draw_stroke"
+            },
+            {
+              "beatIndex": 5,
+              "phraseJa": "具体的な条件分岐の設計",
+              "action": "stamp"
+            }
+          ],
+          "narrationJa": "ゴルヴィッツァーとシーランが94の研究をまとめたメタ分析によると、目標達成率を大きく押し上げたのはモチベーションの高さではなく、もしエックスが起きたらワイをするという具体的な条件分岐の設計でした。",
+          "subtitleSegments": [
+            {
+              "line1": "ゴルヴィッツァーとシーランが",
+              "line2": "94の研究をまとめた"
+            },
+            {
+              "line1": "メタ分析によると、",
+              "line2": "目標達成率を大きく"
+            },
+            {
+              "line1": "押し上げたのは",
+              "line2": "モチベーションの高さではなく、"
+            },
+            {
+              "line1": "「もしXが起きたら",
+              "line2": "Yをする」という"
+            },
+            {
+              "line1": "具体的な条件分岐の設計でした。"
+            }
+          ],
+          "sfx": [
+            {
+              "kind": "paper_snap",
+              "offsetSec": 0.06,
+              "gain": 0.2
+            },
+            {
+              "kind": "soft_pop",
+              "offsetSec": 0.8,
+              "gain": 0.16
+            },
+            {
+              "kind": "data_chirp",
+              "offsetSec": 1.68,
+              "gain": 0.13
+            },
+            {
+              "kind": "whoosh",
+              "offsetSec": 2.8,
+              "gain": 0.13
+            },
+            {
+              "kind": "paper_snap",
+              "offsetSec": 3.42,
+              "gain": 0.18
+            },
+            {
+              "kind": "pen_scratch",
+              "offsetSec": 4.96,
+              "gain": 0.14
+            },
+            {
+              "kind": "question_boing",
+              "offsetSec": 6.64,
+              "gain": 0.13
+            },
+            {
+              "kind": "soft_pop",
+              "offsetSec": 7.52,
+              "gain": 0.18
+            },
+            {
+              "kind": "mallet_bonk",
+              "offsetSec": 8.8,
+              "gain": 0.17
+            },
+            {
+              "kind": "whoosh",
+              "offsetSec": 9.25,
+              "gain": 0.12
+            },
+            {
+              "kind": "pen_scratch",
+              "offsetSec": 9.76,
+              "gain": 0.13
+            },
+            {
+              "kind": "radar_beep",
+              "offsetSec": 10.72,
+              "gain": 0.09
+            },
+            {
+              "kind": "pen_scratch",
+              "offsetSec": 11.18,
+              "gain": 0.13
+            },
+            {
+              "kind": "data_chirp",
+              "offsetSec": 12.72,
+              "gain": 0.14
+            },
+            {
+              "kind": "pen_scratch",
+              "offsetSec": 13.44,
+              "gain": 0.12
+            },
+            {
+              "kind": "stamp_thud",
+              "offsetSec": 14.16,
+              "gain": 0.23
+            },
+            {
+              "kind": "soft_pop",
+              "offsetSec": 14.5,
+              "gain": 0.16
+            }
+          ],
+          "showOnScreenCitation": false
+        }
+      ]
+    }
+  ],
+  "endCta": {
+    "enabled": false
+  },
+  "tts": {
+    "provider": "elevenlabs",
+    "models": [
+      "eleven_v4"
+    ],
+    "voices": [
+      "TX3LPaxmHKxFdv7VOQHJ"
+    ],
+    "languageCode": "ja",
+    "useTimestamps": true,
+    "targetTempoMin": 310,
+    "targetTempoMax": 360
+  },
+  "audio": {
+    "mode": "silent_sfx_only",
+    "leadingSilenceSec": 0.35,
+    "sfxGain": 0.56,
+    "targetLufs": -14.0,
+    "truePeakDbtp": -1.4,
+    "lra": 9.0
+  },
+  "legalChecklist": {
+    "primarySources": [
+      "Raymond, Marin, Lupien et al., \"Salivary Cortisol Levels and Depressive Symptomatology in Consumers and Nonconsumers of Self-Help Books: A Pilot Study\", Neural Plasticity（モントリオール大学 ストレス研究センター）",
+      "Gollwitzer, Sheeran, Michalski & Seifert (2009), \"When Intentions Go Public: Does Social Reality Widen the Intention-Behavior Gap?\", Psychological Science, 20(5), 612-618",
+      "Gollwitzer & Sheeran (2006), \"Implementation Intentions and Goal Achievement: A Meta-Analysis of Effects and Processes\", Advances in Experimental Social Psychology（94の独立テスト, d=0.65）"
+    ],
+    "usesAcmlVoiceForCriticism": false,
+    "usesAiExpertAdvice": false,
+    "fontsLicense": "SIL OFL 1.1 / Apache 2.0 (Yomogi, Zen Maru Gothic, Noto Sans JP, Noto Serif JP, Playfair Display)"
+  }
+}

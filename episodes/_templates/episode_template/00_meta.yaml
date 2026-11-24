@@ -1,0 +1,31 @@
+# エピソード管理メタデータ（Gate 1〜7 トラッキング）
+episode_id: "ep000_sample"
+format_plan: "stickman_collage"  # stickman_collage（ch1『バグる棒人間』） / planE_macro_econ（ch2『経済の赤ペン』）
+traffic_role: "browse_suggested"  # browse_suggested (70%) / search_named (30%)
+status: "draft"  # draft / scripting / audio_qa / rendering / editing / preflight / scheduled / published
+
+package:
+  title_candidate: ""       # 全角30文字前後目安（検索KW先頭・【】は任意）
+  thumbnail_copy: ""        # 上限20文字・2行以内（推奨3〜10文字程度）
+  triggers_used: []         # 最大2種: numbers / loss_avoidance / surprise / self_relevance
+  thumbnail_spec_path: "thumbnail_spec.json"
+  thumbnail_locked_before_script: false  # 台本執筆前に仮確定し build_thumbnail.py --validate-only 通過で true
+  thumbnail_variants_count: null         # 公式 Test & Compare 用 2〜3案（大差）
+  thumbnail_qa_passed: false             # 4K(3840x2160) & 168x94px & 比較シート目視QA完了後に true
+
+production:
+  target_duration_min: null              # 目安（水増しせず自然な尺に着地）
+  narration_style: "polite_desu_masu"  # polite_desu_masu / restrained_da_dearu
+  voice_provider: ""        # configs/stack.yaml のロールに準拠
+  ai_disclosure_required: false  # リアル調AI映像/改変を含む場合のみ true
+
+legal_and_monetization:
+  sensitive_domain_ai_persona: false  # 常に false であること
+  uses_acml_1_0_on_critique: false    # 常に false であること
+  primary_sources_count: 0            # 3以上必須
+  monetization_type: "ads_only"       # ads_only / affiliate / sponsor / owned_product
+
+schedule:
+  limited_upload_at: ""     # 公開24時間以上前に設定
+  publish_at_jst: ""        # 17:00-18:30 JST 推奨
+  youtube_video_id: ""

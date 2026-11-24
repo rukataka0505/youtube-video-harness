@@ -1,0 +1,886 @@
+{
+  "slug": "ab_20261122_luxury_trap",
+  "title": "ハイブランドが本当にカモにしているのは、富裕層ではない",
+  "formatId": "planE_macro_econ",
+  "antiPowerPointCheck": true,
+  "blueprintRef": "docs/evergreen/09_plan_e_longform_blueprint.md",
+  "harnessRef": "harnesses/plan-e-macro-econ/README.md",
+  "output": {
+    "publicSubdir": "ab_tests/2026-11-22_planE_luxury-trap/base",
+    "timelineTsPath": "studio/src/compositions/ab_tests/plan_e_luxury_trap/baseTimelineData.ts",
+    "exportName": "BASE_TIMELINE"
+  },
+  "video": {
+    "fps": 30,
+    "width": 1920,
+    "height": 1080
+  },
+  "fonts": [
+    "Noto Sans JP",
+    "Noto Serif JP",
+    "Playfair Display"
+  ],
+  "tts": {
+    "provider": "elevenlabs",
+    "models": [
+      "eleven_v4",
+      "eleven_v4_turbo",
+      "eleven_multilingual_v2"
+    ],
+    "voices": [
+      "TX3LPaxmHKxFdv7VOQHJ"
+    ],
+    "languageCode": "ja",
+    "useTimestamps": true
+  },
+  "pacing": {
+    "mode": "natural",
+    "leadingSilenceSec": 0.15,
+    "minTempo": 0.94,
+    "maxTempo": 1.08
+  },
+  "legalChecklist": {
+    "primarySources": [
+      {
+        "title": "Bain & Company × Altagamma: Luxury Goods Worldwide Market Study (2024)",
+        "url": "https://www.bain.com/insights/luxury-goods-worldwide-market-study-fall-winter-2024/",
+        "publisher": "Bain & Company"
+      },
+      {
+        "title": "LVMH Moët Hennessy Louis Vuitton: 2024 & 2025 Annual Financial Results",
+        "url": "https://www.lvmh.com/investors/",
+        "publisher": "LVMH"
+      },
+      {
+        "title": "Han, Nunes & Drèze (2010): Signaling Status with Luxury Goods: The Role of Brand Prominence",
+        "url": "https://doi.org/10.1509/jmkg.74.4.015",
+        "publisher": "Journal of Marketing"
+      },
+      {
+        "title": "Thorstein Veblen (1899): The Theory of the Leisure Class",
+        "url": "https://www.gutenberg.org/ebooks/833",
+        "publisher": "Macmillan"
+      }
+    ],
+    "usesAcmlVoiceForCriticism": false,
+    "usesAiExpertAdvice": false,
+    "noFinancialAdviceClaim": true,
+    "fontsLicense": "SIL OFL 1.1"
+  },
+  "images": [],
+  "videoClips": [
+    {
+      "key": "luxury_boutique_broll",
+      "filename": "01_luxury_boutique.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/4437/4437-1080.mp4",
+      "searchQuery": "luxury shopping street night",
+      "startOffsetSec": 0.0,
+      "durationSec": 7.0,
+      "extractPoster": true,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    },
+    {
+      "key": "shopping_mall_broll",
+      "filename": "02_shopping_mall.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/4379/4379-720.mp4",
+      "searchQuery": "shopping mall shoppers",
+      "startOffsetSec": 0.0,
+      "durationSec": 6.0,
+      "extractPoster": true,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    },
+    {
+      "key": "counting_cash_broll",
+      "filename": "03_counting_cash.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/18296/18296-720.mp4",
+      "searchQuery": "counting money cash",
+      "startOffsetSec": 0.0,
+      "durationSec": 6.0,
+      "extractPoster": true,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    },
+    {
+      "key": "tokyo_street_broll",
+      "filename": "04_tokyo_street.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/4057/4057-720.mp4",
+      "searchQuery": "tokyo ginza night street",
+      "startOffsetSec": 0.0,
+      "durationSec": 7.0,
+      "extractPoster": true,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    },
+    {
+      "key": "smartphone_unboxing_broll",
+      "filename": "05_smartphone_scroll.mp4",
+      "source": "mixkit",
+      "url": "https://assets.mixkit.co/videos/22976/22976-720.mp4",
+      "searchQuery": "smartphone social media",
+      "startOffsetSec": 0.0,
+      "durationSec": 6.0,
+      "extractPoster": true,
+      "license": "mixkit_free",
+      "creditShort": "Mixkit Stock Footage"
+    }
+  ],
+  "stockImages": [
+    {
+      "key": "ginza_luxury_street",
+      "filename": "s01_ginza_luxury_street.jpg",
+      "source": "wikimedia",
+      "searchQuery": "Ginza Tokyo",
+      "license": "wikimedia_commons",
+      "creditShort": "Wikimedia Commons"
+    },
+    {
+      "key": "paris_champs_elysees",
+      "filename": "s02_paris_luxury_boutique.jpg",
+      "source": "wikimedia",
+      "searchQuery": "Champs-Elysees Paris",
+      "license": "wikimedia_commons",
+      "creditShort": "Wikimedia Commons"
+    },
+    {
+      "key": "tokyo_commuter_crowd",
+      "filename": "s03_tokyo_salaryman_crowd.jpg",
+      "source": "wikimedia",
+      "searchQuery": "Tokyo salaryman",
+      "license": "wikimedia_commons",
+      "creditShort": "Wikimedia Commons"
+    },
+    {
+      "key": "luxury_handbag_display",
+      "filename": "s04_luxury_handbag_window.jpg",
+      "source": "wikimedia",
+      "searchQuery": "Louis Vuitton bag",
+      "license": "wikimedia_commons",
+      "creditShort": "Wikimedia Commons"
+    }
+  ],
+  "chunks": [
+    {
+      "chunkId": "seg_01_hook",
+      "text": "もしあなたが160万円のバッグを売るなら、いちばん大事な客は誰でしょう？",
+      "pauseAfterSec": 0.55,
+      "minPauseSec": 0.45,
+      "shotRole": "scroll_stop_hook",
+      "shotLabel": "夜の路面ブティックBロール＋三行広告値札",
+      "eventKey": "hookStartSec",
+      "subtitleSegments": [
+        {
+          "startChar": 0,
+          "line1": "もしあなたが160万円のバッグを売るなら、",
+          "line2": "いちばん大事な客は誰でしょう？"
+        }
+      ]
+    },
+    {
+      "chunkId": "seg_02_vhs_flip",
+      "text": "普通に考えれば、お金持ちです。ところが本物の大富豪ほど、ロゴの目立つバッグを持ちたがりません。この業界を太く支えているのは、お金持ちに見られたい普通の会社員のほうです。",
+      "pauseAfterSec": 0.35,
+      "shotRole": "contrarian_claim",
+      "shotLabel": "VHS一時停止反転→号外切抜き比較",
+      "eventKey": "vhsPauseSec",
+      "subtitle": {
+        "line1": "普通に考えれば、お金持ちです。"
+      },
+      "splits": [
+        {
+          "charIndex": 15,
+          "shotRole": "contrarian_claim",
+          "shotLabel": "号外切抜き：ロゴなし vs ロゴ大",
+          "eventKey": "grooveStartSec",
+          "minOffsetFromPrevSec": 1.5,
+          "subtitle": {
+            "line1": "ところが本物の大富豪ほど、",
+            "line2": "ロゴの目立つバッグを持ちたがりません。"
+          }
+        },
+        {
+          "charIndex": 47,
+          "shotRole": "contrarian_claim",
+          "shotLabel": "号外切抜き：会社員の後ろ姿",
+          "minOffsetFromPrevSec": 1.5,
+          "subtitle": {
+            "line1": "この業界を太く支えているのは、",
+            "line2": "お金持ちに見られたい普通の会社員のほうです。"
+          }
+        }
+      ]
+    },
+    {
+      "chunkId": "seg_03_market",
+      "text": "世界の高級ブランド市場は、2024年でおよそ60兆円。その45パーセントを、上位わずか2パーセントの超富裕層が落としています。ところが残りの98パーセント、3億5000万人を超える、背伸びして買う人たちが、売上の半分以上を払っています。",
+      "pauseAfterSec": 0.35,
+      "shotRole": "context_lean_in",
+      "shotLabel": "ホワイトボード市場構成比（2% vs 98%）",
+      "eventKey": "whiteboardChartSec",
+      "subtitleSegments": [
+        {
+          "startChar": 0,
+          "line1": "世界の高級ブランド市場は、",
+          "line2": "2024年でおよそ60兆円。"
+        },
+        {
+          "startChar": 27,
+          "line1": "その45パーセントを、上位わずか",
+          "line2": "2パーセントの超富裕層が落としています。"
+        },
+        {
+          "startChar": 63,
+          "line1": "ところが残りの98パーセント、",
+          "line2": "3億5000万人を超える、"
+        },
+        {
+          "startChar": 91,
+          "line1": "背伸びして買う人たちが、",
+          "line2": "売上の半分以上を払っています。"
+        }
+      ]
+    },
+    {
+      "chunkId": "seg_04_margin",
+      "text": "その背伸びの代金は、どこへ行くのか。ルイ・ヴィトンを抱えるエルブイエムエイチでは、革製品部門の営業利益率が37.1パーセントもあります。100円売れるたびに37円が残る、普通のアパレルの数倍の儲けです。しかも値札は上がり続け、シャネルの定番バッグは5年でほぼ2倍、日本では160万円を超えました。",
+      "pauseAfterSec": 0.35,
+      "shotRole": "example_illustration",
+      "shotLabel": "紙面赤判子（営業利益率37.1%）＋定価2倍折れ線",
+      "eventKey": "marginEvidenceSec",
+      "subtitle": {
+        "line1": "その背伸びの代金は、どこへ行くのか。"
+      },
+      "splits": [
+        {
+          "charIndex": 18,
+          "shotRole": "example_illustration",
+          "shotLabel": "紙面赤判子：LVMH",
+          "minOffsetFromPrevSec": 1.2,
+          "subtitle": {
+            "line1": "ルイ・ヴィトンを抱える",
+            "line2": "エルブイエムエイチでは、"
+          }
+        },
+        {
+          "charIndex": 41,
+          "shotRole": "example_illustration",
+          "shotLabel": "紙面赤判子：営業利益率37.1%",
+          "minOffsetFromPrevSec": 1.2,
+          "subtitle": {
+            "line1": "革製品部門の営業利益率が",
+            "line2": "37.1パーセントもあります。"
+          }
+        },
+        {
+          "charIndex": 68,
+          "shotRole": "example_illustration",
+          "shotLabel": "100円玉37円塗り比較",
+          "minOffsetFromPrevSec": 1.2,
+          "subtitle": {
+            "line1": "100円売れるたびに37円が残る、",
+            "line2": "普通のアパレルの数倍の儲けです。"
+          }
+        },
+        {
+          "charIndex": 101,
+          "shotRole": "example_illustration",
+          "shotLabel": "ホワイトボード：シャネル定価推移",
+          "eventKey": "priceTrendSec",
+          "minOffsetFromPrevSec": 1.2,
+          "subtitle": {
+            "line1": "しかも値札は上がり続け、",
+            "line2": "シャネルの定番バッグは5年でほぼ2倍、"
+          }
+        },
+        {
+          "charIndex": 132,
+          "shotRole": "example_illustration",
+          "shotLabel": "店頭値札160万円超",
+          "minOffsetFromPrevSec": 1.2,
+          "subtitle": {
+            "line1": "日本では160万円を超えました。"
+          }
+        }
+      ]
+    },
+    {
+      "chunkId": "seg_05_dropout",
+      "text": "ここで、妙なことが起きます。2022年からの2年間で、値上げと物価高についていけない約5000万人が、この市場を去りました。普通なら値下げを考える場面です。ところがブランドが選んだのは、もう一段の値上げでした。",
+      "pauseAfterSec": 0.35,
+      "shotRole": "contrarian_claim",
+      "shotLabel": "因果ギアループ：5000万人脱落→0.0RPM急停止→再値上げ",
+      "eventKey": "gearLoopSec",
+      "subtitleSegments": [
+        {
+          "startChar": 0,
+          "line1": "ここで、妙なことが起きます。"
+        },
+        {
+          "startChar": 14,
+          "line1": "2022年からの2年間で、",
+          "line2": "値上げと物価高についていけない"
+        },
+        {
+          "startChar": 42,
+          "line1": "約5000万人が、この市場を去りました。",
+          "line2": "普通なら値下げを考える場面です。"
+        },
+        {
+          "startChar": 78,
+          "line1": "ところがブランドが選んだのは、",
+          "line2": "もう一段の値上げでした。"
+        }
+      ]
+    },
+    {
+      "chunkId": "seg_06_paper",
+      "text": "この謎は、2010年のマーケティング研究ですんなり解けます。買い手を資産の多さと見せびらかしたい気持ちで4つに分けると、本当の資産家ほどロゴのない地味な品を選んでいました。素材や仕立ての違いは、同じ階層の人に伝われば足りるからです。大きなロゴを欲しがったのは、上にいると見せたい人たちです。",
+      "pauseAfterSec": 0.32,
+      "shotRole": "example_illustration",
+      "shotLabel": "コルクボード赤紐4象限（ロゴ小 vs ロゴ大）",
+      "eventKey": "collageEvidenceSec",
+      "subtitleSegments": [
+        {
+          "startChar": 0,
+          "line1": "この謎は、2010年の",
+          "line2": "マーケティング研究ですんなり解けます。"
+        },
+        {
+          "startChar": 30,
+          "line1": "買い手を資産の多さと",
+          "line2": "見せびらかしたい気持ちで4つに分けると、"
+        },
+        {
+          "startChar": 60,
+          "line1": "本当の資産家ほどロゴのない地味な品を",
+          "line2": "選んでいました。"
+        },
+        {
+          "startChar": 86,
+          "line1": "素材や仕立ての違いは、",
+          "line2": "同じ階層の人に伝われば足りるからです。"
+        },
+        {
+          "startChar": 116,
+          "line1": "大きなロゴを欲しがったのは、",
+          "line2": "上にいると見せたい人たちです。"
+        }
+      ]
+    },
+    {
+      "chunkId": "seg_07_veblen",
+      "text": "経済学者のヴェブレンも1899年に、高いこと自体が価値になる品があると書いています。値上げは客をふるい落としつつ、残った客に、自分はまだ買える側だと思わせる仕掛けでもあるわけです。",
+      "pauseAfterSec": 0.35,
+      "shotRole": "example_illustration",
+      "shotLabel": "紙面切抜き：1899年ヴェブレン理論×値札",
+      "eventKey": "veblenPaperSec",
+      "subtitleSegments": [
+        {
+          "startChar": 0,
+          "line1": "経済学者のヴェブレンも1899年に、",
+          "line2": "高いこと自体が価値になる品が"
+        },
+        {
+          "startChar": 32,
+          "line1": "あると書いています。",
+          "line2": "値上げは客をふるい落としつつ、"
+        },
+        {
+          "startChar": 57,
+          "line1": "残った客に、自分はまだ買える側だと",
+          "line2": "思わせる仕掛けでもあるわけです。"
+        }
+      ]
+    },
+    {
+      "chunkId": "seg_08_japan",
+      "text": "日本だと、もっとよく見えます。実質賃金が伸び悩む中でも、銀座の店には行列ができ、SNSには開封動画が流れ続けています。一生もの、資産価値、自分へのご褒美。そこに来月また値上げという噂が重なると、バッグは無理でも財布なら、と手が伸びます。",
+      "pauseAfterSec": 0.35,
+      "shotRole": "example_illustration",
+      "shotLabel": "暗室地図日本ズーム→銀座行列＆紙面切抜き",
+      "eventKey": "japanMapSec",
+      "subtitle": {
+        "line1": "日本だと、もっとよく見えます。"
+      },
+      "splits": [
+        {
+          "charIndex": 15,
+          "shotRole": "example_illustration",
+          "shotLabel": "銀座の行列",
+          "minOffsetFromPrevSec": 1.2,
+          "subtitle": {
+            "line1": "実質賃金が伸び悩む中でも、",
+            "line2": "銀座の店には行列ができ、"
+          }
+        },
+        {
+          "charIndex": 40,
+          "shotRole": "example_illustration",
+          "shotLabel": "SNS開封動画",
+          "minOffsetFromPrevSec": 1.2,
+          "subtitle": {
+            "line1": "SNSには開封動画が流れ続けています。"
+          }
+        },
+        {
+          "charIndex": 59,
+          "shotRole": "example_illustration",
+          "shotLabel": "紙面チラシ切抜き：一生モノ・資産価値・ご褒美",
+          "eventKey": "japanFlyerSec",
+          "minOffsetFromPrevSec": 1.2,
+          "subtitle": {
+            "line1": "一生もの、資産価値、自分へのご褒美。"
+          }
+        },
+        {
+          "charIndex": 77,
+          "shotRole": "example_illustration",
+          "shotLabel": "来月値上げ噂→財布購入",
+          "minOffsetFromPrevSec": 1.2,
+          "subtitle": {
+            "line1": "そこに来月また値上げという噂が重なると、",
+            "line2": "バッグは無理でも財布なら、と手が伸びます。"
+          }
+        }
+      ]
+    },
+    {
+      "chunkId": "seg_09_open_loop",
+      "text": "売上の半分近くは、たしかに大富豪が払っています。ただ、憧れを値札に変えられるのは、それを見上げる何億人もの財布があるからです。では、5000万人を失っても崩れない値札は、どう決まっているのか。そして次に狙われるのは、誰の財布なのか。",
+      "pauseAfterSec": 0.6,
+      "shotRole": "open_loop",
+      "shotLabel": "暗室世界地図オープンループ＆値札フォーカス",
+      "eventKey": "openLoopSec",
+      "subtitleSegments": [
+        {
+          "startChar": 0,
+          "line1": "売上の半分近くは、",
+          "line2": "たしかに大富豪が払っています。"
+        },
+        {
+          "startChar": 24,
+          "line1": "ただ、憧れを値札に変えられるのは、",
+          "line2": "それを見上げる何億人もの財布があるからです。"
+        },
+        {
+          "startChar": 63,
+          "line1": "では、5000万人を失っても崩れない値札は、",
+          "line2": "どう決まっているのか。"
+        },
+        {
+          "startChar": 96,
+          "line1": "そして次に狙われるのは、",
+          "line2": "誰の財布なのか。"
+        }
+      ]
+    }
+  ],
+  "audio": {
+    "bpm": 115.0,
+    "loudnormTargetI": -14.0,
+    "loudnormTargetTp": -1.4,
+    "loudnormTargetLra": 9.0,
+    "exportSfxLibrary": true,
+    "bgm": {
+      "introDroneEndEvent": "vhsPauseSec",
+      "grooveStartEvent": "grooveStartSec",
+      "cutouts": [
+        {
+          "startEvent": "vhsPauseSec",
+          "endEvent": "grooveStartSec"
+        }
+      ]
+    },
+    "sfx": [
+      {
+        "kind": "price_ping",
+        "event": "hookStartSec",
+        "offsetSec": 0.4,
+        "gain": 0.22
+      },
+      {
+        "kind": "paper_snap",
+        "event": "hookStartSec",
+        "offsetSec": 1.8,
+        "gain": 0.24
+      },
+      {
+        "kind": "vhs_pause",
+        "event": "vhsPauseSec",
+        "offsetSec": 0.0,
+        "gain": 0.24
+      },
+      {
+        "kind": "glitch_burst",
+        "event": "grooveStartSec",
+        "offsetSec": 0.0,
+        "gain": 0.24
+      },
+      {
+        "kind": "stamp_thud",
+        "event": "grooveStartSec",
+        "offsetSec": 1.2,
+        "gain": 0.24
+      },
+      {
+        "kind": "paper_snap",
+        "event": "grooveStartSec",
+        "offsetSec": 4.2,
+        "gain": 0.22
+      },
+      {
+        "kind": "whoosh",
+        "event": "whiteboardChartSec",
+        "offsetSec": 0.0,
+        "gain": 0.18
+      },
+      {
+        "kind": "chart_tick",
+        "event": "whiteboardChartSec",
+        "offsetSec": 0.8,
+        "pulses": 4,
+        "gain": 0.16
+      },
+      {
+        "kind": "stamp_thud",
+        "event": "whiteboardChartSec",
+        "offsetSec": 5.2,
+        "gain": 0.24
+      },
+      {
+        "kind": "paper_snap",
+        "event": "marginEvidenceSec",
+        "offsetSec": 0.2,
+        "gain": 0.24
+      },
+      {
+        "kind": "stamp_thud",
+        "event": "marginEvidenceSec",
+        "offsetSec": 2.8,
+        "gain": 0.25
+      },
+      {
+        "kind": "price_ping",
+        "event": "marginEvidenceSec",
+        "offsetSec": 5.5,
+        "gain": 0.22
+      },
+      {
+        "kind": "chart_tick",
+        "event": "priceTrendSec",
+        "offsetSec": 0.4,
+        "pulses": 5,
+        "gain": 0.16
+      },
+      {
+        "kind": "camera_shutter",
+        "event": "priceTrendSec",
+        "offsetSec": 3.5,
+        "gain": 0.2
+      },
+      {
+        "kind": "mech_slide",
+        "event": "gearLoopSec",
+        "offsetSec": 0.2,
+        "gain": 0.22
+      },
+      {
+        "kind": "impact_thud",
+        "event": "gearLoopSec",
+        "offsetSec": 4.5,
+        "gain": 0.26
+      },
+      {
+        "kind": "stamp_thud",
+        "event": "gearLoopSec",
+        "offsetSec": 8.2,
+        "gain": 0.25
+      },
+      {
+        "kind": "price_ping",
+        "event": "gearLoopSec",
+        "offsetSec": 11.2,
+        "gain": 0.22
+      },
+      {
+        "kind": "soft_pop",
+        "event": "collageEvidenceSec",
+        "offsetSec": 0.4,
+        "gain": 0.2
+      },
+      {
+        "kind": "stamp_thud",
+        "event": "collageEvidenceSec",
+        "offsetSec": 4.0,
+        "gain": 0.24
+      },
+      {
+        "kind": "paper_snap",
+        "event": "collageEvidenceSec",
+        "offsetSec": 9.5,
+        "gain": 0.22
+      },
+      {
+        "kind": "paper_snap",
+        "event": "veblenPaperSec",
+        "offsetSec": 0.2,
+        "gain": 0.24
+      },
+      {
+        "kind": "price_ping",
+        "event": "veblenPaperSec",
+        "offsetSec": 4.5,
+        "gain": 0.22
+      },
+      {
+        "kind": "whoosh",
+        "event": "japanMapSec",
+        "offsetSec": 0.0,
+        "gain": 0.2
+      },
+      {
+        "kind": "camera_shutter",
+        "event": "japanMapSec",
+        "offsetSec": 3.5,
+        "gain": 0.2
+      },
+      {
+        "kind": "paper_snap",
+        "event": "japanFlyerSec",
+        "offsetSec": 0.3,
+        "gain": 0.24
+      },
+      {
+        "kind": "stamp_thud",
+        "event": "japanFlyerSec",
+        "offsetSec": 3.2,
+        "gain": 0.24
+      },
+      {
+        "kind": "whoosh",
+        "event": "openLoopSec",
+        "offsetSec": 0.0,
+        "gain": 0.2
+      },
+      {
+        "kind": "impact_thud",
+        "event": "openLoopSec",
+        "offsetSec": 7.0,
+        "gain": 0.26
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "sc01_hook",
+      "type": "video_broll",
+      "startEvent": "hookStartSec",
+      "endEvent": "vhsPauseSec",
+      "videoKey": "luxury_boutique_broll",
+      "posterKey": "luxury_boutique_broll_poster",
+      "overlayCutout": {
+        "kicker": "LUXURY PRICE",
+        "headline": "¥1,600,000",
+        "stamp": "5年で2倍",
+        "accentColor": "#B91C1C"
+      }
+    },
+    {
+      "id": "sc02_vhs_pause",
+      "type": "vhs_pause_avatar",
+      "startEvent": "vhsPauseSec",
+      "endEvent": "grooveStartSec",
+      "headline": "いちばん大事な客は？",
+      "subline": "大富豪か、それとも——"
+    },
+    {
+      "id": "sc03_editorial_flip",
+      "type": "editorial_cutout",
+      "startEvent": "grooveStartSec",
+      "endEvent": "whiteboardChartSec",
+      "surface": "paper",
+      "masthead": "LUXURY MARKET EXTRA",
+      "cards": [
+        {
+          "title": "ロゴなし",
+          "body": "本物の大富豪",
+          "stamp": "QUIET"
+        },
+        {
+          "title": "ロゴ大",
+          "body": "普通の会社員",
+          "stamp": "本当の上客",
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "id": "sc04_market_whiteboard",
+      "type": "whiteboard_trend",
+      "startEvent": "whiteboardChartSec",
+      "endEvent": "marginEvidenceSec",
+      "title": "世界ラグジュアリー市場 60兆円の内訳",
+      "yLabel": "構成比 (%)",
+      "xLabels": [
+        "人数比",
+        "売上比"
+      ],
+      "series": [
+        {
+          "name": "背伸び層 (98%)",
+          "color": "#DC2626",
+          "values": [
+            98,
+            55
+          ],
+          "highlight": true
+        },
+        {
+          "name": "超富裕層 (2%)",
+          "color": "#2563EB",
+          "values": [
+            2,
+            45
+          ]
+        }
+      ],
+      "circleLastHighlight": true
+    },
+    {
+      "id": "sc05_margin_paper",
+      "type": "editorial_cutout",
+      "startEvent": "marginEvidenceSec",
+      "endEvent": "priceTrendSec",
+      "surface": "paper",
+      "masthead": "ANNUAL REPORT",
+      "cards": [
+        {
+          "title": "LVMH 革製品部門",
+          "body": "100円売って37円残る",
+          "stamp": "営業利益率 37.1%",
+          "highlight": true
+        },
+        {
+          "title": "一般アパレル",
+          "body": "数%〜10%前後",
+          "stamp": "数倍の格差"
+        }
+      ]
+    },
+    {
+      "id": "sc06_price_whiteboard",
+      "type": "whiteboard_trend",
+      "startEvent": "priceTrendSec",
+      "endEvent": "gearLoopSec",
+      "title": "シャネル定番バッグ 定価推移 (USD)",
+      "yLabel": "USD",
+      "xLabels": [
+        "2019",
+        "2021",
+        "2023",
+        "2024"
+      ],
+      "series": [
+        {
+          "name": "Classic Flap",
+          "color": "#DC2626",
+          "values": [
+            5800,
+            7800,
+            10200,
+            11300
+          ],
+          "highlight": true
+        }
+      ],
+      "circleLastHighlight": true
+    },
+    {
+      "id": "sc07_gear_dropout",
+      "type": "causal_gear_loop",
+      "startEvent": "gearLoopSec",
+      "endEvent": "collageEvidenceSec",
+      "surfaceTheme": "paper",
+      "leftActor": "ブランド",
+      "rightActor": "背伸び層 3.5億人",
+      "topFlowLabel": "再値上げ",
+      "bottomFlowLabel": "5000万人脱落",
+      "lockAtProgress": 0.55
+    },
+    {
+      "id": "sc08_corkboard_paper",
+      "type": "editorial_cutout",
+      "startEvent": "collageEvidenceSec",
+      "endEvent": "veblenPaperSec",
+      "surface": "corkboard",
+      "masthead": "STATUS SIGNALING 2010",
+      "cards": [
+        {
+          "title": "本当の資産家",
+          "body": "素材と仕立てのみ",
+          "stamp": "ロゴ小"
+        },
+        {
+          "title": "上にいると見せたい層",
+          "body": "一目で分かる記号",
+          "stamp": "ロゴ大",
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "id": "sc09_veblen_paper",
+      "type": "editorial_cutout",
+      "startEvent": "veblenPaperSec",
+      "endEvent": "japanMapSec",
+      "surface": "paper",
+      "masthead": "1899 VEBLEN",
+      "cards": [
+        {
+          "title": "高いほど欲しい",
+          "body": "自分はまだ買える側",
+          "stamp": "希少性効果",
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "id": "sc10_japan_map",
+      "type": "projector_target_map",
+      "startEvent": "japanMapSec",
+      "endEvent": "japanFlyerSec",
+      "targetIso2": "jp",
+      "headline": "JAPAN",
+      "callout": "実質賃金停滞 × 銀座の行列"
+    },
+    {
+      "id": "sc11_japan_flyer",
+      "type": "editorial_cutout",
+      "startEvent": "japanFlyerSec",
+      "endEvent": "openLoopSec",
+      "surface": "paper",
+      "masthead": "PRICE REVISION",
+      "cards": [
+        {
+          "title": "一生モノ・資産価値",
+          "body": "バッグは無理でも財布なら",
+          "stamp": "来月値上げ",
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "id": "sc12_open_loop",
+      "type": "projector_target_map",
+      "startEvent": "openLoopSec",
+      "targetIso2": "fr",
+      "headline": "NEXT TARGET",
+      "callout": "値札の決まり方と次の財布"
+    }
+  ]
+}
